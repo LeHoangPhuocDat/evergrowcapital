@@ -372,67 +372,96 @@
                     <button class="tab-button" onclick="showStockContent('stockContent2', this)">VCB</button>
                     <button class="tab-button" onclick="showStockContent('stockContent3', this)">HPG</button>
                 </div>
-                <div id="stockContent1" class="stock-content active space-y-6">
-                    <h3 class="text-2xl font-semibold text-green-700 mb-4">Cổ Phiếu Ưu Tiên: FPT (Tập đoàn FPT)</h3>
-                    
+               
+                <div id="stockContent1" class="stock-content active space-y-8">
                     <div>
-                        <h4 class="text-xl font-semibold text-gray-700 mb-2">1. Tổng quan về Công ty:</h4>
-                        <p class="text-gray-600 leading-relaxed">
-                            [Điền nội dung tổng quan về Tập đoàn FPT tại đây: Lịch sử hình thành, quy mô, các lĩnh vực hoạt động chính, vị thế trên thị trường, tầm nhìn và sứ mệnh của công ty...]
+                        <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6 mb-6">
+                            <img src="images/fpt_logo_placeholder.png" alt="Logo FPT" class="w-32 h-32 sm:w-40 sm:h-40 object-contain rounded-lg border border-gray-200 p-1">
+                            <div>
+                                <h3 class="text-2xl lg:text-3xl font-semibold text-green-700 mb-2">FPT (Công ty Cổ phần FPT)</h3>
+                                <p class="text-gray-500 text-sm mb-3">Ngành: Công nghệ Thông tin & Viễn thông | Sàn: HOSE</p>
+                                <h4 class="text-xl font-semibold text-gray-800 mb-2">1. Tổng quan về Công ty:</h4>
+                                <p class="text-gray-600 leading-relaxed text-justify">
+                                    Thành lập từ năm 1988, FPT là tập đoàn công nghệ thông tin và viễn thông hàng đầu Việt Nam. FPT hoạt động trong ba lĩnh vực kinh doanh cốt lõi: Công nghệ, Viễn thông và Giáo dục. Với vị thế tiên phong trong chuyển đổi số, FPT cung cấp các giải pháp và dịch vụ công nghệ toàn diện cho khách hàng trong và ngoài nước, đặc biệt mạnh ở thị trường Nhật Bản, Mỹ và châu Âu. Tầm nhìn của FPT là trở thành một tập đoàn toàn cầu, đóng góp vào sự phát triển kinh tế số của Việt Nam và thế giới.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-800 mb-3">2. Các điểm nổi trội:</h4>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2 leading-relaxed">
+                            <li><strong>Vị thế dẫn đầu thị trường:</strong> FPT là doanh nghiệp công nghệ lớn nhất Việt Nam với hệ sinh thái sản phẩm, dịch vụ đa dạng và mạng lưới khách hàng rộng khắp.</li>
+                            <li><strong>Năng lực công nghệ vượt trội:</strong> Tiên phong nghiên cứu và ứng dụng các công nghệ mới như AI, Cloud, Big Data, IoT, Blockchain, đóng góp vào nhiều dự án chuyển đổi số quốc gia.</li>
+                            <li><strong>Tăng trưởng doanh thu từ thị trường nước ngoài ấn tượng:</strong> Mảng xuất khẩu phần mềm liên tục ghi nhận mức tăng trưởng cao, khẳng định năng lực cạnh tranh trên thị trường toàn cầu.</li>
+                            <li><strong>Nguồn nhân lực chất lượng cao:</strong> Hệ thống giáo dục FPT (FPT Education) cung cấp nguồn nhân lực IT dồi dào và chất lượng cho chính tập đoàn và thị trường.</li>
+                            <li><strong>Văn hóa doanh nghiệp đặc sắc:</strong> Môi trường làm việc năng động, sáng tạo, thu hút và giữ chân nhân tài.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-x-8 gap-y-6">
+                        <div>
+                            <h4 class="text-xl font-semibold text-gray-800 mb-3">3. Luận điểm đầu tư:</h4>
+                            <ul class="list-disc list-inside text-gray-600 space-y-2 leading-relaxed">
+                                <li>Hưởng lợi trực tiếp từ xu hướng chuyển đổi số mạnh mẽ trên toàn cầu và tại Việt Nam.</li>
+                                <li>Biên lợi nhuận mảng công nghệ, đặc biệt là dịch vụ xuất khẩu phần mềm, duy trì ở mức cao và ổn định.</li>
+                                <li>Mảng viễn thông (dịch vụ internet, truyền hình) tạo dòng tiền đều đặn.</li>
+                                <li>Khối giáo dục tiếp tục mở rộng quy mô, đóng góp ngày càng lớn vào cơ cấu doanh thu và lợi nhuận.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold text-gray-800 mb-3">4. Rủi ro cần lưu ý:</h4>
+                            <ul class="list-disc list-inside text-gray-600 space-y-2 leading-relaxed">
+                                <li>Biến động tỷ giá có thể ảnh hưởng đến lợi nhuận từ thị trường nước ngoài.</li>
+                                <li>Cạnh tranh ngày càng gay gắt từ các đối thủ trong và ngoài nước.</li>
+                                <li>Rủi ro về bảo mật thông tin và an ninh mạng.</li>
+                                <li>Thách thức trong việc thu hút và giữ chân nhân tài IT chất lượng cao.</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                     <div>
+                        <h4 class="text-xl font-semibold text-gray-800 mb-3">5. Định giá & Khuyến nghị (Ví dụ):</h4>
+                        <p class="text-gray-600 bg-gray-50 p-4 rounded-md leading-relaxed">Giá mục tiêu (1 năm): <span class="font-semibold">145.000 VNĐ/cp</span> (Dựa trên phương pháp P/E và DCF).<br>
+                           P/E dự phóng 2025: <span class="font-semibold">18.5x</span> (So với trung bình ngành 20.x).<br>
+                           Khuyến nghị: <span class="font-semibold text-green-600">MUA</span> với tỷ trọng cao trong danh mục dài hạn.
                         </p>
                     </div>
-        
-                    <div class="grid md:grid-cols-2 gap-x-6 gap-y-4">
-                        <div>
-                            <h4 class="text-lg font-semibold text-gray-700 mb-2">2. Luận điểm đầu tư:</h4>
-                            <ul class="list-disc list-inside text-gray-600 space-y-1">
-                                <li><strong>Dẫn đầu chuyển đổi số:</strong> FPT là đối tác tin cậy của nhiều doanh nghiệp lớn trong và ngoài nước về tư vấn và triển khai giải pháp công nghệ.</li>
-                                <li><strong>Tăng trưởng bền vững từ thị trường quốc tế:</strong> Mảng xuất khẩu phần mềm, đặc biệt tại Nhật Bản, Mỹ và châu Âu, liên tục tăng trưởng hai con số.</li>
-                                <li><strong>Hệ sinh thái sản phẩm đa dạng:</strong> Từ giáo dục, viễn thông đến các giải pháp Made-by-FPT, tạo nguồn doanh thu ổn định và tiềm năng mở rộng.</li>
-                                <li><strong>Văn hóa doanh nghiệp mạnh:</strong> Khuyến khích đổi mới sáng tạo và phát triển nhân tài.</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-semibold text-gray-700 mb-2">3. Các điểm nổi trội:</h4>
-                            <ul class="list-disc list-inside text-gray-600 space-y-1">
-                                <li>[Điểm nổi trội 1 của FPT: Ví dụ: Năng lực công nghệ vượt trội, đội ngũ nhân sự chất lượng cao...]</li>
-                                <li>[Điểm nổi trội 2 của FPT: Ví dụ: Mạng lưới đối tác toàn cầu rộng khắp...]</li>
-                                <li>[Điểm nổi trội 3 của FPT: Ví dụ: Khả năng thích ứng nhanh với xu hướng thị trường...]</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-semibold text-gray-700 mb-2">4. Rủi ro cần lưu ý:</h4>
-                            <ul class="list-disc list-inside text-gray-600 space-y-1">
-                                <li>Biến động tỷ giá có thể ảnh hưởng đến doanh thu từ thị trường nước ngoài.</li>
-                                <li>Cạnh tranh gay gắt trong ngành công nghệ thông tin.</li>
-                                <li>Rủi ro thiếu hụt nhân sự chất lượng cao.</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-semibold text-gray-700 mb-2">5. Định giá & Khuyến nghị (Ví dụ):</h4>
-                            <p class="text-gray-600">Giá mục tiêu (1 năm): 145.000 VNĐ | P/E dự phóng: 18.x | Khuyến nghị: MUA</p>
-                        </div>
-                    </div>
-        
+                    
                     <div>
-                        <h4 class="text-lg font-semibold text-gray-700 mt-4 mb-2">6. Tin tức về Công ty (Ví dụ):</h4>
-                        <ul class="list-disc list-inside text-gray-600 space-y-2">
-                            <li><a href="#" class="text-blue-600 hover:underline">[FPT Software ký kết hợp đồng triệu đô với đối tác Nhật Bản]</a> - [Ngày 15/05/2025]</li>
-                            <li><a href="#" class="text-blue-600 hover:underline">[FPT Smart Cloud ra mắt giải pháp AI mới cho doanh nghiệp]</a> - [Ngày 10/05/2025]</li>
-                            <li><a href="#" class="text-blue-600 hover:underline">[FPT Retail mở rộng chuỗi nhà thuốc Long Châu]</a> - [Ngày 05/05/2025]</li>
+                        <h4 class="text-xl font-semibold text-gray-800 mb-3">6. Tin tức & Sự kiện nổi bật (Ví dụ):</h4>
+                        <ul class="list-none space-y-3">
+                            <li class="border-b pb-2">
+                                <a href="#" class="text-blue-600 hover:text-blue-700 font-medium hover:underline block">[FPT Software ký kết hợp đồng chiến lược trị giá 100 triệu USD với đối tác Mỹ]</a>
+                                <span class="text-sm text-gray-500 block mt-1">Ngày 20/05/2025 - FPT tiếp tục khẳng định vị thế trên thị trường công nghệ toàn cầu.</span>
+                            </li>
+                            <li class="border-b pb-2">
+                                <a href="#" class="text-blue-600 hover:text-blue-700 font-medium hover:underline block">[FPT Smart Cloud ra mắt nền tảng AI thế hệ mới FPT.AI 2.0]</a>
+                                <span class="text-sm text-gray-500 block mt-1">Ngày 10/05/2025 - Nền tảng mới hứa hẹn mang lại nhiều giải pháp đột phá cho doanh nghiệp.</span>
+                            </li>
+                            <li>
+                                <a href="#" class="text-blue-600 hover:text-blue-700 font-medium hover:underline block">[Đại học FPT nằm trong TOP 3 trường đào tạo CNTT tốt nhất Việt Nam]</a>
+                                <span class="text-sm text-gray-500 block mt-1">Ngày 01/05/2025 - Khẳng định chất lượng đào tạo nguồn nhân lực công nghệ cao.</span>
+                            </li>
                         </ul>
                     </div>
                     
                     <div>
-                        <h4 class="text-lg font-semibold text-gray-700 mt-4 mb-2">7. Các bài báo liên quan (Ví dụ):</h4>
-                         <ul class="list-disc list-inside text-gray-600 space-y-2">
-                            <li><a href="#" class="text-blue-600 hover:underline">[Phân tích tiềm năng tăng trưởng của FPT trong kỷ nguyên số]</a> - VnEconomy</li>
-                            <li><a href="#" class="text-blue-600 hover:underline">[FPT và chiến lược vươn ra biển lớn]</a> - Forbes Vietnam</li>
+                        <h4 class="text-xl font-semibold text-gray-800 mb-3">7. Các bài báo & Phân tích liên quan (Ví dụ):</h4>
+                         <ul class="list-none space-y-3">
+                            <li class="border-b pb-2">
+                                <a href="#" class="text-blue-600 hover:text-blue-700 font-medium hover:underline block">[VnEconomy: FPT - Cổ phiếu công nghệ đáng chú ý nửa cuối năm 2025]</a>
+                                <p class="text-sm text-gray-500 mt-1">Bài viết đánh giá triển vọng tăng trưởng của FPT dựa trên các hợp đồng mới và xu hướng thị trường.</p>
+                            </li>
+                            <li>
+                                <a href="#" class="text-blue-600 hover:text-blue-700 font-medium hover:underline block">[Forbes Vietnam: Câu chuyện thành công của FPT và khát vọng toàn cầu]</a>
+                                 <p class="text-sm text-gray-500 mt-1">Phân tích chiến lược mở rộng thị trường quốc tế và những yếu tố làm nên thành công của FPT.</p>
+                            </li>
                         </ul>
                     </div>
         
                     <div>
-                        <h4 class="text-lg font-semibold text-gray-700 mt-6 mb-3">8. Biểu đồ phân tích (Ví dụ):</h4>
+                        <h4 class="text-xl font-semibold text-gray-800 mb-3">8. Biểu đồ phân tích (Ví dụ):</h4>
                         <div class="grid md:grid-cols-3 gap-4">
                             <div class="chart-placeholder p-4 rounded text-center">Biểu đồ Tăng trưởng Doanh thu FPT (5 năm)</div>
                             <div class="chart-placeholder p-4 rounded text-center">Biểu đồ P/E của FPT so với VNINDEX & Ngành</div>
@@ -440,64 +469,82 @@
                         </div>
                     </div>
                 </div>
-                <div id="stockContent2" class="stock-content hidden space-y-6">
-                    <h3 class="text-2xl font-semibold text-green-700 mb-4">Cổ Phiếu Ưu Tiên: VCB (Ngân hàng TMCP Ngoại thương Việt Nam)</h3>
+        
+                <div id="stockContent2" class="stock-content hidden space-y-8">
+                    <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6 mb-6">
+                        <img src="images/vcb_logo_placeholder.png" alt="Logo VCB" class="w-32 h-32 sm:w-40 sm:h-40 object-contain rounded-lg border border-gray-200 p-1">
+                        <div>
+                            <h3 class="text-2xl lg:text-3xl font-semibold text-green-700 mb-2">VCB (Ngân hàng TMCP Ngoại thương Việt Nam)</h3>
+                            <p class="text-gray-500 text-sm mb-3">Ngành: Ngân hàng | Sàn: HOSE</p>
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">1. Tổng quan về Công ty:</h4>
+                            <p class="text-gray-600 leading-relaxed text-justify">
+                                [Điền nội dung tổng quan về Ngân hàng VCB tại đây: Lịch sử hình thành, quy mô hoạt động, các sản phẩm dịch vụ chính, thị phần, và vị thế là một trong những ngân hàng hàng đầu Việt Nam...]
+                            </p>
+                        </div>
+                    </div>
                     
                     <div>
-                        <h4 class="text-xl font-semibold text-gray-700 mb-2">1. Tổng quan về Công ty:</h4>
-                        <p class="text-gray-600 leading-relaxed">
-                            [Điền nội dung tổng quan về Ngân hàng VCB tại đây: Lịch sử, quy mô, mạng lưới, các sản phẩm dịch vụ chính, vị thế trong ngành ngân hàng...]
+                        <h4 class="text-xl font-semibold text-gray-800 mb-3">2. Các điểm nổi trội:</h4>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2 leading-relaxed">
+                            <li>[Điểm nổi trội 1 của VCB: Ví dụ: Thương hiệu uy tín và lâu đời với mạng lưới chi nhánh rộng khắp...]</li>
+                            <li>[Điểm nổi trội 2 của VCB: Ví dụ: Nền tảng công nghệ hiện đại, tiên phong trong các dịch vụ ngân hàng số...]</li>
+                            <li>[Điểm nổi trội 3 của VCB: Ví dụ: Quan hệ khách hàng doanh nghiệp lớn mạnh và tệp khách hàng cá nhân chất lượng cao...]</li>
+                        </ul>
+                    </div>
+        
+                    <div class="grid md:grid-cols-2 gap-x-8 gap-y-6">
+                        <div>
+                            <h4 class="text-xl font-semibold text-gray-800 mb-3">3. Luận điểm đầu tư:</h4>
+                            <ul class="list-disc list-inside text-gray-600 space-y-2 leading-relaxed">
+                                <li><strong>Ngân hàng đầu ngành:</strong> Sở hữu vị thế dẫn đầu về quy mô, thương hiệu, và chất lượng tài sản.</li>
+                                <li><strong>Tỷ lệ CASA cao:</strong> Lợi thế chi phí vốn thấp, hỗ trợ NIM (Biên lãi ròng) ở mức cao so với trung bình ngành.</li>
+                                <li><strong>Chất lượng tài sản vượt trội:</strong> Tỷ lệ nợ xấu được kiểm soát ở mức thấp, bộ đệm dự phòng rủi ro tín dụng vững chắc.</li>
+                                <li><strong>Tiềm năng từ Bancassurance và Ngân hàng số:</strong> Các mảng kinh doanh này đang phát triển mạnh mẽ, đóng góp ngày càng lớn vào cơ cấu lợi nhuận.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold text-gray-800 mb-3">4. Rủi ro cần lưu ý:</h4>
+                            <ul class="list-disc list-inside text-gray-600 space-y-2 leading-relaxed">
+                                <li>Rủi ro tín dụng tiềm ẩn từ các biến động kinh tế vĩ mô có thể ảnh hưởng đến chất lượng tài sản.</li>
+                                <li>Áp lực cạnh tranh từ các ngân hàng thương mại cổ phần tư nhân năng động và các công ty fintech.</li>
+                                <li>Rủi ro từ việc thay đổi chính sách tiền tệ và quy định của Ngân hàng Nhà nước.</li>
+                            </ul>
+                        </div>
+                    </div>
+                     <div>
+                        <h4 class="text-xl font-semibold text-gray-800 mb-3">5. Định giá & Khuyến nghị (Ví dụ):</h4>
+                        <p class="text-gray-600 bg-gray-50 p-4 rounded-md leading-relaxed">Giá mục tiêu (1 năm): <span class="font-semibold">110.000 VNĐ/cp</span>.<br>
+                           P/B dự phóng 2025: <span class="font-semibold">2.8x</span>.<br>
+                           Khuyến nghị: <span class="font-semibold text-orange-500">KHẢ QUAN</span> cho đầu tư trung và dài hạn.
                         </p>
                     </div>
-        
-                    <div class="grid md:grid-cols-2 gap-x-6 gap-y-4">
-                        <div>
-                            <h4 class="text-lg font-semibold text-gray-700 mb-2">2. Luận điểm đầu tư:</h4>
-                            <ul class="list-disc list-inside text-gray-600 space-y-1">
-                                <li><strong>Ngân hàng đầu ngành:</strong> Sở hữu vị thế dẫn đầu về quy mô, thương hiệu, và chất lượng tài sản.</li>
-                                <li><strong>Tỷ lệ CASA cao:</strong> Lợi thế chi phí vốn thấp, hỗ trợ NIM ở mức cao.</li>
-                                <li><strong>Chất lượng tài sản vượt trội:</strong> Tỷ lệ nợ xấu thấp, bộ đệm dự phòng vững chắc.</li>
-                                <li><strong>Tiềm năng từ Bancassurance và Ngân hàng số:</strong> Các mảng kinh doanh mới đóng góp ngày càng lớn vào lợi nhuận.</li>
-                            </ul>
-                        </div>
-                         <div>
-                            <h4 class="text-lg font-semibold text-gray-700 mb-2">3. Các điểm nổi trội:</h4>
-                            <ul class="list-disc list-inside text-gray-600 space-y-1">
-                                <li>[Điểm nổi trội 1 của VCB: Ví dụ: Thương hiệu uy tín và lâu đời...]</li>
-                                <li>[Điểm nổi trội 2 của VCB: Ví dụ: Nền tảng công nghệ hiện đại...]</li>
-                                <li>[Điểm nổi trội 3 của VCB: Ví dụ: Quan hệ khách hàng doanh nghiệp lớn mạnh...]</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-semibold text-gray-700 mb-2">4. Rủi ro cần lưu ý:</h4>
-                            <ul class="list-disc list-inside text-gray-600 space-y-1">
-                                <li>Rủi ro tín dụng tiềm ẩn từ các biến động kinh tế vĩ mô.</li>
-                                <li>Áp lực cạnh tranh từ các ngân hàng tư nhân và fintech.</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-semibold text-gray-700 mb-2">5. Định giá & Khuyến nghị (Ví dụ):</h4>
-                            <p class="text-gray-600">Giá mục tiêu (1 năm): 110.000 VNĐ | P/B dự phóng: 2.x | Khuyến nghị: KHẢ QUAN</p>
-                        </div>
-                    </div>
                     
                     <div>
-                        <h4 class="text-lg font-semibold text-gray-700 mt-4 mb-2">6. Tin tức về Công ty (Ví dụ):</h4>
-                        <ul class="list-disc list-inside text-gray-600 space-y-2">
-                            <li><a href="#" class="text-blue-600 hover:underline">[VCB công bố lợi nhuận quý I tăng trưởng ấn tượng]</a> - [Ngày 25/04/2025]</li>
-                            <li><a href="#" class="text-blue-600 hover:underline">[Vietcombank triển khai gói tín dụng ưu đãi cho SME]</a> - [Ngày 10/04/2025]</li>
+                        <h4 class="text-xl font-semibold text-gray-800 mb-3">6. Tin tức & Sự kiện nổi bật (Ví dụ):</h4>
+                        <ul class="list-none space-y-3">
+                             <li class="border-b pb-2">
+                                <a href="#" class="text-blue-600 hover:text-blue-700 font-medium hover:underline block">[VCB công bố lợi nhuận quý II/2025 vượt kỳ vọng thị trường]</a>
+                                <span class="text-sm text-gray-500 block mt-1">Ngày 25/07/2025 - Kết quả kinh doanh tích cực khẳng định vị thế dẫn đầu.</span>
+                            </li>
+                            <li>
+                                <a href="#" class="text-blue-600 hover:text-blue-700 font-medium hover:underline block">[Vietcombank được vinh danh "Ngân hàng tốt nhất Việt Nam" năm thứ 5 liên tiếp]</a>
+                                <span class="text-sm text-gray-500 block mt-1">Ngày 10/07/2025 - Giải thưởng uy tín từ tạp chí tài chính quốc tế.</span>
+                            </li>
                         </ul>
                     </div>
         
                     <div>
-                        <h4 class="text-lg font-semibold text-gray-700 mt-4 mb-2">7. Các bài báo liên quan (Ví dụ):</h4>
-                        <ul class="list-disc list-inside text-gray-600 space-y-2">
-                            <li><a href="#" class="text-blue-600 hover:underline">[Đánh giá cổ phiếu VCB: Triển vọng nào cho "anh cả" ngành ngân hàng?]</a> - CafeF</li>
+                        <h4 class="text-xl font-semibold text-gray-800 mb-3">7. Các bài báo & Phân tích liên quan (Ví dụ):</h4>
+                        <ul class="list-none space-y-3">
+                            <li>
+                                <a href="#" class="text-blue-600 hover:text-blue-700 font-medium hover:underline block">[CafeF: Phân tích chuyên sâu cổ phiếu VCB - Động lực tăng trưởng và rủi ro]</a>
+                                <p class="text-sm text-gray-500 mt-1">Bài viết đi sâu vào các yếu tố tài chính và triển vọng của Vietcombank.</p>
+                            </li>
                         </ul>
                     </div>
         
                     <div>
-                        <h4 class="text-lg font-semibold text-gray-700 mt-6 mb-3">8. Biểu đồ phân tích (Ví dụ):</h4>
+                        <h4 class="text-xl font-semibold text-gray-800 mb-3">8. Biểu đồ phân tích (Ví dụ):</h4>
                         <div class="grid md:grid-cols-3 gap-4">
                             <div class="chart-placeholder p-4 rounded text-center">Biểu đồ Tăng trưởng Lợi nhuận VCB (5 năm)</div>
                             <div class="chart-placeholder p-4 rounded text-center">Biểu đồ NIM và CASA của VCB</div>
@@ -505,65 +552,84 @@
                         </div>
                     </div>
                 </div>
-                <div id="stockContent3" class="stock-content hidden space-y-6">
-                    <h3 class="text-2xl font-semibold text-green-700 mb-4">Cổ Phiếu Ưu Tiên: HPG (Công ty Cổ phần Tập đoàn Hòa Phát)</h3>
-                    
+        
+                <div id="stockContent3" class="stock-content hidden space-y-8">
+                    <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6 mb-6">
+                        <img src="images/hpg_logo_placeholder.png" alt="Logo HPG" class="w-32 h-32 sm:w-40 sm:h-40 object-contain rounded-lg border border-gray-200 p-1">
+                        <div>
+                            <h3 class="text-2xl lg:text-3xl font-semibold text-green-700 mb-2">HPG (Công ty Cổ phần Tập đoàn Hòa Phát)</h3>
+                            <p class="text-gray-500 text-sm mb-3">Ngành: Thép & Sản xuất Công nghiệp | Sàn: HOSE</p>
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">1. Tổng quan về Công ty:</h4>
+                            <p class="text-gray-600 leading-relaxed text-justify">
+                                [Điền nội dung tổng quan về Tập đoàn Hòa Phát: Lịch sử hình thành, vị thế là nhà sản xuất thép hàng đầu Việt Nam, các mảng kinh doanh chính (thép xây dựng, ống thép, tôn mạ, nông nghiệp, bất động sản công nghiệp, điện máy gia dụng), năng lực sản xuất và các dự án trọng điểm như Khu liên hợp gang thép Dung Quất...]
+                            </p>
+                        </div>
+                    </div>
+        
                     <div>
-                        <h4 class="text-xl font-semibold text-gray-700 mb-2">1. Tổng quan về Công ty:</h4>
-                        <p class="text-gray-600 leading-relaxed">
-                            [Điền nội dung tổng quan về Tập đoàn Hòa Phát tại đây: Quá trình phát triển, các mảng kinh doanh chính (thép, nông nghiệp, bất động sản), thị phần, năng lực sản xuất...]
+                        <h4 class="text-xl font-semibold text-gray-800 mb-3">2. Các điểm nổi trội:</h4>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2 leading-relaxed">
+                            <li>[Điểm nổi trội 1 của HPG: Ví dụ: Chuỗi giá trị sản xuất thép khép kín từ thượng nguồn đến hạ nguồn, giúp tối ưu chi phí...]</li>
+                            <li>[Điểm nổi trội 2 của HPG: Ví dụ: Thị phần thép xây dựng và ống thép lớn nhất Việt Nam...]</li>
+                            <li>[Điểm nổi trội 3 của HPG: Ví dụ: Năng lực quản trị xuất sắc và ban lãnh đạo có tầm nhìn chiến lược...]</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-x-8 gap-y-6">
+                        <div>
+                            <h4 class="text-xl font-semibold text-gray-800 mb-3">3. Luận điểm đầu tư:</h4>
+                            <ul class="list-disc list-inside text-gray-600 space-y-2 leading-relaxed">
+                                <li>Kỳ vọng hưởng lợi lớn từ các dự án đầu tư công và sự phục hồi của thị trường bất động sản.</li>
+                                <li>Dự án Khu liên hợp gang thép Dung Quất 2 đi vào hoạt động sẽ gia tăng đáng kể công suất và doanh thu.</li>
+                                <li>Mở rộng sang các lĩnh vực có tiềm năng như sản xuất container và điện máy gia dụng.</li>
+                                <li>Vị thế tài chính vững mạnh, dòng tiền ổn định.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold text-gray-800 mb-3">4. Rủi ro cần lưu ý:</h4>
+                            <ul class="list-disc list-inside text-gray-600 space-y-2 leading-relaxed">
+                                <li>Biến động mạnh của giá nguyên liệu đầu vào (quặng sắt, than mỡ luyện cốc).</li>
+                                <li>Tính chu kỳ của ngành thép và sự phụ thuộc vào nhu cầu xây dựng.</li>
+                                <li>Rủi ro về chính sách bảo hộ thương mại và cạnh tranh từ thép nhập khẩu.</li>
+                                <li>Các vấn đề liên quan đến bảo vệ môi trường trong sản xuất thép.</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-800 mb-3">5. Định giá & Khuyến nghị (Ví dụ):</h4>
+                         <p class="text-gray-600 bg-gray-50 p-4 rounded-md leading-relaxed">Giá mục tiêu (1 năm): <span class="font-semibold">[Giá VNĐ/cp]</span>.<br>
+                           P/E dự phóng 2025: <span class="font-semibold">[Số liệu]x</span>.<br>
+                           Khuyến nghị: <span class="font-semibold text-blue-600">TRUNG LẬP</span>.
                         </p>
                     </div>
-        
-                    <div class="grid md:grid-cols-2 gap-x-6 gap-y-4">
-                        <div>
-                            <h4 class="text-lg font-semibold text-gray-700 mb-2">2. Luận điểm đầu tư:</h4>
-                            <ul class="list-disc list-inside text-gray-600 space-y-1">
-                                <li>Doanh nghiệp sản xuất thép lớn nhất Việt Nam với chuỗi giá trị khép kín.</li>
-                                <li>Thị phần nội địa cao, có lợi thế về quy mô và chi phí sản xuất.</li>
-                                <li>Mở rộng sang các lĩnh vực khác như container, nông nghiệp, tạo sự đa dạng hóa nguồn thu.</li>
-                                <li>Kỳ vọng hưởng lợi từ đầu tư công và sự phục hồi của ngành xây dựng.</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-semibold text-gray-700 mb-2">3. Các điểm nổi trội:</h4>
-                            <ul class="list-disc list-inside text-gray-600 space-y-1">
-                                <li>[Điểm nổi trội 1 của HPG: Ví dụ: Năng lực quản trị sản xuất hiệu quả...]</li>
-                                <li>[Điểm nổi trội 2 của HPG: Ví dụ: Tiềm lực tài chính mạnh...]</li>
-                                <li>[Điểm nổi trội 3 của HPG: Ví dụ: Dự án Dung Quất 2 mở ra tiềm năng tăng trưởng lớn...]</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-semibold text-gray-700 mb-2">4. Rủi ro cần lưu ý:</h4>
-                            <ul class="list-disc list-inside text-gray-600 space-y-1">
-                                <li>Biến động giá nguyên liệu đầu vào (quặng sắt, than cốc).</li>
-                                <li>Chu kỳ của ngành thép và ảnh hưởng từ thị trường bất động sản.</li>
-                                <li>Rủi ro về chính sách môi trường.</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-semibold text-gray-700 mb-2">5. Định giá & Khuyến nghị (Ví dụ):</h4>
-                            <p class="text-gray-600">Giá mục tiêu (1 năm): [Giá] | P/E: [Số liệu] | Sản lượng: [Số liệu]</p>
-                        </div>
-                    </div>
-        
-                    <div>
-                        <h4 class="text-lg font-semibold text-gray-700 mt-4 mb-2">6. Tin tức về Công ty (Ví dụ):</h4>
-                        <ul class="list-disc list-inside text-gray-600 space-y-2">
-                            <li><a href="#" class="text-blue-600 hover:underline">[Hòa Phát đẩy mạnh xuất khẩu thép sang các thị trường mới]</a> - [Ngày 20/05/2025]</li>
-                            <li><a href="#" class="text-blue-600 hover:underline">[Tiến độ dự án Dung Quất 2 của Hòa Phát]</a> - [Ngày 01/05/2025]</li>
-                        </ul>
-                    </div>
                     
                     <div>
-                        <h4 class="text-lg font-semibold text-gray-700 mt-4 mb-2">7. Các bài báo liên quan (Ví dụ):</h4>
-                        <ul class="list-disc list-inside text-gray-600 space-y-2">
-                            <li><a href="#" class="text-blue-600 hover:underline">[Ngành thép Việt Nam: Cơ hội và thách thức năm 2025]</a> - Báo Đầu Tư</li>
+                        <h4 class="text-xl font-semibold text-gray-800 mb-3">6. Tin tức & Sự kiện nổi bật (Ví dụ):</h4>
+                        <ul class="list-none space-y-3">
+                            <li class="border-b pb-2">
+                                <a href="#" class="text-blue-600 hover:text-blue-700 font-medium hover:underline block">[Hòa Phát ghi nhận sản lượng bán hàng thép xây dựng tăng mạnh trong tháng 7/2025]</a>
+                                <span class="text-sm text-gray-500 block mt-1">Ngày 05/08/2025 - Tín hiệu tích cực từ thị trường nội địa.</span>
+                            </li>
+                            <li>
+                                <a href="#" class="text-blue-600 hover:text-blue-700 font-medium hover:underline block">[Dự án Dung Quất 2 của Hòa Phát dự kiến hoàn thành giai đoạn 1 vào cuối năm 2025]</a>
+                                 <span class="text-sm text-gray-500 block mt-1">Ngày 15/07/2025 - Kỳ vọng đóng góp lớn vào năng lực sản xuất của tập đoàn.</span>
+                            </li>
                         </ul>
                     </div>
         
                     <div>
-                        <h4 class="text-lg font-semibold text-gray-700 mt-6 mb-3">8. Biểu đồ phân tích (Ví dụ):</h4>
+                        <h4 class="text-xl font-semibold text-gray-800 mb-3">7. Các bài báo & Phân tích liên quan (Ví dụ):</h4>
+                        <ul class="list-none space-y-3">
+                            <li>
+                                <a href="#" class="text-blue-600 hover:text-blue-700 font-medium hover:underline block">[Báo Đầu Tư Chứng Khoán: Ngành thép liệu đã qua đáy?]</a>
+                                <p class="text-sm text-gray-500 mt-1">Phân tích các yếu tố ảnh hưởng đến ngành thép và triển vọng của các doanh nghiệp đầu ngành như HPG.</p>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-800 mb-3">8. Biểu đồ phân tích (Ví dụ):</h4>
                         <div class="grid md:grid-cols-3 gap-4">
                             <div class="chart-placeholder p-4 rounded text-center">Biểu đồ Giá Thép và Giá Cổ Phiếu HPG</div>
                             <div class="chart-placeholder p-4 rounded text-center">Biểu đồ Biên Lợi Nhuận Gộp của HPG và TB ngành</div>
