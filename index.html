@@ -19,20 +19,20 @@
             width: 8px;
         }
         ::-webkit-scrollbar-track {
-            background: #f0fdf4;
+            background: #eafafa;
         }
         ::-webkit-scrollbar-thumb {
-            background: #4ade80;
+            background: #114664;
             border-radius: 10px;
         }
         ::-webkit-scrollbar-thumb:hover {
-            background: #22c55e;
+            background: #053a58;
         }
         .hero-section {
-            background-color: #166534; /* Màu nền dự phòng nếu ảnh không tải được */
+            background-color: #1e2e4e; /* Màu nền dự phòng nếu ảnh không tải được */
             background-image:
                 linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), /* Lớp phủ gradient tối (ở trên cùng) */
-                url('z6641897271243_5fa3bec8c8a825c2d9f7ad196329897b.jpg'); /* ĐƯỜNG DẪN TƯƠNG ĐỐI ĐẾN ẢNH CỦA BẠN */
+                url('Images/z6641897271243_5fa3bec8c8a825c2d9f7ad196329897b.jpg'); /* ĐƯỜNG DẪN TƯƠNG ĐỐI ĐẾN ẢNH CỦA BẠN */
             background-size: cover;
             background-position: center;
         }
@@ -43,9 +43,9 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 2px dashed #a7f3d0;
-            color: #065f46;
-            background-color: #dcfce7;
+            border: 2px dashed #114664;
+            color: #1e2e4e;
+            background-color: #114664;
             border-radius: 9999px; /* rounded-full */
             margin-left: auto;
             margin-right: auto;
@@ -66,12 +66,12 @@
             color: #374151;
         }
         .tab-button:hover {
-            border-bottom-color: #22c55e;
-            color: #15803d;
+            border-bottom-color: #b7e6f3;
+            color: #114664;
         }
         .tab-button.active {
-            border-bottom-color: #166534;
-            color: #15803d;
+            border-bottom-color: #114664;
+            color: #114664;
             font-weight: 600;
         }
         .main-content-section {
@@ -81,23 +81,23 @@
             display: block;
         }
         .nav-link.active {
-            background-color: #166534;
+            background-color: #071449;
             color: white;
         }
         header {
-            background-image: linear-gradient(to right, #15803d, #16a34a);
+            background-image: linear-gradient(to right, #114664, #071449);
         }
         #mobile-menu {
-            background-color: #15803d;
+            background-color: #114664;
         }
         .nav-link:hover, #mobile-menu .nav-link:hover {
-            background-color: #16a34a;
+            background-color: #114664;
         }
         main {
             flex-grow: 1;
         }
         footer {
-            background-color: #064e3b;
+            background-color: #1e2e4e;
         }
         .text-3d-effect {
             text-shadow:
@@ -169,14 +169,14 @@
                 <div class="flex-shrink-0">
                     <a href="#" id="logo-link" class="text-2xl sm:text-3xl font-bold">EverGrow Capital</a>
                 </div>
-                <nav class="hidden md:flex space-x-1">
-                    <a href="#tong-quan" data-target="tong-quan" class="nav-link px-3 py-2 rounded-md text-sm font-bold transition duration-150 ease-in-out">Tổng quan</a>
-                    <a href="#khach-hang" data-target="khach-hang" class="nav-link px-3 py-2 rounded-md text-sm font-bold transition duration-150 ease-in-out">Khách hàng</a>
-                    <a href="#doi-ngu-phan-tich" data-target="doi-ngu-phan-tich" class="nav-link px-3 py-2 rounded-md text-sm font-bold transition duration-150 ease-in-out">Đội ngũ phân tích</a>
-                    <a href="#danh-muc-dau-tu" data-target="danh-muc-dau-tu" class="nav-link px-3 py-2 rounded-md text-sm font-bold transition duration-150 ease-in-out">Dịch vụ</a>
-                    <a href="#phan-tich-co-phieu" data-target="phan-tich-co-phieu" class="nav-link px-3 py-2 rounded-md text-sm font-bold transition duration-150 ease-in-out">Phân tích cổ phiếu</a>
-                    <a href="#cong-cu" data-target="cong-cu" class="nav-link px-3 py-2 rounded-md text-sm font-bold transition duration-150 ease-in-out">Công cụ & Tài nguyên</a>
-                </nav>
+                  <nav class="hidden md:flex space-x-1">
+                      <a href="#tong-quan" data-target="tong-quan" class="nav-link px-3 py-2 rounded-md text-sm font-bold transition duration-150 ease-in-out">Overview</a>
+                      <a href="#khach-hang" data-target="khach-hang" class="nav-link px-3 py-2 rounded-md text-sm font-bold transition duration-150 ease-in-out">Clients</a>
+                      <a href="#doi-ngu-phan-tich" data-target="doi-ngu-phan-tich" class="nav-link px-3 py-2 rounded-md text-sm font-bold transition duration-150 ease-in-out">Analyst Team</a>
+                      <a href="#danh-muc-dau-tu" data-target="danh-muc-dau-tu" class="nav-link px-3 py-2 rounded-md text-sm font-bold transition duration-150 ease-in-out">Services</a>
+                      <a href="#phan-tich-co-phieu" data-target="phan-tich-co-phieu" class="nav-link px-3 py-2 rounded-md text-sm font-bold transition duration-150 ease-in-out">Stock Analysis</a>
+                      <a href="#cong-cu" data-target="cong-cu" class="nav-link px-3 py-2 rounded-md text-sm font-bold transition duration-150 ease-in-out">Tools & Resources</a>
+                  </nav>
                 <div class="md:hidden flex items-center">
                     <button id="mobile-menu-button" class="text-white hover:text-gray-300 focus:outline-none focus:text-gray-300">
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -186,155 +186,157 @@
                 </div>
             </div>
         </div>
-        <div id="mobile-menu" class="md:hidden hidden">
-            <a href="#tong-quan" data-target="tong-quan" class="nav-link block px-4 py-3 text-base font-medium transition duration-150 ease-in-out"><b>Tổng quan</b></a>
-            <a href="#khach-hang" data-target="khach-hang" class="nav-link block px-4 py-3 text-base font-medium transition duration-150 ease-in-out">Khách hàng</a>
-            <a href="#doi-ngu-phan-tich" data-target="doi-ngu-phan-tich" class="nav-link block px-4 py-3 text-base font-medium transition duration-150 ease-in-out">Đội ngũ phân tích</a>
-            <a href="#danh-muc-dau-tu" data-target="danh-muc-dau-tu" class="nav-link block px-4 py-3 text-base font-medium transition duration-150 ease-in-out">Danh mục đầu tư</a>
-            <a href="#phan-tich-co-phieu" data-target="phan-tich-co-phieu" class="nav-link block px-4 py-3 text-base font-medium transition duration-150 ease-in-out">Phân tích cổ phiếu</a>
-            <a href="#cong-cu" data-target="cong-cu" class="nav-link block px-4 py-3 text-base font-medium transition duration-150 ease-in-out">Công cụ & Tài nguyên</a>
-        </div>
+          <div id="mobile-menu" class="md:hidden hidden">
+              <a href="#tong-quan" data-target="tong-quan" class="nav-link block px-4 py-3 text-base font-medium transition duration-150 ease-in-out"><b>Overview</b></a>
+              <a href="#khach-hang" data-target="khach-hang" class="nav-link block px-4 py-3 text-base font-medium transition duration-150 ease-in-out">Clients</a>
+              <a href="#doi-ngu-phan-tich" data-target="doi-ngu-phan-tich" class="nav-link block px-4 py-3 text-base font-medium transition duration-150 ease-in-out">Analyst Team</a>
+              <a href="#danh-muc-dau-tu" data-target="danh-muc-dau-tu" class="nav-link block px-4 py-3 text-base font-medium transition duration-150 ease-in-out">Investment Portfolio</a>
+              <a href="#phan-tich-co-phieu" data-target="phan-tich-co-phieu" class="nav-link block px-4 py-3 text-base font-medium transition duration-150 ease-in-out">Stock Analysis</a>
+              <a href="#cong-cu" data-target="cong-cu" class="nav-link block px-4 py-3 text-base font-medium transition duration-150 ease-in-out">Tools & Resources</a>
+          </div>
     </header>
 
-    <section id="hero-section" class="hero-section text-white py-16 sm:py-24 main-content-section active">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3d-effect text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
-                Đầu tư thông minh,<br class="hidden sm:block"> Tăng trưởng bền vững
-            </h2>
-            <p class="text-md sm:text-lg mt-2 mb-8 max-w-2xl mx-auto">
-                EverGrow Capital đồng hành cùng bạn trên hành trình xây dựng một tương lai tài chính vững mạnh.
-            </p>
-            <a href="#tong-quan" data-target="tong-quan" class="nav-link-hero bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-bold py-3 px-6 rounded-lg text-md transition duration-300 ease-in-out transform hover:scale-105">Tìm Hiểu Thêm</a>
-            <a href="#danh-muc-dau-tu" onclick="event.preventDefault(); setActiveSection('danh-muc-dau-tu');" class="inline-block bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold py-3 px-6 rounded-lg transition duration-300">Xem danh mục mẫu</a>
-        </div>
-    </section>
 
-    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+<section id="hero-section" class="hero-section text-white py-16 sm:py-24 main-content-section active">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3d-effect text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
+            Smart Investing,<br class="hidden sm:block"> Sustainable Growth
+        </h2>
+        <p class="text-md sm:text-lg mt-2 mb-8 max-w-2xl mx-auto">
+            EverGrow Capital accompanies you on the journey to building a strong financial future.
+        </p>
+        <a href="#tong-quan" data-target="tong-quan" class="nav-link-hero bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-bold py-3 px-6 rounded-lg text-md transition duration-300 ease-in-out transform hover:scale-105">Learn More</a>
+        <a href="#danh-muc-dau-tu" onclick="event.preventDefault(); setActiveSection('danh-muc-dau-tu');" class="inline-block bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold py-3 px-6 rounded-lg transition duration-300">Sample Portfolio</a>
+    </div>
+  </section>
+
+<main class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
 
         <section id="tong-quan" class="main-content-section mb-12 sm:mb-16">
-             <h2 class="text-3xl sm:text-4xl font-semibold text-gray-800 mb-6 sm:mb-8 border-b-2 border-green-600 pb-3">Tổng Quan về EverGrow Capital</h2>
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-6 sm:mb-8 border-b-2 border-[#114664] pb-3">Overview of EverGrow Capital</h2>
             <div class="bg-white p-6 sm:p-8 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
-                <h3 class="text-xl sm:text-2xl font-semibold text-green-700 mb-4">Về Chúng Tôi</h3>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    EverGrow Capital là một công ty tư vấn đầu tư và quản lý tài sản độc lập, được thành lập với sứ mệnh đồng hành cùng khách hàng trên hành trình đạt được tự do tài chính và sự thịnh vượng bền vững. Chúng tôi tin rằng mỗi cá nhân và doanh nghiệp đều có những mục tiêu và hoàn cảnh riêng, do đó, chúng tôi luôn đặt khách hàng làm trọng tâm, lắng nghe và thấu hiểu để đưa ra những giải pháp tài chính tối ưu và cá nhân hóa.
+                <h3 class="text-xl sm:text-2xl font-semibold text-[#114664] mb-4">About Us</h3>
+                <p class="text-gray-900 leading-relaxed mb-4">
+                    EverGrow Capital is an independent investment advisory and asset management firm, established with the mission to accompany clients on their journey toward financial freedom and sustainable prosperity. We believe that each individual and business has their own goals and circumstances, so we always place the client at the center—listening and understanding in order to offer optimal and personalized financial solutions.
                 </p>
-                <h3 class="text-xl sm:text-2xl font-semibold text-green-700 mb-4">Triết Lý & Chiến Lược Đầu Tư Dài Hạn</h3>
-                <p class="text-gray-600 leading-relaxed mb-3">
-                    Tại EverGrow Capital, chúng tôi tin tưởng vào sức mạnh của đầu tư dài hạn, tập trung vào các doanh nghiệp có nền tảng vững chắc và tiềm năng tăng trưởng bền vững. Triết lý của chúng tôi dựa trên:
+                <h3 class="text-xl sm:text-2xl font-semibold text-[#114664] mb-4">Long-Term Investment Philosophy & Strategy</h3>
+                <p class="text-gray-900 leading-relaxed mb-3">
+                    At EverGrow Capital, we believe in the power of long-term investing, focusing on businesses with solid foundations and sustainable growth potential. Our philosophy is based on:
                 </p>
-                <ul class="list-disc list-inside text-gray-600 space-y-2 mb-4">
-                    <li><span class="font-medium">Phân tích cơ bản sâu sắc:</span> Nghiên cứu kỹ lưỡng tình hình tài chính, lợi thế cạnh tranh, đội ngũ lãnh đạo và triển vọng ngành của doanh nghiệp.</li>
-                    <li><span class="font-medium">Kiên nhẫn và tầm nhìn chiến lược:</span> Đầu tư không phải là câu chuyện ngày một ngày hai. Chúng tôi khuyến khích sự kiên định với các khoản đầu tư có giá trị thực.</li>
-                    <li><span class="font-medium">Quản trị rủi ro chặt chẽ:</span> Xây dựng danh mục đa dạng hóa, phù hợp với khẩu vị rủi ro và mục tiêu tài chính của từng khách hàng.</li>
-                    <li><span class="font-medium">Đa dạng hóa thông minh:</span> Phân bổ tài sản vào nhiều loại hình khác nhau như cổ phiếu, trái phiếu, quỹ đầu tư và bất động sản để tối ưu hóa lợi nhuận và giảm thiểu rủi ro.</li>
-                    <li><span class="font-medium">Đồng hành cùng tăng trưởng:</span> Chúng tôi không chỉ đưa ra khuyến nghị, mà còn theo dõi sát sao và điều chỉnh danh mục khi cần thiết để phù hợp với diễn biến thị trường và mục tiêu của khách hàng.</li>
+                <ul class="list-disc list-inside text-gray-900 space-y-2 mb-4">
+                    <li><span class="font-medium">In-depth fundamental analysis:</span> Thoroughly researching financial conditions, competitive advantages, leadership teams, and industry outlooks.</li>
+                    <li><span class="font-medium">Patience and strategic vision:</span> Investing is not a short-term game. We encourage persistence in investments with real intrinsic value.</li>
+                    <li><span class="font-medium">Tight risk management:</span> Constructing diversified portfolios tailored to each client's risk appetite and financial goals.</li>
+                    <li><span class="font-medium">Smart diversification:</span> Allocating assets across various types such as stocks, bonds, funds, and real estate to optimize returns and mitigate risks.</li>
+                    <li><span class="font-medium">Growth-oriented partnership:</span> We not only provide recommendations but also closely monitor and adjust portfolios as needed to stay aligned with market movements and client objectives.</li>
                 </ul>
-                <p class="text-gray-600 leading-relaxed">
-                    Chúng tôi ưu tiên các ngành có tiềm năng tăng trưởng dài hạn như công nghệ, y tế, tiêu dùng thiết yếu và năng lượng tái tạo. Tiêu chí lựa chọn cổ phiếu bao gồm: ban lãnh đạo có năng lực và minh bạch, lợi thế cạnh tranh bền vững, và định giá hấp dẫn.
+                <p class="text-gray-900 leading-relaxed">
+                    We prioritize industries with long-term growth potential such as technology, healthcare, essential consumer goods, and renewable energy. Our stock selection criteria include competent and transparent leadership, sustainable competitive advantages, and attractive valuations.
                 </p>
             </div>
         </section>
 
         <section id="khach-hang" class="main-content-section mb-12 sm:mb-16 detail-section-container">
             <div id="client-list-view" class="list-view-panel visible-list-panel">
-                <h2 class="text-3xl sm:text-4xl font-semibold text-gray-800 mb-6 sm:mb-8 border-b-2 border-green-600 pb-3">Thông tin khách hàng</h2>
+                <h2 class="text-3xl sm:text-4xl font-semibold text-[#114664] mb-6 sm:mb-8 border-b-2 border-[#114664] pb-3">Client Information</h2>
                 <div class="flex flex-wrap justify-center items-stretch gap-6">
                     <div class="clickable-card bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 text-center w-full sm:basis-[calc(50%-0.75rem)] md:basis-[calc(33.333%-1rem)] flex flex-col"
-                         data-name="Nguyễn Văn Minh" data-birth-year="1985" data-title="Quản lý cấp trung tại một tập đoàn đa quốc gia có trụ sở tại quận 1 TP. HCM"
-                         data-quote="EverGrow Capital là đối tác được chúng tôi lựa chọn kĩ lưỡng từ nhiều công ty cùng ngành khác, tôi cảm thấy rất an tâm khi trải nghiệm các dịch vụ của EverGrow Capital."
-                         data-details="Tình trạng tài sản: Chưa có nhà và xe hơi. Lương sau thuế của chồng là 50 triệu đồng/tháng. Sổ tiết kiệm 1 tỷ đồng. Tài sản khác không có.
-                                       Mục tiêu đầu tư: Mua bất động sản khu vực quận 2 trong 8 năm hoặc khả thi hơn là mua chung cư cao cấp trong 5-7 năm. Khi người chồng 60 tuổi, sổ tiết kiệm phải đạt được 9 tỷ nhằm mục đích hưu trí. Đảm bảo được nguồn vốn để trả học phí cho con học đại học RMIT.
-                                       Khả năng chấp nhận rủi ro: Trung bình-Cao (Khoảng 24-27 điểm theo bảng khảo sát)
-                                       Kinh nghiệm đầu tư: Đã có kinh nghiệm đầu tư chứng khoán cơ bản. Đã từng xây dựng danh mục đầu tư cơ bản nhưng chưa đa dạng hoá và tối ưu hoá phân bổ tài sản."
-                         data-image-src="KH NGUYEN VAN MINH.jpg">
-                        <div class="team-member-image-placeholder-card">Ảnh KH</div>
-                        <h3 class="text-xl font-semibold text-green-700 mb-2">Nguyễn Văn Minh</h3>
-                        <p class="text-gray-600 text-sm mb-1">Quản lý cấp trung</p>
-                        <p class="text-gray-500 text-xs italic">"Mục tiêu đầu tư lâu dài"</p>
+                        data-name="Nguyễn Văn Minh" data-birth-year="1985" data-title="Mid-level manager at a multinational corporation headquartered in District 1, Ho Chi Minh City"
+                        data-quote="EverGrow Capital was carefully selected from many companies in the industry, and I feel very secure using their services."
+                        data-details="Assets: No house or car yet. Husband's net salary is 50 million VND/month. Savings: 1 billion VND. No other assets.
+                                      Investment goals: Purchase real estate in District 2 within 8 years or more feasibly a luxury apartment within 5–7 years. At age 60, savings should reach 9 billion VND for retirement purposes. Ensure funding for children's tuition at RMIT University.
+                                      Risk tolerance: Medium-High (around 24–27 points according to the survey)
+                                      Investment experience: Has basic stock investment experience. Has built a basic portfolio but not yet diversified or optimized asset allocation."
+                        data-image-src="Images/KH NGUYEN VAN MINH.jpg">
+                        <div class="team-member-image-placeholder-card">Client Photo</div>
+                        <h3 class="text-xl font-semibold text-[#114664] mb-2">NGUYEN VAN MINH</h3>
+                        <p class="text-gray-600 text-sm mb-1">Mid-level Manager</p>
+                        <p class="text-gray-500 text-xs italic">"Long-term investment goals"</p>
                     </div>
                     <div class="clickable-card bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 text-center w-full sm:basis-[calc(50%-0.75rem)] md:basis-[calc(33.333%-1rem)] flex flex-col"
-                         data-name="Dương Thuỳ Nhiên" data-birth-year="1987" data-title="Kế toán của một công ty gỗ"
-                         data-quote="Là một người không có nhiều thời gian theo dõi thị trường, tôi thực sự hài lòng với hiệu quả đầu tư và sự minh bạch trong quản lý danh mục mà EverGrow Capital mang lại. Đội ngũ tư vấn rất tận tâm."
-                         data-details="Lương sau thuế của vợ là 20 triệu đồng/tháng, chưa có kinh nghiệm tự đầu tư. 
-                                       Các mục tiêu đầu tư giống như chồng."
-                         data-image-src="KH DUONG THUY NHIEN.jpg">
-                        <div class="team-member-image-placeholder-card">Ảnh KH</div>
-                        <h3 class="text-xl font-semibold text-green-700 mb-2">Dương Thuỳ Nhiên</h3>
-                        <p class="text-gray-600 text-sm mb-1">Kế toán</p>
-                        <p class="text-gray-500 text-xs italic">"Mục tiêu đầu tư lâu dài"</p>
+                        data-name="Dương Thuỳ Nhiên" data-birth-year="1987" data-title="Accountant at a wood company"
+                        data-quote="As someone who doesn't have much time to follow the market, I'm very satisfied with the investment effectiveness and transparency in portfolio management provided by EverGrow Capital. The consulting team is very dedicated."
+                        data-details="Net income of wife is 20 million VND/month, no prior investment experience.
+                                      Investment goals are aligned with her husband."
+                        data-image-src="Images/KH DUONG THUY NHIEN.jpg">
+                        <div class="team-member-image-placeholder-card">Client Photo</div>
+                        <h3 class="text-xl font-semibold text-[#114664] mb-2">DUONG THUY NHIEN</h3>
+                        <p class="text-gray-600 text-sm mb-1">Accountant</p>
+                        <p class="text-gray-500 text-xs italic">"Long-term investment goals"</p>
                     </div>
                 </div>
             </div>
             <div id="client-detail-panel" class="detail-view-panel hidden-detail-panel">
-                <button id="back-to-client-list-button" class="mb-6 bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 flex items-center">
+                <button id="back-to-client-list-button" class="mb-6 bg-[#0d3b59] hover:bg-[#114664] text-white font-bold py-2 px-4 rounded-lg transition duration-300 flex items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
-                    Quay lại danh sách
+                    Back to List
                 </button>
                 <div class="grid md:grid-cols-1 lg:grid-cols-5 gap-8 items-start">
                     <div class="lg:col-span-2">
-                        <img id="detail-client-image-actual" src="" alt="Ảnh Khách Hàng" class="detail-image-actual">
+                        <img id="detail-client-image-actual" src="" alt="Client Photo" class="detail-image-actual">
                     </div>
                     <div class="lg:col-span-3">
-                        <h3 id="detail-client-name" class="text-3xl lg:text-4xl font-semibold text-green-700 mb-1"></h3>
+                        <h3 id="detail-client-name" class="text-3xl lg:text-4xl font-semibold text-[#114664] mb-1"></h3>
                         <p id="detail-client-birth-year" class="text-gray-500 text-sm mb-3"></p>
                         <p id="detail-client-title" class="text-gray-700 text-lg mb-4 font-medium"></p>
-                        <blockquote id="detail-client-quote" class="text-gray-600 italic border-l-4 border-green-500 pl-4 py-2 mb-6 text-lg"></blockquote>
+                        <blockquote id="detail-client-quote" class="text-gray-600 italic border-l-4 border-[#114664] pl-4 py-2 mb-6 text-lg"></blockquote>
                         <p id="detail-client-details" class="text-gray-700 leading-relaxed text-base"></p>
                     </div>
                 </div>
             </div>
         </section>
 
+
         <section id="doi-ngu-phan-tich" class="main-content-section mb-12 sm:mb-16 detail-section-container">
             <div id="team-list-view" class="list-view-panel visible-list-panel">
-                <h2 class="text-3xl sm:text-4xl font-semibold text-gray-800 mb-6 sm:mb-8 border-b-2 border-green-600 pb-3">Đội Ngũ Phân Tích Sắp Chuyên Nghiệp</h2>
+                <h2 class="text-3xl sm:text-4xl font-semibold text-[#114664] mb-6 sm:mb-8 border-b-2 border-[#114664] pb-3">Đội Ngũ Phân Tích Sắp Chuyên Nghiệp</h2>
                 <div class="flex flex-wrap justify-center items-stretch gap-6">
                     <div class="clickable-card bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 text-center w-full sm:basis-[calc(50%-0.75rem)] md:basis-[calc(33.333%-1rem)] flex flex-col"
                          data-name="Đào Thị Minh Anh" data-age="1+2+3+4+5+6" data-title="Trưởng nhóm phân tích"
                          data-bio="Với kinh nghiệm trong lĩnh vực phân tích tài chính và đầu tư, Minh Anh chuyên về phân tích các vấn đề liên quan đến tài chính. Hiện đang là sinh viên năm 3 Ngành TC-NH tại trường Đại học Ngân hàng TP. HCM. CHƯA CÓ NGƯỜI YÊU!!!."
-                         data-image-src="images/team_minhanh_large.jpg">
+                         data-image-src="MANH.jpg">
                         <div class="team-member-image-placeholder-card">Ảnh TV</div>
-                        <h3 class="text-xl font-semibold text-green-700 mb-1">Đào Thị Minh Anh</h3>
+                        <h3 class="text-xl font-semibold text-[#114664] mb-1">Đào Thị Minh Anh</h3>
                         <p class="text-gray-500 text-sm italic">Nhóm trưởng</p>
                     </div>
                     <div class="clickable-card bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 text-center w-full sm:basis-[calc(50%-0.75rem)] md:basis-[calc(33.333%-1rem)] flex flex-col"
                          data-name="Đỗ Hoàng Khương" data-age="(21x)'" data-title="Trưởng BPKT"
                          data-bio="Khương chuyên về xử lý số liệu, làm website cũng như các vấn đề liên quan đến công nghệ. Hiện đang là sinh viên năm 3 Ngành TC-NH tại trường Đại học Ngân hàng TP. HCM. Đang hẹn hò với CÔ ĐƠN."
-                         data-image-src="images/team_khuong_large.jpg">
+                         data-image-src="KHUONG.jpg">
                         <div class="team-member-image-placeholder-card">Ảnh TV</div>
-                        <h3 class="text-xl font-semibold text-green-700 mb-1">Đỗ Hoàng Khương</h3>
+                        <h3 class="text-xl font-semibold text-[#114664] mb-1">Đỗ Hoàng Khương</h3>
                         <p class="text-gray-500 text-sm italic">Trưởng BPKT</p>
                     </div>
                     <div class="clickable-card bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 text-center w-full sm:basis-[calc(50%-0.75rem)] md:basis-[calc(33.333%-1rem)] flex flex-col"
                          data-name="Phan Vũ Thuỳ An" data-age="2x-1=41" data-title="Cấp dưới Minh Anh"
                          data-bio="Thuỳ An chuyên về phân tích vĩ mô ngành, vĩ mô nền kinh tế. Hiện đang là sinh viên năm 3 Ngành TC-NH tại trường Đại học Ngân hàng TP. HCM. Không ai hỏi về người yêu."
-                         data-image-src="images/team_thuyan_large.jpg">
+                         data-image-src="AN.jpg">
                         <div class="team-member-image-placeholder-card">Ảnh TV</div>
-                        <h3 class="text-xl font-semibold text-green-700 mb-1">Phan Vũ Thuỳ An</h3>
+                        <h3 class="text-xl font-semibold text-[#114664] mb-1">Phan Vũ Thuỳ An</h3>
                         <p class="text-gray-500 text-sm italic">Cựu thiếu nhi</p>
                     </div>
                     <div class="clickable-card bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 text-center w-full sm:basis-[calc(50%-0.75rem)] md:basis-[calc(33.333%-1rem)] flex flex-col"
                          data-name="Lê Hoàng Phước Đạt" data-age="21" data-title="Không cấp dưới của ai"
                          data-bio="Đạt chuyên về ..............."
-                         data-image-src="images/team_dat_large.jpg">
+                         data-image-src="ĐẠT.jpg">
                         <div class="team-member-image-placeholder-card">Ảnh TV</div>
-                        <h3 class="text-xl font-semibold text-green-700 mb-1">Lê Hoàng Phước Đạt</h3>
+                        <h3 class="text-xl font-semibold text-[#114664] mb-1">Lê Hoàng Phước Đạt</h3>
                         <p class="text-gray-500 text-sm italic">Cựu thiếu nhi</p>
                     </div>
                     <div class="clickable-card bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 text-center w-full sm:basis-[calc(50%-0.75rem)] md:basis-[calc(33.333%-1rem)] flex flex-col"
                          data-name="Nguyễn Thị Phương Linh" data-age="4^2+5" data-title="Cấp dưới Minh Anh"
                          data-bio="Phương Linh theo dõi và phân tích các ngành kinh tế trọng điểm như Bất động sản, Năng lượng, đánh giá tác động của các yếu tố vĩ mô và chính sách lên triển vọng của ngành, từ đó cung cấp góc nhìn tổng quan cho các quyết định đầu tư. Sinh viên năm 3, Đại học Ngân hàng TP.HCM."
-                         data-image-src="images/team_phuonglinh_large.jpg">
+                         data-image-src="LINH.jpg">
                         <div class="team-member-image-placeholder-card">Ảnh TV</div>
-                        <h3 class="text-xl font-semibold text-green-700 mb-1">Nguyễn Thị Phương Linh</h3>
+                        <h3 class="text-xl font-semibold text-[#114664] mb-1">Nguyễn Thị Phương Linh</h3>
                         <p class="text-gray-500 text-sm italic">Cựu thiếu nhi</p>
                     </div>
                     <div class="clickable-card bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 text-center w-full sm:basis-[calc(50%-0.75rem)] md:basis-[calc(33.333%-1rem)] flex flex-col"
                          data-name="Nguyễn Minh Thư" data-age="21.sin(pi/2)" data-title="Cấp dưới Minh Anh"
                          data-bio="Minh Thư hỗ trợ khách hàng xây dựng và quản lý danh mục đầu tư cá nhân hóa, tập trung vào việc tối ưu hóa lợi nhuận dựa trên khẩu vị rủi ro. Hiện đang là sinh viên năm 3 Ngành TC-NH tại trường Đại học Ngân hàng TP. HCM."
-                         data-image-src="images/team_minhthu_large.jpg">
+                         data-image-src="MTHU.jpg">
                         <div class="team-member-image-placeholder-card">Ảnh TV</div>
-                        <h3 class="text-xl font-semibold text-green-700 mb-1">Nguyễn Minh Thư</h3>
+                        <h3 class="text-xl font-semibold text-[#114664] mb-1">Nguyễn Minh Thư</h3>
                         <p class="text-gray-500 text-sm italic">Cựu thiếu nhi</p>
                     </div>
                     <div class="clickable-card bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 text-center w-full sm:basis-[calc(50%-0.75rem)] md:basis-[calc(33.333%-1rem)] flex flex-col"
@@ -342,22 +344,22 @@
                          data-bio="Anh Thư chịu trách nhiệm thu thập, tổng hợp dữ liệu thị trường, xây dựng chi tiêu của khách hàng để đưa ra quyết định đầu tư hợp lý. Hiện đang là sinh viên năm 3 Ngành TC-NH tại trường Đại học Ngân hàng TP. HCM."
                          data-image-src="images/team_anhthu_large.jpg">
                         <div class="team-member-image-placeholder-card">Ảnh TV</div>
-                        <h3 class="text-xl font-semibold text-green-700 mb-1">Nguyễn Hoàng Anh Thư</h3>
+                        <h3 class="text-xl font-semibold text-[#114664] mb-1">Nguyễn Hoàng Anh Thư</h3>
                         <p class="text-gray-500 text-sm italic">Cựu thiếu nhi</p>
                     </div>
                 </div>
             </div>
             <div id="team-detail-panel" class="detail-view-panel hidden-detail-panel">
-                <button id="back-to-team-list-button" class="mb-6 bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 flex items-center">
+                <button id="back-to-team-list-button" class="mb-6 bg-[#0d3b59] hover:bg-[#114664] text-white font-bold py-2 px-4 rounded-lg transition duration-300 flex items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
-                    Quay lại danh sách
+                    Back to List
                 </button>
                 <div class="grid md:grid-cols-1 lg:grid-cols-5 gap-8 items-start">
                     <div class="lg:col-span-2">
                         <img id="detail-team-image-actual" src="" alt="Ảnh Thành viên" class="detail-image-actual">
                     </div>
                     <div class="lg:col-span-3">
-                        <h3 id="detail-team-name" class="text-3xl lg:text-4xl font-semibold text-green-700 mb-1"></h3>
+                        <h3 id="detail-team-name" class="text-3xl lg:text-4xl font-semibold text-[#114664] mb-1"></h3>
                         <p id="detail-team-age" class="text-gray-500 text-sm mb-1"></p>
                         <p id="detail-team-title" class="text-gray-700 text-lg mb-4 font-medium"></p>
                         <p id="detail-team-bio" class="text-gray-700 leading-relaxed text-base"></p>
@@ -367,7 +369,7 @@
         </section>
 
         <section id="danh-muc-dau-tu" class="main-content-section mb-12 sm:mb-16">
-            <h2 class="text-3xl sm:text-4xl font-semibold text-gray-800 mb-6 sm:mb-8 border-b-2 border-green-600 pb-3">Danh Mục Đầu Tư</h2>
+            <h2 class="text-3xl sm:text-4xl font-semibold text-[#114664] mb-6 sm:mb-8 border-b-2 border-[#114664] pb-3">Danh Mục Đầu Tư</h2>
             <div class="bg-white p-6 sm:p-8 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
                 <div class="stock-tabs mb-6 border-b border-gray-300 flex flex-wrap gap-4">
                     <button class="tab-button active" onclick="showStockContent('stockContent1', this)">FPT</button>
@@ -380,7 +382,7 @@
                         <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6 mb-6">
                             <img src="images/fpt_logo_placeholder.png" alt="Logo FPT" class="w-32 h-32 sm:w-40 sm:h-40 object-contain rounded-lg border border-gray-200 p-1">
                             <div>
-                                <h3 class="text-2xl lg:text-3xl font-semibold text-green-700 mb-2">FPT (Công ty Cổ phần FPT)</h3>
+                                <h3 class="text-2xl lg:text-3xl font-semibold text-[#114664] mb-2">FPT (Công ty Cổ phần FPT)</h3>
                                 <p class="text-gray-500 text-sm mb-3">Ngành: Công nghệ Thông tin & Viễn thông | Sàn: HOSE</p>
                                 <h4 class="text-xl font-semibold text-gray-800 mb-2">1. Tổng quan về Công ty:</h4>
                                 <p class="text-gray-600 leading-relaxed text-justify">
@@ -426,7 +428,7 @@
                         <h4 class="text-xl font-semibold text-gray-800 mb-3">5. Định giá & Khuyến nghị:</h4>
                         <p class="text-gray-600 bg-gray-50 p-4 rounded-md leading-relaxed">Giá mục tiêu (1 năm): <span class="font-semibold">145.000 VNĐ/cp</span> (Dựa trên phương pháp P/E và DCF).<br>
                            P/E dự phóng 2025: <span class="font-semibold">18.5x</span> (So với trung bình ngành 20.x).<br>
-                           Khuyến nghị: <span class="font-semibold text-green-600">MUA</span> với tỷ trọng cao trong danh mục dài hạn.
+                           Khuyến nghị: <span class="font-semibold text-[#114664]">MUA</span> với tỷ trọng cao trong danh mục dài hạn.
                         </p>
                     </div>
                     
@@ -476,7 +478,7 @@
                     <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6 mb-6">
                         <img src="images/vcb_logo_placeholder.png" alt="Logo VCB" class="w-32 h-32 sm:w-40 sm:h-40 object-contain rounded-lg border border-gray-200 p-1">
                         <div>
-                            <h3 class="text-2xl lg:text-3xl font-semibold text-green-700 mb-2">VCB (Ngân hàng TMCP Ngoại thương Việt Nam)</h3>
+                            <h3 class="text-2xl lg:text-3xl font-semibold text-[#114664] mb-2">VCB (Ngân hàng TMCP Ngoại thương Việt Nam)</h3>
                             <p class="text-gray-500 text-sm mb-3">Ngành: Ngân hàng | Sàn: HOSE</p>
                             <h4 class="text-xl font-semibold text-gray-800 mb-2">1. Tổng quan về Công ty:</h4>
                             <p class="text-gray-600 leading-relaxed text-justify">
@@ -559,7 +561,7 @@
                     <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6 mb-6">
                         <img src="images/hpg_logo_placeholder.png" alt="Logo HPG" class="w-32 h-32 sm:w-40 sm:h-40 object-contain rounded-lg border border-gray-200 p-1">
                         <div>
-                            <h3 class="text-2xl lg:text-3xl font-semibold text-green-700 mb-2">HPG (Công ty Cổ phần Tập đoàn Hòa Phát)</h3>
+                            <h3 class="text-2xl lg:text-3xl font-semibold text-[#114664] mb-2">HPG (Công ty Cổ phần Tập đoàn Hòa Phát)</h3>
                             <p class="text-gray-500 text-sm mb-3">Ngành: Thép & Sản xuất Công nghiệp | Sàn: HOSE</p>
                             <h4 class="text-xl font-semibold text-gray-800 mb-2">1. Tổng quan về Công ty:</h4>
                             <p class="text-gray-600 leading-relaxed text-justify">
@@ -602,7 +604,7 @@
                         <h4 class="text-xl font-semibold text-gray-800 mb-3">5. Định giá & Khuyến nghị:</h4>
                          <p class="text-gray-600 bg-gray-50 p-4 rounded-md leading-relaxed">Giá mục tiêu (1 năm): <span class="font-semibold">[Giá VNĐ/cp]</span>.<br>
                            P/E dự phóng 2025: <span class="font-semibold">[Số liệu]x</span>.<br>
-                           Khuyến nghị: <span class="font-semibold text-blue-600">TRUNG LẬP</span>.
+                           Khuyến nghị: <span class="font-semibold text-orange-500">TRUNG LẬP</span>.
                         </p>
                     </div>
                     
@@ -643,7 +645,7 @@
         </section>
 
         <section id="phan-tich-co-phieu" class="main-content-section mb-12 sm:mb-16">
-            <h2 class="text-3xl sm:text-4xl font-semibold text-gray-800 mb-6 sm:mb-8 border-b-2 border-yellow-500 pb-3">Phân Tích Cổ Phiếu</h2>
+            <h2 class="text-3xl sm:text-4xl font-semibold text-[#114664] mb-6 sm:mb-8 border-b-2 border-[#114664] pb-3">Stock Analysis</h2>
             <div class="bg-white p-6 sm:p-8 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
                 <div class="tab-buttons mb-6 border-b border-gray-300 flex flex-wrap gap-4">
                     <button class="tab-button active" onclick="showStockAnalysis('stockAnalysisFPT', this)">FPT</button>
@@ -654,8 +656,8 @@
                 </div>
 
                    <div id="stockAnalysisFPT" class="stock-analysis-content hidden">
-                  <img src="Images/Logos/fpt-logo.png" alt="Logo FPT" class="h-12 mb-3">
-                  <h3 class="text-xl font-semibold text-yellow-600 mb-3">Phân tích chi tiết cho FPT</h3>
+                  <img src="FPT.jpg" alt="Logo FPT" class="h-12 mb-3">
+                  <h3 class="text-2xl font-semibold text-yellow-600 mb-3">Detailed Analysis of FPT</h3>
                   <p class="text-gray-600 leading-relaxed">
                     <strong>1. Tổng quan doanh nghiệp:</strong><br>
                     Công ty Cổ phần FPT là tập đoàn hàng đầu Việt Nam trong lĩnh vực công nghệ thông tin, viễn thông và giáo dục. Với hơn 30 năm phát triển, FPT có mạng lưới hoạt động toàn cầu tại 29 quốc gia, phục vụ hàng triệu khách hàng với hơn 60.000 nhân viên.<br><br>
@@ -684,8 +686,8 @@
                   <div class="chart-placeholder p-4 my-4 rounded text-center">Biểu đồ tăng trưởng doanh thu, ROE và phân bổ doanh thu FPT</div>
                 </div>
                     <div id="stockAnalysisBMP" class="stock-analysis-content active">
-                  <img src="Images/Logos/fpt-logo.png" alt="Logo FPT" class="h-12 mb-3">
-                  <h3 class="text-xl font-semibold text-yellow-600 mb-3">Phân tích chi tiết cho BMP</h3>
+                  <img src="BMP.jpg" alt="Logo BMP" class="h-12 mb-3">
+                  <h3 class="text-2xl font-semibold text-yellow-600 mb-3">Detailed Analysis of BMP</h3>
                   <p class="text-gray-600 leading-relaxed">
                     <strong>1. Tổng quan doanh nghiệp:</strong><br>
                     BMP là doanh nghiệp đầu ngành trong sản xuất ống nhựa xây dựng dân dụng và công nghiệp tại Việt Nam. Hệ thống nhà máy hiện đại, công suất 150.000 tấn/năm, mạng lưới hơn 1.300 đại lý và sự hậu thuẫn từ tập đoàn SCG (Thái Lan) giúp BMP duy trì vị thế vững chắc.<br><br>
@@ -714,8 +716,8 @@
                   <div class="chart-placeholder p-4 my-4 rounded text-center">Biểu đồ tài chính, SWOT, và thị phần BMP</div>
                 </div>
                 <div id="stockAnalysisVCB" class="stock-analysis-content hidden">
-                  <img src="Images/Logos/fpt-logo.png" alt="Logo FPT" class="h-12 mb-3">
-                  <h3 class="text-xl font-semibold text-yellow-600 mb-3">Phân tích chi tiết cho VCB</h3>
+                  <img src="VCB.jpg" alt="Logo VCB" class="h-12 mb-3">
+                  <h3 class="text-2xl font-semibold text-yellow-600 mb-3">Detailed Analysis of VCB</h3>
                   <p class="text-gray-600 leading-relaxed">
                     <strong>1. Tổng quan doanh nghiệp:</strong><br>
                     Ngân hàng TMCP Ngoại thương Việt Nam (Vietcombank - VCB) là một trong những ngân hàng thương mại cổ phần hàng đầu tại Việt Nam. Tính đến cuối năm 2023, tổng tài sản đạt hơn 1,8 triệu tỷ đồng, đứng top đầu hệ thống ngân hàng cả về quy mô lẫn hiệu quả hoạt động.<br><br>
@@ -744,8 +746,8 @@
                   <div class="chart-placeholder p-4 my-4 rounded text-center">Biểu đồ tăng trưởng tín dụng, thu nhập ngoài lãi, nợ xấu VCB</div>
                 </div>
                 <div id="stockAnalysisHPG" class="stock-analysis-content hidden">
-                  <img src="Images/Logos/fpt-logo.png" alt="Logo FPT" class="h-12 mb-3">
-                  <h3 class="text-xl font-semibold text-yellow-600 mb-3">Phân tích chi tiết cho HPG</h3>
+                  <img src="HPG.jpg" alt="Logo HPG" class="h-12 mb-3">
+                  <h3 class="text-2xl font-semibold text-yellow-600 mb-3">Detailed Analysis of HPG</h3>
                   <p class="text-gray-600 leading-relaxed">
                     <strong>1. Tổng quan doanh nghiệp:</strong><br>
                     Hòa Phát (HPG) là tập đoàn sản xuất công nghiệp đa ngành, trong đó ngành thép là lĩnh vực chủ lực. HPG hiện chiếm hơn 30% thị phần thép xây dựng Việt Nam và là doanh nghiệp nội địa duy nhất vận hành chuỗi sản xuất thép khép kín.<br><br>
@@ -774,8 +776,8 @@
                   <div class="chart-placeholder p-4 my-4 rounded text-center">Biểu đồ sản lượng sản xuất, giá thép, và biên lợi nhuận HPG</div>
                 </div>
                 <div id="stockAnalysisVNM" class="stock-analysis-content hidden">
-                  <img src="Images/Logos/fpt-logo.png" alt="Logo FPT" class="h-12 mb-3">
-                  <h3 class="text-xl font-semibold text-yellow-600 mb-3">Phân tích chi tiết cho VNM</h3>
+                  <img src="VNM.png" alt="Logo VNM" class="h-12 mb-3">
+                  <h3 class="text-2xl font-semibold text-yellow-600 mb-3">Detailed Analysis of VNM</h3>
                   <p class="text-gray-600 leading-relaxed">
                     <strong>1. Tổng quan doanh nghiệp:</strong><br>
                     Vinamilk (VNM) là doanh nghiệp sữa lớn nhất Việt Nam, chiếm khoảng 43% thị phần sữa nội địa. Với mạng lưới phân phối rộng khắp và danh mục sản phẩm đa dạng, VNM đã mở rộng hoạt động ra quốc tế, đặc biệt tại Campuchia, Philippines, Mỹ và Lào.<br><br>
@@ -808,14 +810,14 @@
         </section>
 
         <section id="cong-cu" class="main-content-section">
-            <h2 class="text-3xl sm:text-4xl font-semibold text-gray-800 mb-6 sm:mb-8 border-b-2 border-green-600 pb-3">Công Cụ và Tài Nguyên</h2>
+            <h2 class="text-3xl sm:text-4xl font-semibold text-[#114664] mb-6 sm:mb-8 border-b-2 border-[#114664] pb-3">Công Cụ và Tài Nguyên</h2>
             <div class="bg-white p-6 sm:p-8 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 space-y-6">
                 <div>
                     <h3 class="text-xl sm:text-2xl font-semibold text-green-700 mb-2">vnstock</h3>
                     <p class="text-gray-600 leading-relaxed mb-2">
                         Thư viện Python mạnh mẽ cho phép truy cập dữ liệu lịch sử và thời gian thực của thị trường chứng khoán Việt Nam, hỗ trợ phân tích kỹ thuật, thống kê và xây dựng mô hình định lượng. Rất hữu ích cho các nhà đầu tư cá nhân và tổ chức muốn tự động hóa quy trình phân tích.
                     </p>
-                    <a href="https://github.com/thinh-vu/vnstock" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">Tìm hiểu thêm về vnstock &rarr;</a>
+                    <a href="https://vnstocks.com/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">Tìm hiểu thêm về vnstock &rarr;</a>
                 </div>
                 <div>
                     <h3 class="text-xl sm:text-2xl font-semibold text-green-700 mb-2">FiinPro</h3>
@@ -847,158 +849,137 @@
     </main>
 
     <!-- Services Section -->
-    <section class="py-16 bg-gray-50 only-home">
-      <div class="container mx-auto px-4">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-800 mb-4">
-            Dịch vụ đầu tư của chúng tôi
-          </h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            Chúng tôi cung cấp các giải pháp đầu tư toàn diện được thiết kế để
-            đáp ứng mục tiêu tài chính của bạn.
-          </p>
+<section class="py-16 bg-gray-50 only-home">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">
+        Our Investment Services
+      </h2>
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+        We offer comprehensive investment solutions designed to meet your financial goals.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-8 rounded shadow-md hover:shadow-lg transition duration-300">
+        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+          <i class="ri-line-chart-line ri-2x text-primary"></i>
         </div>
-
-        <div class="grid md:grid-cols-3 gap-8">
-          <div
-            class="bg-white p-8 rounded shadow-md hover:shadow-lg transition duration-300"
-          >
-            <div
-              class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6"
-            >
-              <i class="ri-line-chart-line ri-2x text-primary"></i>
-            </div>
-            <h3 class="text-xl font-bold text-gray-800 mb-3">
-              Quản lý danh mục đầu tư
-            </h3>
-            <p class="text-gray-600">
-              Chiến lược đầu tư được cá nhân hóa dựa trên mục tiêu và khẩu vị
-              rủi ro của bạn, được quản lý bởi đội ngũ chuyên gia giàu kinh
-              nghiệm.
-            </p>
-          </div>
-
-          <div
-            class="bg-white p-8 rounded shadow-md hover:shadow-lg transition duration-300"
-          >
-            <div
-              class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6"
-            >
-              <i class="ri-funds-line ri-2x text-primary"></i>
-            </div>
-            <h3 class="text-xl font-bold text-gray-800 mb-3">
-              Phân tích thị trường
-            </h3>
-            <p class="text-gray-600">
-              Nghiên cứu chuyên sâu và phân tích thị trường cập nhật để giúp bạn
-              đưa ra quyết định đầu tư sáng suốt trong môi trường tài chính luôn
-              thay đổi.
-            </p>
-          </div>
-
-          <div
-            class="bg-white p-8 rounded shadow-md hover:shadow-lg transition duration-300"
-          >
-            <div
-              class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6"
-            >
-              <i class="ri-shield-check-line ri-2x text-primary"></i>
-            </div>
-            <h3 class="text-xl font-bold text-gray-800 mb-3">
-              Tư vấn tài chính
-            </h3>
-            <p class="text-gray-600">
-              Tư vấn tài chính toàn diện để giúp bạn xây dựng và duy trì một kế
-              hoạch tài chính vững chắc phù hợp với mục tiêu dài hạn của bạn.
-            </p>
-          </div>
-        </div>
+        <h3 class="text-xl font-bold text-gray-800 mb-3">
+          Portfolio Management
+        </h3>
+        <p class="text-gray-600">
+          Personalized investment strategies based on your goals and risk appetite, managed by a team of experienced professionals.
+        </p>
       </div>
-    </section>
+
+      <div class="bg-white p-8 rounded shadow-md hover:shadow-lg transition duration-300">
+        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+          <i class="ri-funds-line ri-2x text-primary"></i>
+        </div>
+        <h3 class="text-xl font-bold text-gray-800 mb-3">
+          Market Analysis
+        </h3>
+        <p class="text-gray-600">
+          In-depth research and up-to-date market analysis to help you make informed investment decisions in an ever-changing financial environment.
+        </p>
+      </div>
+
+      <div class="bg-white p-8 rounded shadow-md hover:shadow-lg transition duration-300">
+        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+          <i class="ri-shield-check-line ri-2x text-primary"></i>
+        </div>
+        <h3 class="text-xl font-bold text-gray-800 mb-3">
+          Financial Advisory
+        </h3>
+        <p class="text-gray-600">
+          Comprehensive financial advice to help you build and maintain a solid financial plan aligned with your long-term goals.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!-- Why Choose Us Section -->
-    <section class="py-16 bg-white only-home">
-      <div class="container mx-auto px-4">
-        <div class="flex flex-col md:flex-row items-center gap-12">
-          <div class="md:w-1/2">
-            <img
-              src="https://readdy.ai/api/search-image?query=Professional%20financial%20advisors%20in%20a%20modern%20office%20discussing%20investment%20strategies%20with%20charts%20and%20graphs%20on%20screens%2C%20business%20meeting%20with%20diverse%20team%20members%2C%20clean%20corporate%20environment%2C%20financial%20planning%20session&width=600&height=500&seq=2&orientation=landscape"
-              alt="Đội ngũ chuyên gia tài chính"
-              class="rounded-lg shadow-lg w-full"
-            />
+<section class="py-16 bg-white only-home">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row items-center gap-12">
+      <div class="md:w-1/2">
+        <img
+          src="https://readdy.ai/api/search-image?query=Professional%20financial%20advisors%20in%20a%20modern%20office%20discussing%20investment%20strategies%20with%20charts%20and%20graphs%20on%20screens%2C%20business%20meeting%20with%20diverse%20team%20members%2C%20clean%20corporate%20environment%2C%20financial%20planning%20session&width=600&height=500&seq=2&orientation=landscape"
+          alt="Our Financial Experts"
+          class="rounded-lg shadow-lg w-full"
+        />
+      </div>
+      <div class="md:w-1/2">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">
+          Why Choose EverGrow Capital?
+        </h2>
+
+        <div class="space-y-6">
+          <div class="flex gap-4">
+            <div
+              class="w-12 h-12 flex items-center justify-center bg-green-100 rounded-full flex-shrink-0"
+            >
+              <i class="ri-user-star-line ri-lg text-primary"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-800 mb-2">
+                Expert Team
+              </h3>
+              <p class="text-gray-600">
+                Our team of experts has nearly 100 years of combined experience in finance and investment.
+              </p>
+            </div>
           </div>
-          <div class="md:w-1/2">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6">
-              Tại sao chọn EverGrow Capital?
-            </h2>
 
-            <div class="space-y-6">
-              <div class="flex gap-4">
-                <div
-                  class="w-12 h-12 flex items-center justify-center bg-green-100 rounded-full flex-shrink-0"
-                >
-                  <i class="ri-user-star-line ri-lg text-primary"></i>
-                </div>
-                <div>
-                  <h3 class="text-xl font-bold text-gray-800 mb-2">
-                    Đội ngũ chuyên gia
-                  </h3>
-                  <p class="text-gray-600">
-                    Đội ngũ chuyên gia của chúng tôi có nhiều năm kinh nghiệm
-                    trong lĩnh vực tài chính và đầu tư.
-                  </p>
-                </div>
-              </div>
+          <div class="flex gap-4">
+            <div
+              class="w-12 h-12 flex items-center justify-center bg-green-100 rounded-full flex-shrink-0"
+            >
+              <i class="ri-strategy-line ri-lg text-primary"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-800 mb-2">
+                Diversified Investment Strategies
+              </h3>
+              <p class="text-gray-600">
+                We offer a wide range of investment strategies tailored to different financial goals and risk appetites.
+              </p>
+            </div>
+          </div>
 
-              <div class="flex gap-4">
-                <div
-                  class="w-12 h-12 flex items-center justify-center bg-green-100 rounded-full flex-shrink-0"
-                >
-                  <i class="ri-strategy-line ri-lg text-primary"></i>
-                </div>
-                <div>
-                  <h3 class="text-xl font-bold text-gray-800 mb-2">
-                    Chiến lược đầu tư đa dạng
-                  </h3>
-                  <p class="text-gray-600">
-                    Chúng tôi cung cấp nhiều chiến lược đầu tư khác nhau để phù
-                    hợp với mọi mục tiêu tài chính và khẩu vị rủi ro.
-                  </p>
-                </div>
-              </div>
-
-              <div class="flex gap-4">
-                <div
-                  class="w-12 h-12 flex items-center justify-center bg-green-100 rounded-full flex-shrink-0"
-                >
-                  <i class="ri-customer-service-2-line ri-lg text-primary"></i>
-                </div>
-                <div>
-                  <h3 class="text-xl font-bold text-gray-800 mb-2">
-                    Dịch vụ khách hàng xuất sắc
-                  </h3>
-                  <p class="text-gray-600">
-                    Chúng tôi cam kết cung cấp dịch vụ khách hàng tận tâm và
-                    luôn sẵn sàng hỗ trợ bạn trong suốt hành trình đầu tư.
-                  </p>
-                </div>
-              </div>
+          <div class="flex gap-4">
+            <div
+              class="w-12 h-12 flex items-center justify-center bg-green-100 rounded-full flex-shrink-0"
+            >
+              <i class="ri-customer-service-2-line ri-lg text-primary"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-800 mb-2">
+                Excellent Customer Service
+              </h3>
+              <p class="text-gray-600">
+                We are committed to delivering dedicated customer service and are always ready to support you throughout your investment journey.
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
     <!-- Testimonials Section -->
     <section class="py-16 bg-white only-home">
       <div class="container mx-auto px-4">
         <div class="text-center mb-12">
           <h2 class="text-3xl font-bold text-gray-800 mb-4">
-            Khách hàng nói gì về chúng tôi
+            What Our Clients Say About Us
           </h2>
           <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            Khám phá trải nghiệm của khách hàng khi làm việc với EverGrow
-            Capital.
+            Discover the experiences of clients working with EverGrow Capital.
           </p>
         </div>
 
@@ -1015,8 +996,8 @@
             <div class="flex items-center">
               <div class="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
               <div>
-                <h4 class="font-bold text-gray-800">Nguyễn Thanh Tùng</h4>
-                <p class="text-gray-600">Doanh nhân, Hà Nội</p>
+                <h4 class="font-bold text-gray-800">Lê Hoàng Phước Đạt</h4>
+                <p class="text-gray-600">Nổi tiếng nhưng ít người biết đến</p>
               </div>
             </div>
           </div>
@@ -1026,15 +1007,15 @@
               <i class="ri-double-quotes-l ri-2x text-primary"></i>
             </div>
             <p class="text-gray-700 mb-6">
-              "Tôi đã làm việc với nhiều công ty tư vấn đầu tư khác nhau, nhưng
-              EverGrow Capital thực sự nổi bật với phương pháp tiếp cận cá nhân
-              hóa và chiến lược đầu tư bền vững của họ."
+              "저는 다양한 투자 자문 회사와 협력해 보았지만, EverGrow Capital은 맞춤형 접근 방식과 지속 가능한 투자 전략으로 정말 돋보입니다.
+              
+              "
             </p>
             <div class="flex items-center">
               <div class="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
               <div>
-                <h4 class="font-bold text-gray-800">Trần Minh Hương</h4>
-                <p class="text-gray-600">Giám đốc tài chính, TP.HCM</p>
+                <h4 class="font-bold text-gray-800">G - Dragon</h4>
+                <p class="text-gray-600">Rapper, Korea <p>
               </div>
             </div>
           </div>
@@ -1044,16 +1025,13 @@
               <i class="ri-double-quotes-l ri-2x text-primary"></i>
             </div>
             <p class="text-gray-700 mb-6">
-              "Kể từ khi bắt đầu làm việc với EverGrow Capital, tôi đã thấy sự
-              cải thiện đáng kể trong hiệu suất danh mục đầu tư của mình. Họ
-              thực sự hiểu rõ mục tiêu của tôi và đưa ra những giải pháp phù
-              hợp."
+              "Since starting working with EverGrow Capital, I have seen a significant improvement in my portfolio performance. They really understand my goals and provide tailored solutions."
             </p>
             <div class="flex items-center">
               <div class="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
               <div>
-                <h4 class="font-bold text-gray-800">Lê Văn Hoàng</h4>
-                <p class="text-gray-600">Kỹ sư, Đà Nẵng</p>
+                <h4 class="font-bold text-gray-800">Elon Musk</h4>
+                <p class="text-gray-600">Business, South Africa</p>
               </div>
             </div>
           </div>
@@ -1063,18 +1041,17 @@
 
 
     <!-- Newsletter Section -->
-    <section class="py-16 bg-white only-home">
-      <div class="container mx-auto px-4">
-        <div class="max-w-4xl mx-auto">
-          <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-4">
-              Đánh giá khẩu vị rủi ro & Đăng ký nhận bản tin
-            </h2>
-            <p class="text-lg text-gray-600">
-              Hãy cho chúng tôi biết thêm về bạn để nhận được những thông tin
-              phù hợp nhất.
-            </p>
-          </div>
+  <section class="py-16 bg-white only-home">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">
+            Risk Tolerance Assessment & Newsletter Signup
+          </h2>
+          <p class="text-lg text-gray-600">
+            Tell us more about yourself to receive the most relevant information.
+          </p>
+        </div>
         <form id="riskAssessmentForm" class="bg-gray-50 p-8 rounded-lg shadow-md mb-8">
         <div class="space-y-6">
           <!-- Câu 1 đến 10 (Đã chỉnh sửa text-gray-800 cho rõ ràng) -->
@@ -1326,32 +1303,32 @@
           </div>
         </div>
         <div id="resultSection" class="hidden mt-8 p-6 bg-white rounded-lg shadow-md">
-          <h3 class="text-xl font-bold text-green-700 mb-4">Kết quả đánh giá</h3>
-          <div class="flex items-center justify-between mb-4">
-            <span class="text-lg font-medium text-gray-800">Điểm số của bạn:</span>
-            <span id="riskScore" class="text-2xl font-bold text-gray-800">0/40</span>
-          </div>
-          <div class="mb-4">
-            <span class="text-lg font-medium text-gray-800">Khẩu vị rủi ro:</span>
-            <span id="riskAppetite" class="ml-2 text-lg font-medium text-gray-800">Chưa xác định</span>
-          </div>
-          <p id="riskDescription" class="text-gray-800">
-            Vui lòng hoàn thành bảng câu hỏi để nhận được đánh giá.
-          </p>
+        <h3 class="text-xl font-bold text-green-700 mb-4">Assessment Results</h3>
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-lg font-medium text-gray-800">Your Score:</span>
+          <span id="riskScore" class="text-2xl font-bold text-gray-800">0/40</span>
         </div>
-        <div class="mt-8">
-          <div class="flex flex-col sm:flex-row gap-4">
-            <input
-              type="email"
-              placeholder="Địa chỉ email của bạn"
-              class="flex-grow px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary text-gray-800"
-            />
-            <button
-              type="submit"
-              class="bg-primary hover:bg-secondary text-yellow-600 font-medium px-6 py-3 rounded whitespace-nowrap transition duration-300"
-            >
-              Đăng ký nhận tư vấn
-            </button>
+        <div class="mb-4">
+          <span class="text-lg font-medium text-gray-800">Risk Appetite:</span>
+          <span id="riskAppetite" class="ml-2 text-lg font-medium text-gray-800">Undetermined</span>
+        </div>
+        <p id="riskDescription" class="text-gray-800">
+          Please complete the questionnaire to receive an assessment.
+        </p>
+      </div>
+      <div class="mt-8">
+        <div class="flex flex-col sm:flex-row gap-4">
+          <input
+            type="email"
+            placeholder="Your email address"
+            class="flex-grow px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary text-gray-800"
+          />
+          <button
+            type="submit"
+            class="bg-primary hover:bg-secondary text-yellow-600 font-medium px-6 py-3 rounded whitespace-nowrap transition duration-300"
+          >
+            Subscribe for Consultation
+          </button>
           </div>
         </div>
       </form>
@@ -1454,87 +1431,88 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 <footer class="bg-primary text-white py-12">
-    <div class="container mx-auto px-4">
-        <div class="grid md:grid-cols-4 gap-8">
-            <div>
-                <h3 class="text-xl font-bold mb-4">EverGrow Capital</h3>
-                <p class="mb-4">Đầu tư thông minh, Tăng trưởng bền vững</p>
-                <div class="flex space-x-4">
-                    <a href="#" class="w-10 h-10 flex items-center justify-center bg-white bg-opacity-20 rounded-full hover:bg-opacity-30 transition duration-300">
-                        <i class="ri-facebook-fill ri-lg"></i>
-                    </a>
-                    <a href="#" class="w-10 h-10 flex items-center justify-center bg-white bg-opacity-20 rounded-full hover:bg-opacity-30 transition duration-300">
-                        <i class="ri-twitter-fill ri-lg"></i>
-                    </a>
-                    <a href="#" class="w-10 h-10 flex items-center justify-center bg-white bg-opacity-20 rounded-full hover:bg-opacity-30 transition duration-300">
-                        <i class="ri-linkedin-fill ri-lg"></i>
-                    </a>
-                </div>
-            </div>
-            <div>
-                <h3 class="text-xl font-bold mb-4">Dịch vụ</h3>
-                <ul class="space-y-2">
-                    <li>
-                        <a href="#danh-muc-dau-tu" data-target="danh-muc-dau-tu" class="nav-link hover:text-yellow-300 transition duration-300 scroll-smooth">Quản lý danh mục đầu tư</a>
-                    </li>
-                    <li>
-                        <a href="#" class="hover:text-yellow-300 transition duration-300 service-link">Phân tích thị trường</a>
-                    </li>
-                    <li>
-                        <a href="#" class="hover:text-yellow-300 transition duration-300 service-link">Tư vấn tài chính</a>
-                    </li>
-                    <li>
-                        <a href="#" class="hover:text-yellow-300 transition duration-300 service-link">Lập kế hoạch hưu trí</a>
-                    </li>
-                    <li>
-                        <a href="#" class="hover:text-yellow-300 transition duration-300 service-link">Đầu tư bất động sản</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h3 class="text-xl font-bold mb-4">Liên kết</h3>
-                <ul class="space-y-2">
-                    <li>
-                        <a href="#hero-section" data-target="hero-section" class="nav-link hover:text-yellow-300 transition duration-300">Trang chủ</a>
-                    </li>
-                    <li>
-                        <a href="#tong-quan" data-target="tong-quan" class="nav-link hover:text-yellow-300 transition duration-300">Về chúng tôi</a>
-                    </li>
-                    <li>
-                        <a href="#danh-muc-dau-tu" data-target="danh-muc-dau-tu" class="nav-link hover:text-yellow-300 transition duration-300">Dịch vụ</a>
-                    </li>
-                    <li>
-                        <a href="#" class="hover:text-yellow-300 transition duration-300 service-link">Blog</a>
-                    </li>
-                    <li>
-                        <a href="#doi-ngu-phan-tich" data-target="doi-ngu-phan-tich" class="nav-link hover:text-yellow-300 transition duration-300">Liên hệ</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h3 class="text-xl font-bold mb-4">Liên hệ</h3>
-                <ul class="space-y-2">
-                    <li class="flex items-start gap-3">
-                        <i class="ri-map-pin-line ri-lg mt-1"></i>
-                        <span>36 Tôn Thất Đạm, Quận 1, TP.HCM</span>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <i class="ri-phone-line ri-lg"></i>
-                        <span>(+84) 364 368 372</span>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <i class="ri-mail-line ri-lg"></i>
-                        <span>info@evergrowcapital.corp.com</span>
-                    </li>
-                </ul>
-            </div>
+  <div class="container mx-auto px-4">
+    <div class="grid md:grid-cols-4 gap-8">
+      <div>
+        <h3 class="text-xl font-bold mb-4">EverGrow Capital</h3>
+        <p class="mb-4">Smart Investment, Sustainable Growth</p>
+        <div class="flex space-x-4">
+          <a href="#" class="w-10 h-10 flex items-center justify-center bg-white bg-opacity-20 rounded-full hover:bg-opacity-30 transition duration-300">
+            <i class="ri-facebook-fill ri-lg"></i>
+          </a>
+          <a href="#" class="w-10 h-10 flex items-center justify-center bg-white bg-opacity-20 rounded-full hover:bg-opacity-30 transition duration-300">
+            <i class="ri-twitter-fill ri-lg"></i>
+          </a>
+          <a href="#" class="w-10 h-10 flex items-center justify-center bg-white bg-opacity-20 rounded-full hover:bg-opacity-30 transition duration-300">
+            <i class="ri-linkedin-fill ri-lg"></i>
+          </a>
         </div>
-        <div class="border-t border-white border-opacity-20 mt-12 pt-8 text-center text-sm text-white text-opacity-70">
-            <p>© 2025 EverGrow Capital. Mọi quyền được bảo lưu.</p>
-            <p class="mt-2">Thông tin trên trang này chỉ mang tính chất tham khảo.</p>
-        </div>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold mb-4">Services</h3>
+        <ul class="space-y-2">
+          <li>
+            <a href="#danh-muc-dau-tu" data-target="danh-muc-dau-tu" class="nav-link hover:text-yellow-300 transition duration-300 scroll-smooth">Portfolio Management</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-yellow-300 transition duration-300 service-link">Market Analysis</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-yellow-300 transition duration-300 service-link">Financial Consulting</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-yellow-300 transition duration-300 service-link">Retirement Planning</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-yellow-300 transition duration-300 service-link">Real Estate Investment</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold mb-4">Links</h3>
+        <ul class="space-y-2">
+          <li>
+            <a href="#hero-section" data-target="hero-section" class="nav-link hover:text-yellow-300 transition duration-300">Home</a>
+          </li>
+          <li>
+            <a href="#tong-quan" data-target="tong-quan" class="nav-link hover:text-yellow-300 transition duration-300">About Us</a>
+          </li>
+          <li>
+            <a href="#danh-muc-dau-tu" data-target="danh-muc-dau-tu" class="nav-link hover:text-yellow-300 transition duration-300">Services</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-yellow-300 transition duration-300 service-link">Blog</a>
+          </li>
+          <li>
+            <a href="#doi-ngu-phan-tich" data-target="doi-ngu-phan-tich" class="nav-link hover:text-yellow-300 transition duration-300">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold mb-4">Contact</h3>
+        <ul class="space-y-2">
+          <li class="flex items-start gap-3">
+            <i class="ri-map-pin-line ri-lg mt-1"></i>
+            <span>36 Ton That Dam, District 1, Ho Chi Minh City</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <i class="ri-phone-line ri-lg"></i>
+            <span>(+84) 364 368 372</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <i class="ri-mail-line ri-lg"></i>
+            <span>info@evergrowcapital.corp.com</span>
+          </li>
+        </ul>
+      </div>
     </div>
+    <div class="border-t border-white border-opacity-20 mt-12 pt-8 text-center text-sm text-white text-opacity-70">
+      <p>© 2025 EverGrow Capital. All rights reserved.</p>
+      <p class="mt-2">Information on this site is for reference purposes only.</p>
+    </div>
+  </div>
 </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
     <div
       id="comingSoonModal"
@@ -1545,12 +1523,12 @@ document.addEventListener("DOMContentLoaded", function () {
           <i class="ri-timer-line ri-3x text-primary mb-4"></i>
           <h3 class="text-xl font-bold text-gray-800 mb-2">Coming Soon!</h3>
           <p class="text-gray-600 mb-4">
-            Tính năng này đang được phát triển. Vui lòng quay lại sau.
+            This feature is under development. Please come back later.
           </p>
           <button
             class="bg-primary hover:bg-secondary text-yellow-300 font-medium px-6 py-2 !rounded-button whitespace-nowrap transition duration-300 close-modal"
           >
-            Đóng
+            Close
           </button>
         </div>
       </div>
