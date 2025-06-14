@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EverGrow Capital - Đầu Tư Thông Minh, Tăng Trưởng Bền Vững</title>
+    <title>Sustainable Growth Income - Đầu Tư Thông Minh, Tăng Trưởng Bền Vững</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -158,16 +158,31 @@
             margin-bottom: 1rem;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
+                #google_translate_element select {
+          padding: 4px;
+          font-size: 14px;
+        }
+        .goog-te-gadget {
+          font-size: 0; /* ẩn chữ “Chọn ngôn ngữ” */
+        }
+        .goog-logo-link,
+        .goog-te-gadget span {
+          display: none !important;
+        }
+        .notranslate {
+          translate: no;
+        }
         /* ======================================================= */
     </style>
 </head>
 <body class="bg-green-100 text-gray-800">
 
     <header class="text-white shadow-lg sticky top-0 z-50">
+        
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <div class="flex-shrink-0">
-                    <a href="#" id="logo-link" class="text-2xl sm:text-3xl font-bold">EverGrow Capital</a>
+                    <a href="#" id="logo-link" class="text-2xl sm:text-3xl font-bold"> Sustainable Growth Income</a>
                 </div>
                   <nav class="hidden md:flex space-x-1">
                       <a href="#tong-quan" data-target="tong-quan" class="nav-link px-3 py-2 rounded-md text-sm font-bold transition duration-150 ease-in-out">Overview</a>
@@ -177,12 +192,17 @@
                       <a href="#phan-tich-co-phieu" data-target="phan-tich-co-phieu" class="nav-link px-3 py-2 rounded-md text-sm font-bold transition duration-150 ease-in-out">Stock Analysis</a>
                       <a href="#cong-cu" data-target="cong-cu" class="nav-link px-3 py-2 rounded-md text-sm font-bold transition duration-150 ease-in-out">Tools & Resources</a>
                   </nav>
+                  
                 <div class="md:hidden flex items-center">
                     <button id="mobile-menu-button" class="text-white hover:text-gray-300 focus:outline-none focus:text-gray-300">
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                         </svg>
                     </button>
+                </div>
+                <div id="custom-language-toggle" class="relative ml-4 cursor-pointer">
+                  <span class="text-white text-xl" id="language-icon">🌐</span>
+                  <div id="google_translate_element" class="absolute right-0 top-6 hidden bg-white rounded shadow-md z-50"></div>
                 </div>
             </div>
         </div>
@@ -203,7 +223,7 @@
             Smart Investing,<br class="hidden sm:block"> Sustainable Growth
         </h2>
         <p class="text-md sm:text-lg mt-2 mb-8 max-w-2xl mx-auto">
-            EverGrow Capital accompanies you on the journey to building a strong financial future.
+            Sustainable Growth Income accompanies you on the journey to building a strong financial future.
         </p>
         <a href="#tong-quan" data-target="tong-quan" class="nav-link-hero bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-bold py-3 px-6 rounded-lg text-md transition duration-300 ease-in-out transform hover:scale-105">Learn More</a>
         <a href="#danh-muc-dau-tu" onclick="event.preventDefault(); setActiveSection('danh-muc-dau-tu');" class="inline-block bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold py-3 px-6 rounded-lg transition duration-300">Sample Portfolio</a>
@@ -213,15 +233,15 @@
 <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
 
         <section id="tong-quan" class="main-content-section mb-12 sm:mb-16">
-            <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-6 sm:mb-8 border-b-2 border-[#114664] pb-3">Overview of EverGrow Capital</h2>
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-6 sm:mb-8 border-b-2 border-[#114664] pb-3">Overview of Sustainable Growth Income</h2>
             <div class="bg-white p-6 sm:p-8 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
                 <h3 class="text-xl sm:text-2xl font-semibold text-[#114664] mb-4">About Us</h3>
                 <p class="text-gray-900 leading-relaxed mb-4">
-                    EverGrow Capital is an independent investment advisory and asset management firm, established with the mission to accompany clients on their journey toward financial freedom and sustainable prosperity. We believe that each individual and business has their own goals and circumstances, so we always place the client at the center—listening and understanding in order to offer optimal and personalized financial solutions.
+                    Sustainable Growth Income is an independent investment advisory and asset management firm, established with the mission to accompany clients on their journey toward financial freedom and sustainable prosperity. We believe that each individual and business has their own goals and circumstances, so we always place the client at the center—listening and understanding in order to offer optimal and personalized financial solutions.
                 </p>
                 <h3 class="text-xl sm:text-2xl font-semibold text-[#114664] mb-4">Long-Term Investment Philosophy & Strategy</h3>
                 <p class="text-gray-900 leading-relaxed mb-3">
-                    At EverGrow Capital, we believe in the power of long-term investing, focusing on businesses with solid foundations and sustainable growth potential. Our philosophy is based on:
+                    At Sustainable Growth Income, we believe in the power of long-term investing, focusing on businesses with solid foundations and sustainable growth potential. Our philosophy is based on:
                 </p>
                 <ul class="list-disc list-inside text-gray-900 space-y-2 mb-4">
                     <li><span class="font-medium">In-depth fundamental analysis:</span> Thoroughly researching financial conditions, competitive advantages, leadership teams, and industry outlooks.</li>
@@ -242,12 +262,12 @@
                 <div class="flex flex-wrap justify-center items-stretch gap-6">
                     <div class="clickable-card bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 text-center w-full sm:basis-[calc(50%-0.75rem)] md:basis-[calc(33.333%-1rem)] flex flex-col"
                         data-name="Nguyễn Văn Minh" data-birth-year="1985" data-title="Mid-level manager at a multinational corporation headquartered in District 1, Ho Chi Minh City"
-                        data-quote="EverGrow Capital was carefully selected from many companies in the industry, and I feel very secure using their services."
+                        data-quote="Sustainable Growth Income was carefully selected from many companies in the industry, and I feel very secure using their services."
                         data-details="Assets: No house or car yet. Husband's net salary is 50 million VND/month. Savings: 1 billion VND. No other assets.
                                       Investment goals: Purchase real estate in District 2 within 8 years or more feasibly a luxury apartment within 5–7 years. At age 60, savings should reach 9 billion VND for retirement purposes. Ensure funding for children's tuition at RMIT University.
                                       Risk tolerance: Medium-High (around 24–27 points according to the survey)
                                       Investment experience: Has basic stock investment experience. Has built a basic portfolio but not yet diversified or optimized asset allocation."
-                        data-image-src="KH NGUYEN VAN MINH.jpg">
+                        data-image-src="Images/KH NGUYEN VAN MINH.jpg">
                         <div class="team-member-image-placeholder-card">Client Photo</div>
                         <h3 class="text-xl font-semibold text-[#114664] mb-2">NGUYEN VAN MINH</h3>
                         <p class="text-gray-600 text-sm mb-1">Mid-level Manager</p>
@@ -255,10 +275,10 @@
                     </div>
                     <div class="clickable-card bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 text-center w-full sm:basis-[calc(50%-0.75rem)] md:basis-[calc(33.333%-1rem)] flex flex-col"
                         data-name="Dương Thuỳ Nhiên" data-birth-year="1987" data-title="Accountant at a wood company"
-                        data-quote="As someone who doesn't have much time to follow the market, I'm very satisfied with the investment effectiveness and transparency in portfolio management provided by EverGrow Capital. The consulting team is very dedicated."
+                        data-quote="As someone who doesn't have much time to follow the market, I'm very satisfied with the investment effectiveness and transparency in portfolio management provided by Sustainable Growth Income. The consulting team is very dedicated."
                         data-details="Net income of wife is 20 million VND/month, no prior investment experience.
                                       Investment goals are aligned with her husband."
-                        data-image-src="KH DUONG THUY NHIEN.jpg">
+                        data-image-src="Images/KH DUONG THUY NHIEN.jpg">
                         <div class="team-member-image-placeholder-card">Client Photo</div>
                         <h3 class="text-xl font-semibold text-[#114664] mb-2">DUONG THUY NHIEN</h3>
                         <p class="text-gray-600 text-sm mb-1">Accountant</p>
@@ -326,7 +346,7 @@
                     <div class="clickable-card bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 text-center w-full sm:basis-[calc(50%-0.75rem)] md:basis-[calc(33.333%-1rem)] flex flex-col"
                          data-name="Nguyễn Thị Phương Linh" data-age="4^2+5" data-title="Cấp dưới Minh Anh"
                          data-bio="Phương Linh theo dõi và phân tích các ngành kinh tế trọng điểm như Bất động sản, Năng lượng, đánh giá tác động của các yếu tố vĩ mô và chính sách lên triển vọng của ngành, từ đó cung cấp góc nhìn tổng quan cho các quyết định đầu tư. Sinh viên năm 3, Đại học Ngân hàng TP.HCM."
-                         data-image-src="PLINH.jpg">
+                         data-image-src="LINH.jpg">
                         <div class="team-member-image-placeholder-card">Ảnh TV</div>
                         <h3 class="text-xl font-semibold text-[#114664] mb-1">Nguyễn Thị Phương Linh</h3>
                         <p class="text-gray-500 text-sm italic">Cựu thiếu nhi</p>
@@ -342,7 +362,7 @@
                     <div class="clickable-card bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 text-center w-full sm:basis-[calc(50%-0.75rem)] md:basis-[calc(33.333%-1rem)] flex flex-col"
                          data-name="Nguyễn Hoàng Anh Thư" data-age="ln(e^21)" data-title="Cấp dưới Minh Anh"
                          data-bio="Anh Thư chịu trách nhiệm thu thập, tổng hợp dữ liệu thị trường, xây dựng chi tiêu của khách hàng để đưa ra quyết định đầu tư hợp lý. Hiện đang là sinh viên năm 3 Ngành TC-NH tại trường Đại học Ngân hàng TP. HCM."
-                         data-image-src="ATHU.jpg">
+                         data-image-src="images/team_anhthu_large.jpg">
                         <div class="team-member-image-placeholder-card">Ảnh TV</div>
                         <h3 class="text-xl font-semibold text-[#114664] mb-1">Nguyễn Hoàng Anh Thư</h3>
                         <p class="text-gray-500 text-sm italic">Cựu thiếu nhi</p>
@@ -655,165 +675,399 @@
                     <button class="tab-button" onclick="showStockAnalysis('stockAnalysisVNM', this)">VNM</button>
                 </div>
 
-                   <div id="stockAnalysisFPT" class="stock-analysis-content hidden">
-                      <div style="text-align: center;">
-                          <img src="FPT.jpg" alt="Logo FPT" style="height: 200px; display: block; margin: 0 auto;">
-                      </div>
+                <div id="stockAnalysisFPT" class="stock-analysis-content hidden">
+                  <img src="FPT.jpg" alt="Logo FPT" class="h-12 mb-3" >
                   <h3 class="text-2xl font-semibold text-yellow-600 mb-3">Detailed Analysis of FPT</h3>
                   <p class="text-gray-600 leading-relaxed">
-                    <strong>1. Tổng quan doanh nghiệp:</strong><br>
-                    Công ty Cổ phần FPT là tập đoàn hàng đầu Việt Nam trong lĩnh vực công nghệ thông tin, viễn thông và giáo dục. Với hơn 30 năm phát triển, FPT có mạng lưới hoạt động toàn cầu tại 29 quốc gia, phục vụ hàng triệu khách hàng với hơn 60.000 nhân viên.<br><br>
+                    <strong>I. NON FINANCIAL ANALYSIS:</strong><br>
+                    <strong>1. Corporate profile:</strong><br>
+                    - Ticket: FPT (HOSE) (Listed year: 2006)<br>
+                    - Share outstanding: 1,471,069,183<br>
+                    - Industry: Information Technology/ Software & Services/ Software<br>
+                    - Chairman: Truong Gia Binh<br>
+                    - CEO: Nguyen Dang Khoa<br>
+                    - Core value: “Respect – Innovation – Teammate – Fairness – Exemplarity – Visionary”<br>
+                    - Strategic Vision: FPT remains committed to its long-term goal of becoming a digital enterprise and ranking among the Top 50 global companies in providing comprehensive digital transformation services and solutions by 2030.<br>
+                    - FPT ecosystem: Technology, Telecommunications, Education<br>
+                    - Member company: 08 Subsidiary Company, 02 Associate Company<br>
+                    - 2024 Recap: Technology sector achieved record-breaking international contracts totaling nearly 450 million USD (225M in the US, 115M in Germany, 110M in Singapore). Domestically, signed digital transformation agreements with 31 provinces/cities, supporting e-government initiatives under Project 06 and Resolution 57/NQ-TW. Launched HCMC Digital Citizen app and piloted Hanoi Public Administration Service Center. Telecommunications rolled out Wi-Fi 6 nationwide, with Data Center segment growing nearly 50% YoY. Education network surpassed 152,000 learners across nearly 30 localities with 600,000 m² built-up area.<br>
+                    - 2025 Goals: Focus on Artificial Intelligence, Semiconductors, Automotive, Digital Transformation, and Green Transformation, with AI as the key pillar. Technology to integrate AI into all services/products, aiming to lead in AI and Cloud infrastructure. Telecommunications to invest in data centers, Esports, IoT, and energy management solutions. Education to expand general education, vocational training, and universities nationwide.<br><br>
 
-                    <strong>2. Phân tích hoạt động kinh doanh:</strong><br>
-                    - Mảng Công nghệ (Cung cấp dịch vụ chuyển đổi số và xuất khẩu phần mềm) chiếm tỷ trọng lớn nhất trong cơ cấu doanh thu và lợi nhuận, ghi nhận mức tăng trưởng cao trong nhiều năm gần đây.<br>
-                    - Mảng Viễn thông (dịch vụ Internet băng rộng và truyền hình trả tiền) có thị phần lớn tại Việt Nam, đóng góp doanh thu ổn định.<br>
-                    - Mảng Giáo dục (hệ thống phổ thông và đại học FPT) phát triển mạnh, đang mở rộng quy mô tại nhiều tỉnh thành.<br><br>
+                    <strong>2. Company’s products and services:</strong><br>
+                    a. Technology:<br>
+                    - FPT Software: IT Services<br>
+                    - FPT IS: Solution by industry<br>
+                    - FPT Digital: Digital transformation consulting<br>
+                    - FPT Smart Cloud: AI & Cloud computing<br>
+                    - Base.vn: Business management platform<br>
+                    - Services: Consultancy in Digital Transformation, Green Transformation, and AI Transformation; IT system design, implementation, integration, maintenance, testing; cybersecurity; solutions on platforms like NVIDIA, Landing AI, SAP, Oracle, Microsoft, ESRI.<br>
+                    - Products: FPT.AI (AI platform), FPT Cloud (cloud computing platform), Base.vn (enterprise management platform); power management and IoT chips; AI, Generative AI, RPA, and IoT-integrated solutions for Government, Telecommunications, Banking & Finance, Healthcare, Transportation, Public Finance, Energy, Enterprises, Automotive; solutions for supply chain, financial, HR, customer experience, sustainability, and business process transformation.<br>
+                    b. Telecommunications:<br>
+                    - FPT Telecom, FPT Online: Internet services, private channels, data centers, VoIP phones, value-added telecommunications, IoT services; FPT Play (TV services); OnMeeting (smart multi-platform online meeting solution); Digital Media Ecosystem (VRace, eBox, eLive, AI Newsroom, Smart Ads); FPT Smart Home (energy-saving, fire alarm, control, lighting, security, TV solutions).<br>
+                    c. Education:<br>
+                    - FPT Education operates in 28 provinces/cities, partners with 180+ international institutions, offers specialized training in AI, semiconductors, and smart manufacturing.<br><br>
 
-                    <strong>3. Tình hình tài chính:</strong><br>
-                    FPT duy trì tăng trưởng doanh thu và lợi nhuận ổn định, tỷ suất sinh lời ROE trên 20%. Cơ cấu tài chính an toàn với đòn bẩy tài chính thấp, dòng tiền hoạt động dương liên tục trong nhiều năm.<br><br>
+                    <strong>3. Relevant industry characteristics:</strong><br>
+                    - General Context: 2024 faced macroeconomic and geopolitical challenges, with global economic slowdown. Vietnam achieved 7.1% GDP growth, driven by high-tech exports, FDI, and domestic consumption. Government reforms bolster digital infrastructure and IT development.<br>
+                    - IT Industry: Global IT spending to grow 9.0% in 2025, with IT services at 1,731 billion USD. Digital transformation spending to reach 4 trillion USD by 2027 (16.2% CAGR). AI market to hit 294 billion USD in 2025, with 29.2% CAGR to 2032.<br>
+                    - Vietnam: Semiconductor market to reach 31.4 billion USD by 2029 (11.48% CAGR). AI to contribute 79.3 billion USD to Vietnam’s economy by 2030. Shortage of AI and semiconductor talent persists.<br>
+                    - Telecommunications: Growth driven by new data centers amid rising AI and data security demands. FPT Telecom ranks second in data center scale/market share. New data center in Thu Duc (2025) to add 3,600 racks and 10,000 m².<br>
+                    - Education: Rising demand for AI, semiconductor, automotive, and robotics training. FPT University partners with Asia University, Taiwan, for semiconductor and smart manufacturing education. New schools in Hue and Hau Giang to start in 2025.<br>
+                    - 2025 AGM Highlights: Middle East market prioritized with million-USD sales to large corporations. AI business segments (applications, services, infrastructure) target 30–50% YoY growth for 5 years. AI Applications (AI Agent, voice bot, chatbot) aim for 50% YoY growth, with 15 million USD revenue in 2024. AI Services target 40% YoY growth, with 60 million USD revenue in 2024.<br><br>
 
-                    <strong>4. Lợi thế cạnh tranh:</strong><br>
-                    - Hệ sinh thái toàn diện từ phần mềm, hạ tầng viễn thông đến giáo dục đào tạo nhân lực CNTT.<br>
-                    - Năng lực công nghệ vượt trội, tiên phong trong chuyển đổi số và AI.<br>
-                    - Thương hiệu uy tín và đội ngũ nhân lực chất lượng cao.<br><br>
+                    <strong>4. Company’s pricing environment:</strong><br>
+                    - Software, IT, System Integration: Owns 250+ proprietary software solutions for Government, Public Finance, Banking, Education, Healthcare, Transportation. Top-tier partner of AWS, GE, Microsoft, Cisco, IBM, SAP, Symantec. General contractor for large-scale IT projects.<br>
+                    - Telecommunications: Nationwide internet infrastructure covering 63 provinces, owns North–South backbone, international connections, and 5,000 Gbps bandwidth. Operates four data centers, ranks second in market share.<br>
+                    - Digital Content: Leads online advertising with eClick AdNetwork, operates VnExpress.net, Ngoisao.net, iOne.net.<br>
+                    - Education: BrandLaureate-recognized, operates in 28 provinces, partners with 180+ international institutions.<br>
+                    - Retail: Distributes for 30+ tech partners, with 1,500 agents and 473 FPT Shop outlets across 63 provinces.<br><br>
 
-                    <strong>5. Định giá và tiềm năng tăng trưởng:</strong><br>
-                    Với tốc độ tăng trưởng kép (CAGR) cao trong dài hạn và khả năng mở rộng thị trường quốc tế, FPT được định giá hấp dẫn so với tiềm năng. Tập đoàn đặt mục tiêu duy trì mức tăng trưởng lợi nhuận hai chữ số và mở rộng tại Mỹ, Nhật và châu Âu.<br><br>
+                    <strong>5. SWOT Analysis:</strong><br>
+                    - Strengths:<br>
+                      + Technology: Top 50 Asian IT Services, largest in Southeast Asia, leader in digital/green transformation, trusted global partner, world-class AI, Cloud, and Data provider.<br>
+                      + Telecommunications: Top 3 ISP in Vietnam, second in data centers, leads in advertising technology with digital media ecosystem.<br>
+                      + Education: BrandLaureate award, ranks 401-600 in THE Impact Rankings 2024, offers specialized AI/semiconductor training.<br>
+                    - Weaknesses: [Not specified in document].<br>
+                    - Opportunities:<br>
+                      + Supportive policies: Resolution 57/NQ-TW and Project 06 drive digital transformation.<br>
+                      + AI Demand: AI to boost global GDP by 14% (15.7 trillion USD) by 2030. FPT targets 1 million AI Agents, 50,000 AI engineers, and 500,000 AI-skilled individuals by 2030.<br>
+                      + Japan Market: IT talent shortage (789,000 by 2030) and digitalization demand. Stronger yen improves profitability.<br>
+                      + FPT AI Factory: Launched Nov 2024, targets 100 million USD revenue in 2025.<br>
+                      + Middle East Expansion: New business opportunities.<br>
+                    - Threats:<br>
+                      + Geopolitical tensions and potential U.S. tariffs indirectly impact IT demand.<br>
+                      + Economic instability in U.S./Europe may delay IT investments.<br>
+                      + Trade war risks require flexible navigation to meet 20% growth target.<br><br>
 
-                    <strong>6. Rủi ro:</strong><br>
-                    - Biến động tỷ giá và chi phí đầu vào nhân lực.<br>
-                    - Cạnh tranh gay gắt trên thị trường công nghệ quốc tế.<br>
-                    - Rủi ro về nguồn cung nhân lực chất lượng cao.<br>
+                    <strong>II. FINANCIAL ANALYSIS:</strong><br>
+                    <strong>1. 2020-2024 Recap:</strong><br>
+                    - 2024: Revenue 62,849 billion VND (+19.4% YoY), PBT 11,070 billion VND (+20.3% YoY), surpassing 102% of AGM target. IT Services for foreign markets grew 27.4% to 30,953 billion VND, driven by Japan (+32.2%) and APAC (+34.8%). Digital Transformation Services revenue 14,340 billion VND (+37.6% YoY), 46.3% of foreign IT revenue. Telecommunications revenue up 11.4%, Education/Investment/Other up 14.3%.<br><br>
+
+                    <strong>2. Q1/2025 Performance:</strong><br>
+                    - Revenue: 16,058 billion VND (+13.9% YoY), below 2024’s 20.6%. Gross margin at 39.2%.<br>
+                    - Technology: Revenue 9,769 billion VND (+15.3% YoY), PBT 1,416 billion VND (+22.5% YoY), contributing 61% revenue and 47% PBT. Foreign IT Services revenue 8,186 billion VND (+17.0% YoY), PBT 1,391 billion VND (+24.8% YoY). Japan (+30.4%) and EU (+24.6%) led growth. New contracts worth 11,505 billion VND (+17.2% YoY), including 9 large projects (>10M USD, +125% YoY). Domestic revenue 1,583 billion VND (+7.5% YoY), PBT 25 billion VND (-40.3% YoY) due to higher depreciation and operating costs.<br>
+                    - Telecommunications: Revenue 4,582 billion VND (+14.9% YoY), PBT 967 billion VND (+17.2% YoY), driven by 16% broadband growth and AI-enhanced services. Contributes 28% revenue and 32% PBT.<br>
+                    - Education/Other: Revenue 1,707 billion VND (+6.1% YoY), PBT 642 billion VND (+16.2% YoY), contributing 11% revenue and 21% PBT.<br><br>
+
+                    <strong>3. Financial Health:</strong><br>
+                    - Stable revenue and profit growth, ROE above 20%. Safe financial structure with low leverage, consistent positive operating cash flow for years.<br><br>
+
+                    <strong>4. Competitive Advantages:</strong><br>
+                    - Comprehensive ecosystem spanning software, telecommunications infrastructure, and IT education.<br>
+                    - Superior technology capabilities, pioneering in digital transformation and AI.<br>
+                    - Reputable brand and high-quality workforce.<br><br>
+
+                    <strong>5. Valuation and Growth Potential:</strong><br>
+                    - Attractive valuation given high long-term CAGR and international expansion potential. Targets double-digit profit growth and expansion in U.S., Japan, and Europe. AI Applications aim for 50% YoY growth, AI Services 40% YoY, with FPT AI Factory targeting 100 million USD revenue in 2025.<br><br>
+
+                    <strong>6. Risks:</strong><br>
+                    - Exchange rate fluctuations and rising labor costs.<br>
+                    - Intense competition in global technology markets.<br>
+                    - Shortage of high-quality IT talent.<br>
+                    - Geopolitical tensions and potential U.S. tariffs impacting global IT demand.<br>
                   </p>
                   <div class="chart-placeholder p-4 my-4 rounded text-center">Biểu đồ tăng trưởng doanh thu, ROE và phân bổ doanh thu FPT</div>
                 </div>
-                    <div id="stockAnalysisBMP" class="stock-analysis-content active">
-                      <div style="text-align: center;">
-                          <img src="BMP.jpg" alt="Logo BMP" style="height: 200px; display: block; margin: 0 auto;">
-                      </div>
+                </div>
+                    <div id="stockAnalysisBMP" class="stock-analysis-content active" style="background-color: #ffffff; padding-left: 50px; padding-right: 30px;">
+                  <img src="BMP.jpg" alt="Logo BMP" class="h-12 mb-3">
                   <h3 class="text-2xl font-semibold text-yellow-600 mb-3">Detailed Analysis of BMP</h3>
                   <p class="text-gray-600 leading-relaxed">
-                    <strong>1. Tổng quan doanh nghiệp:</strong><br>
-                    BMP là doanh nghiệp đầu ngành trong sản xuất ống nhựa xây dựng dân dụng và công nghiệp tại Việt Nam. Hệ thống nhà máy hiện đại, công suất 150.000 tấn/năm, mạng lưới hơn 1.300 đại lý và sự hậu thuẫn từ tập đoàn SCG (Thái Lan) giúp BMP duy trì vị thế vững chắc.<br><br>
+                    <strong>I. NON FINANCIAL ANALYSIS:</strong><br>
+                    <strong>1. Corporate profile:</strong><br>
+                    - Ticket: BMP (HOSE) (Listed year: 2006)<br>
+                    - Share outstanding: 81,860,938 shares<br>
+                    - Industry: Materials / Building Products / Plastic Pipes & Fittings<br>
+                    - Chairman: Sakchai Patipampreechavud<br>
+                    - CEO: Chaowalit Treejak<br>
+                    - Core values: “High Consensus – Respect the Past – Solid Present – Confident Future”<br>
+                    - Strategic Vision: Maintain its position as a leading enterprise in Vietnam’s construction plastics industry, proactively enhancing capabilities to compete regionally and internationally.<br>
+                    - Ecosystem: [Not specified in document]<br>
+                    - Member company: [Not specified in document]<br>
+                    - Major shareholder: Siam Cement Group (SCG) via Nawaplastic Industries (54.39% ownership).<br>
+                    - Key Milestones: Established in 1977, began producing PVC-U pipes in 1986 for Unicef’s rural clean water program. Registered trademark in 1990. Became a state-owned enterprise under the Ministry of Light Industry in 1994. Opened Bình Dương factory (20,000 m²) in 1999, expanded to 50,000 m² in 2004. Listed on HOSE in 2006. Established Bình Minh North (NBM) in Hưng Yên (40,000 m²) in 2007. Produced Vietnam’s largest 1,200mm PEHD pipe in 2010. Certified ISO 14001 in 2012. Launched Long An factory in 2015, completed phase 2 in 2017. Implemented ERP in 2015, adopted non-heavy-metal additives for PVC-U pipes in 2017, and received the National Quality Gold Award in 2017. Awarded Asia-Pacific Quality Award (World Class) in 2018. Recognized as Best Workplace in Asia by HR Asia in 2019. Named among Vietnam’s top 50 listed companies by Forbes in 2020. Implemented SCM model and automated systems (AZO, robots) in 2020–2021. Laboratory accredited ISO/IEC 17025:2017 (VILAS 1436) in 2022.<br><br>
 
-                    <strong>2. Phân tích hoạt động kinh doanh:</strong><br>
-                    - Sản phẩm uPVC, HDPE, PPR phục vụ đa dạng công trình dân dụng, công nghiệp và hạ tầng.<br>
-                    - Thị phần ổn định trong ngành nhựa kỹ thuật, đặc biệt tại miền Nam.<br>
-                    - Các dự án lớn đã thực hiện: Hầm Thủ Thiêm, Sân bay Phú Quốc, Cao tốc Bắc Nam...<br><br>
+                    <strong>2. Company’s products and services:</strong><br>
+                    a. uPVC Pipes and Fittings:<br>
+                    - Made from unplasticized PVC, compliant with ISO 14522:2009, TCVN 8491:2011, and QCVN 16:2019/BXD. Certified safe for drinking water, free of heavy metals. High durability, pressure resistance, and chemical resistance. Available in various sizes and thicknesses. Used in high-rise buildings, residential, industrial, water supply/drainage, and ventilation systems.<br>
+                    b. HDPE Pipes and Fittings:<br>
+                    - Made from high-density polyethylene, compliant with ISO 4427:2007, TCVN 7305:2008, and QCVN 16:2019/BXD. Safe for water supply, durable, and chemical-resistant. Diameters up to 1,200mm, suitable for urban/industrial water systems and agricultural irrigation. Double-wall corrugated HDPE pipes (EN 13476-3:2007, DIN 4262-1:2001) for industrial/civil drainage, highways, and golf courses.<br>
+                    c. PP-R Pipes and Fittings:<br>
+                    - Made from Polypropylene Random Copolymer (PP-R80), compliant with DIN 8077/8078:2008, TCVN 10097:2013, ISO 15874:2013, and QCVN 16:2019/BXD. Safe for hot/cold water, durable, and chemical-resistant. Used in residential/industrial projects and food-grade fluid transport.<br>
+                    d. Other Products:<br>
+                    - Sprayers (1L, 2L, 5L, 10L) and irrigation accessories made from high-quality PP/PE, compliant with TCVN 5931:1995 and QCVN 01-182:2015/BNNPTNT. Suitable for high-tech agriculture, mist/drip irrigation, and pesticide spraying.<br>
+                    - Key Features: ISO-certified, compliant with TCVN 6151-2:2002. Wide range of sizes/pressures for residential to industrial applications. Integrated ecosystem (pipes, fittings, gaskets, adhesives) ensures compatibility and cost efficiency.<br>
+                    - Notable Projects: Hải Vân Tunnel, Đèo Cả Tunnel, Phú Quốc Airport, Cà Mau Gas–Power–Fertilizer Complex, Thủ Thiêm Tunnel, Sala City (HCMC).<br><br>
 
-                    <strong>3. Tình hình tài chính:</strong><br>
-                    Doanh thu năm 2023 đạt khoảng 5.000 tỷ đồng, lãi ròng hơn 1.000 tỷ, ROE trên 20%. BMP có mức chia cổ tức đều đặn, tỷ lệ chia cao. Dòng tiền hoạt động dương, nợ vay thấp.<br><br>
+                    <strong>3. Relevant industry characteristics:</strong><br>
+                    - 2024 Market Landscape: Global construction plastics market grows steadily, driven by cost-effective, sustainable materials. Green building initiatives boost demand for eco-friendly plastics. Vietnam’s GDP grew 7.09%, fueled by manufacturing and FDI. Public investment of VND 790 trillion planned for 2025, focusing on infrastructure (Ring Road 3 HCMC, Long Thanh Airport, North-South Expressway). Revised Land Law (effective 2025) poses short-term challenges but supports long-term growth. VND 120 trillion credit package for social housing revives civil construction demand. Urbanization rate at 41% (2024), targeting 45% by 2030, drives demand for water/telecom infrastructure. Vietnam’s Net-Zero 2050 commitment promotes green materials, with cities prioritizing ISO 14001-certified products.<br>
+                    - BMP’s Position: Benefits from SCG’s raw material access, reducing supply chain risks (70–80% of resin imported). Strong track record in major projects positions BMP for infrastructure opportunities. R&D in recycled plastics aligns with green building trends.<br><br>
 
-                    <strong>4. Lợi thế cạnh tranh:</strong><br>
-                    - Vị thế thương hiệu lâu đời và mạng lưới phân phối rộng lớn.<br>
-                    - Hệ thống sản xuất tự động hóa, kiểm soát chất lượng chặt chẽ.<br>
-                    - Hưởng lợi từ xu hướng đầu tư công và đô thị hóa mạnh.<br><br>
+                    <strong>4. Company’s pricing environment:</strong><br>
+                    - Key Events 2024: Showcased at Vietbuild (Hanoi, Da Nang, HCMC) and Vietnam Water Week, strengthening partnerships. Won HCMC Golden Brand Award. Held distributor conference in Thailand with 2,000+ attendees. Increased training budget by 100%, with 30% more courses, achieving 90% positive feedback.<br>
+                    - Value-Based Pricing: Prices 5–15% higher than competitors, justified by stable quality, international standards (ISO, Quatest 3, TCVN), integrated accessories, low maintenance costs, and professional after-sales. Suggested retail price for uPVC 90mm PN10: VND 109,000/m vs. Tiền Phong (~VND 100,000/m) or Hoa Sen (~VND 92,000/m). Preferred for high-standard projects.<br>
+                    - Distributor Discounts: Top-tier distributors receive 15–20% discounts in major cities. Remote/competitive regions get transport and marketing support. Year-end rebates incentivize sales growth. Over 1,300 distributors contribute >80% of revenue.<br>
+                    - Cost Control: SCG affiliation ensures competitive raw material prices, reducing reliance on volatile markets. Standardized production minimizes waste, maintaining high gross margins (27–28% vs. industry 20–24%).<br>
+                    - Flexible Pricing: Quarterly/monthly price adjustments based on raw material costs, regional competition, and macro policies. Internal market monitoring ensures timely pricing strategies.<br><br>
 
-                    <strong>5. Định giá và tiềm năng tăng trưởng:</strong><br>
-                    Kế hoạch năm 2025: Doanh thu 5.362 tỷ đồng, lợi nhuận sau thuế 1.055 tỷ, cổ tức tối thiểu 50%. Tăng trưởng ổn định nhờ nhu cầu ống nhựa gia tăng, mở rộng sang các tỉnh khu vực Tây Nam Bộ và miền Trung.<br><br>
+                    <strong>5. SWOT Analysis:</strong><br>
+                    - Strengths:<br>
+                      + Established in 1977, BMP is a market leader with a trusted brand, especially in southern Vietnam. Over 1,200 products (uPVC, HDPE, PP-R) meet diverse construction needs. Integrated ecosystem ensures compatibility and durability. 1,300+ distributors and 150,000-ton/year capacity ensure market coverage. Advanced automation (AZO, robots) and SCM/ERP systems enhance efficiency. Awards include Asia-Pacific Quality Award (2018), Forbes Vietnam Top 50 (2020), and Best Workplace in Asia (2019).<br>
+                    - Weaknesses:<br>
+                      + Over 98% revenue from domestic market, vulnerable to local economic cycles (real estate, public investment). Limited eco-friendly product offerings hinder access to ESG-focused projects. Traditional sales model focuses on distributors, lacking direct consumer engagement.<br>
+                    - Opportunities:<br>
+                      + VND 700 trillion public investment in 2025 drives demand for pipes in infrastructure projects. Legal reforms (Land, Housing, Real Estate Laws) and VND 120 trillion housing credit boost construction. Urbanization (45% by 2030) increases infrastructure needs. Net-Zero 2050 and green building trends favor eco-friendly products. Digital transformation (SAP ERP, SCM) enhances efficiency.<br>
+                    - Threats:<br>
+                      + Heavy reliance on imported raw materials (80% from China, Korea, Saudi Arabia) exposes BMP to supply chain disruptions and currency fluctuations. Intense competition from Tiền Phong, Hoa Sen, and smaller brands erodes margins. Green regulations (ISO 14001, LEED) risk excluding BMP from high-value projects. Domestic market dependency ties BMP to volatile real estate and public investment cycles.<br><br>
 
-                    <strong>6. Rủi ro:</strong><br>
-                    - Giá nguyên vật liệu đầu vào biến động mạnh (PVC nhập khẩu).<br>
-                    - Áp lực cạnh tranh từ nhựa Trung Quốc và doanh nghiệp nội địa quy mô nhỏ.<br>
-                    - Thiếu chứng chỉ sản phẩm xanh khiến khả năng tiếp cận dự án công hạn chế.<br>
+                    <strong>II. FINANCIAL ANALYSIS:</strong><br>
+                    <strong>1. 2020–2024 Recap:</strong><br>
+                    - 2020: Revenue VND 4,700 billion (+8.23% YoY), net profit VND 523 billion (+23.61% YoY). Short-term assets VND 2,129 billion (+41.75%), long-term assets VND 894 billion (-33.69%). Liabilities VND 551 billion (+44.82%), equity VND 2,471 billion (+0.09%). EPS VND 6,376, dividend VND 4,500/share.<br>
+                    - 2021: Revenue VND 4,565 billion (-2.88% YoY), net profit VND 214 billion (-58.98% YoY). Short-term assets VND 2,008 billion (-5.68%), long-term assets VND 830 billion (-7.15%). Liabilities VND 545 billion (-1.21%), equity VND 2,293 billion (-7.2%). EPS VND 2,607, dividend VND 4,500/share.<br>
+                    - 2022: Revenue VND 5,825 billion (+27.6% YoY), net profit VND 694 billion (+223.85% YoY). Short-term assets VND 2,215 billion (+10.31%), long-term assets VND 829 billion (~0% YoY). Liabilities VND 423 billion (-22.23%), equity VND 2,621 billion (+14.29%). EPS VND 8,423, dividend VND 5,000/share.<br>
+                    - 2023: Revenue VND 5,199 billion (-10.73% YoY), net profit VND 1,041 billion (+49.94% YoY). Short-term assets VND 2,594 billion (+17.1%), long-term assets VND 246 billion. Liabilities VND 565 billion (+33.48%), equity VND 2,275 billion. EPS VND 12,639, dividend VND 8,000/share.<br>
+                    - 2024: Revenue ~VND 4,679 billion (-10% YoY), net profit VND 991 billion (-4.8% YoY). Gross margin 43.1% (10-year high), net margin 21.5%, ROE 36.8%. Invested VND 91 billion in automation (~65% of plan). Total assets VND 3,036 billion (+6.9% YoY), short-term assets VND 2,597 billion, long-term assets VND 439 billion. Liabilities VND 562 billion, equity VND 2,474 billion (+2.61% YoY). EPS VND 12,046, dividend VND 8,000/share.<br><br>
+
+                    <strong>2. Q1/2025 Performance:</strong><br>
+                    - Net revenue VND 1,383.1 billion (+37.9% YoY), gross profit VND 590.2 billion (+38.8% YoY). Net profit VND 286.9 billion (+51.1% YoY), achieving 27.2% of 2025 plan. Sales volume 23,600 tons (+38% YoY). Total assets VND 3,637.5 billion (+13.7% YoY), cash/equivalents VND 1,078.5 billion (+113.9% YoY), held-to-maturity investments VND 1,396 billion. Liabilities VND 648.8 billion (+30.1% YoY).<br>
+                    - 2025 Plan: Net revenue VND 5,362 billion (+15% YoY), net profit VND 1,055 billion (+6.5% YoY). Dividend payout for 2024 at 119.9% (VND 11,990/share), including VND 5,740/share (Dec 2024) and VND 6,250/share (Jun 2025), totaling ~VND 1,000 billion.<br><br>
+
+                    <strong>3. Financial Health:</strong><br>
+                    - Consistent revenue growth, high ROE (36.8% in 2024), and strong gross margins (43.1% in 2024). Low leverage with stable liabilities and growing equity. Positive operating cash flow supports liquidity and investment.<br><br>
+
+                    <strong>4. Competitive Advantages:</strong><br>
+                    - Comprehensive product ecosystem (pipes, fittings, accessories) ensures technical compatibility. Advanced automation and SCM/ERP systems enhance efficiency. Strong brand reputation and extensive distributor network.<br><br>
+
+                    <strong>5. Valuation and Growth Potential:</strong><br>
+                    - Attractive valuation with high ROE and consistent dividends. 2025 targets 15% revenue growth and 6.5% profit growth, driven by infrastructure and housing recovery. Strategic focus on green products and digitalization supports long-term growth.<br><br>
+
+                    <strong>6. Risks:</strong><br>
+                    - Dependency on imported raw materials exposes BMP to supply chain and currency risks. Intense competition from domestic and alternative materials. Green regulations may exclude BMP from ESG-focused projects. Reliance on domestic real estate and public investment cycles.<br>
                   </p>
-                  <div class="chart-placeholder p-4 my-4 rounded text-center">Biểu đồ tài chính, SWOT, và thị phần BMP</div>
+                  <div class="chart-placeholder p-4 my-4 rounded text-center">Revenue, ROE, and Revenue Allocation Chart for BMP</div>
                 </div>
-                <div id="stockAnalysisVCB" class="stock-analysis-content hidden">
-                  <div style="text-align: center;">
-                      <img src="VCB.jpg" alt="Logo VCB" style="height: 200px; display: block; margin: 0 auto;">
-                  </div>
+                <div id="stockAnalysisVCB" class="stock-analysis-content hidden" style="background-color: #ffffff; padding-left: 50px; padding-right: 30px;">
+                  <img src="VCB.jpg" alt="Logo VCB" class="h-12 mb-3" >
                   <h3 class="text-2xl font-semibold text-yellow-600 mb-3">Detailed Analysis of VCB</h3>
                   <p class="text-gray-600 leading-relaxed">
-                    <strong>1. Tổng quan doanh nghiệp:</strong><br>
-                    Ngân hàng TMCP Ngoại thương Việt Nam (Vietcombank - VCB) là một trong những ngân hàng thương mại cổ phần hàng đầu tại Việt Nam. Tính đến cuối năm 2023, tổng tài sản đạt hơn 1,8 triệu tỷ đồng, đứng top đầu hệ thống ngân hàng cả về quy mô lẫn hiệu quả hoạt động.<br><br>
+                    <strong>I. NON FINANCIAL ANALYSIS:</strong><br>
+                    <strong>1. Corporate profile:</strong><br>
+                    - Ticket: VCB (HOSE) (Listed year: 2009)<br>
+                    - Share outstanding: 5,591,127,623 shares (as of Jan 2025)<br>
+                    - Industry: Financials / Banks / Commercial Banking<br>
+                    - Chairman: Pham Quang Dung<br>
+                    - CEO: Pham Quang Dung<br>
+                    - Core values: “Shared Trust – Strong Future”<br>
+                    - Strategic Vision: Maintain its position as Vietnam’s leading commercial bank, driving digital transformation, sustainable development, and international expansion.<br>
+                    - Ecosystem: Banking Financial Services, Non-Banking Financial Services, Securities, Real Estate<br>
+                    - Member company: 3 local subsidiaries, 3 overseas subsidiaries, 3 joint ventures, 1 overseas representative office in Singapore<br>
+                    - Major shareholder: State Bank of Vietnam (74.8%), Mizuho Bank Limited (15%)<br>
+                    - Key Milestones: Established in 1963 as the Foreign Exchange Bureau under the State Bank of Vietnam. Became a general commercial bank in 1990. Renamed Joint Stock Commercial Bank for Foreign Trade of Vietnam in 1996. Privatized and listed on HOSE in 2009. Signed strategic partnership with Mizuho Bank in 2011. Launched new brand identity in 2013. Implemented Basel II in 2015. Cleared all VAMC bad debts in 2016. Regained top profit position in 2016. Opened representative office in the U.S. and established presence in Laos. Signed major insurance distribution deal with FWD Group. Achieved USD 1 billion profit, ranking among the world’s top 100 banks by market capitalization.<br><br>
 
-                    <strong>2. Phân tích hoạt động kinh doanh:</strong><br>
-                    - VCB hoạt động đa dạng trong các mảng tín dụng, huy động vốn, dịch vụ thanh toán, ngân hàng số và kinh doanh ngoại hối.<br>
-                    - Ngân hàng có tỷ trọng thu nhập ngoài lãi ngày càng tăng, nhờ dịch vụ thẻ, bancassurance và ngoại hối.<br>
-                    - VCB cũng là ngân hàng đầu tiên tại Việt Nam phát hành trái phiếu xanh và ứng dụng chuẩn Basel III vào quản trị rủi ro.<br><br>
+                    <strong>2. Company’s products and services:</strong><br>
+                    a. Banking Financial Services:<br>
+                    - Deposits: Short, medium, and long-term demand and term deposits for individuals and organizations.<br>
+                    - Loans: Consumer, home, auto, business, and SME loans (short, medium, long-term).<br>
+                    - Cards: Payment, corporate, and credit cards.<br>
+                    - Digital Banking: VCB DigiBiz, VCB Digibank for account management, mobile payments, QR code payments, and e-account opening.<br>
+                    - Other Services: International clearing, treasury services, foreign exchange trading, money remittance, trade financing, factoring, guarantees, securities dealing.<br>
+                    b. Non-Banking Financial Services:<br>
+                    - Financial leasing, investment banking, and real estate operations through subsidiaries.<br>
+                    c. Other Services:<br>
+                    - Gold bar trading, investment and savings insurance, cash flow management, interest rate and commodity derivatives, consulting, and investment services.<br>
+                    - Key Features: Comprehensive digital banking platforms, extensive international network with 1,249 correspondent banks across 102 countries, and award-winning services (e.g., Sao Khue Award 2022 for VCB DigiBiz, IFM Awards for Best Investment Bank and Digital Transformation 2021).<br>
+                    - Notable Achievements: Top 10 prestigious commercial banks in Vietnam (2022), recognized for sustainable development (VNSI, GRI, TCFD criteria).<br><br>
 
-                    <strong>3. Tình hình tài chính:</strong><br>
-                    Lợi nhuận trước thuế năm 2023 vượt 40.000 tỷ đồng. Tỷ lệ nợ xấu chỉ ở mức 0,97% và tỷ lệ dự phòng bao nợ xấu đạt mức cao nhất hệ thống (hơn 300%). ROE duy trì ổn định ở mức 20% nhờ vào hiệu quả sử dụng vốn và tăng trưởng tín dụng hợp lý.<br><br>
+                    <strong>3. Relevant industry characteristics:</strong><br>
+                    - 2024 Market Landscape: Vietnam’s banking sector remained resilient despite global economic challenges, supported by a 7.09% GDP growth and flexible monetary policies. Credit growth averaged 7.6% among listed banks, with demand for digital banking and SME loans rising. The government’s push for higher foreign ownership (up to 49%) and Basel II compliance enhanced sector stability. Vietnam’s commitment to sustainable finance and digital transformation aligned with global trends.<br>
+                    - VCB’s Position: Third-largest bank by assets (USD 76.8 billion). Low non-performing loan (NPL) ratio (1.22% in Q2 2024 vs. industry ~5%). Strong digital banking adoption and international partnerships (e.g., Mizuho, FWD). First Vietnamese bank to open a U.S. representative office.<br><br>
 
-                    <strong>4. Lợi thế cạnh tranh:</strong><br>
-                    - Thương hiệu ngân hàng quốc doanh mạnh, uy tín cao.<br>
-                    - Mạng lưới chi nhánh rộng, hệ thống ngân hàng số hiện đại (VCB Digibank, VCB Neo).<br>
-                    - Năng lực quản trị rủi ro cao, luôn đi đầu trong việc tuân thủ các chuẩn mực quốc tế.<br><br>
+                    <strong>4. Company’s pricing environment:</strong><br>
+                    - Key Events 2024: Held Annual General Meeting (Apr 2024) and Extraordinary General Meeting (Aug 2024). Increased charter capital to VND 83,556,914,350,000 (Jan 2025). Issued additional 856,574,691 shares (Sep 2023) and 2,766,583,832 shares (Apr 2025). Paid stock dividend at 49.5% (Mar 2025). Strengthened digital transformation with Agile methodologies and sustainable development initiatives.<br>
+                    - Pricing Strategy: Competitive interest rates on deposits and loans, tailored for individual and corporate clients. Fee-based services (e.g., international payments, guarantees) priced based on market standards and service complexity. Digital banking services offered at low or no cost to drive adoption.<br>
+                    - Market Positioning: Leverages extensive branch network (116 branches, 474 transaction offices across 56 provinces) and international relationships to maintain competitive pricing. Benefits from state backing and Mizuho’s strategic investment.<br>
+                    - Cost Control: Optimized credit provisions and operational efficiency, maintaining high bad debt coverage (370.36% in 2020) and low NPL ratio.<br><br>
 
-                    <strong>5. Định giá và tiềm năng tăng trưởng:</strong><br>
-                    Với nền tảng tài chính vững vàng và chiến lược số hóa toàn diện, VCB có tiềm năng mở rộng sang các sản phẩm ngân hàng xanh, ESG. Kỳ vọng lợi nhuận sẽ tăng trưởng bền vững nhờ tăng thu nhập ngoài lãi và kiểm soát chi phí hiệu quả.<br><br>
+                    <strong>5. SWOT Analysis:</strong><br>
+                    - Strengths:<br>
+                      + Leading market position with USD 76.8 billion in assets and USD 472.93 trillion market cap (2025). Extensive network of 116 branches and 474 transaction offices. Low NPL ratio (1.22% in Q2 2024) and high bad debt coverage. Advanced digital banking platforms (VCB DigiBiz, VCB Digibank). Strong state (74.8%) and Mizuho (15%) backing. Multiple awards for prestige, digital transformation, and sustainability.<br>
+                    - Weaknesses:<br>
+                      + Moderate credit growth (7.8% in Q2 2024) compared to peers like VPB (17.5% income growth). Declining operating income (-5.4% YoY in H1 2024) due to lower net interest income (-0.84% YoY).<br>
+                    - Opportunities:<br>
+                      + Rising demand for digital banking and SME financing. Government’s flexible monetary policy and higher foreign ownership limit (49%). Infrastructure and real estate recovery driving loan demand. Sustainable finance and ESG initiatives align with Vietnam’s Net-Zero 2050 goal.<br>
+                    - Threats:<br>
+                      + Intense competition from private banks (e.g., VPB, SSB). Global economic uncertainties and potential VND depreciation impacting costs. Regulatory changes and stricter ESG requirements. Rising NPL ratio (from 0.98% in 2023 to 1.22% in Q2 2024).<br><br>
 
-                    <strong>6. Rủi ro:</strong><br>
-                    - Biến động vĩ mô ảnh hưởng đến cầu tín dụng.<br>
-                    - Cạnh tranh gay gắt từ các ngân hàng tư nhân và ngân hàng nước ngoài.<br>
-                    - Rủi ro về an toàn bảo mật trong chuyển đổi số ngân hàng.<br>
+                    <strong>II. FINANCIAL ANALYSIS:</strong><br>
+                    <strong>1. 2020–2024 Recap:</strong><br>
+                    - 2020: Net income VND 18,468 billion (-0.31% YoY), NIM 2.95% (-0.18% YoY), NPL 0.62%, bad debt coverage 370.36%, ROE 20.55%. Strong cost control despite COVID-19 challenges.<br>
+                    - 2021: [Data not fully provided; based on web sources, VCB achieved USD 1 billion profit, regaining top profit position in Vietnam’s banking sector].<br>
+                    - 2022–2023: [Limited data; VCB maintained stable performance with consistent digital transformation and divestments from Saigonbank, OCB, and Vietcombank 198].<br>
+                    - 2024: Total operating income USD 1.37 billion (-5.4% YoY), net interest income (-0.84% YoY). Pre-tax profit USD 839.4 million (+1.6% YoY). Credit growth 7.8%, NPL 1.22% (up from 0.98% in 2023). Net income Q3 VND 8.70 trillion (+1.53% QoQ), Q2 VND 8.57 trillion. EPS Q3 VND 1,040 (vs. estimate VND 1,030). Revenue Q3 VND 17.27 trillion (vs. estimate VND 17.28 trillion).<br><br>[](https://the-shiv.com/vietcombank-vietnam-stock-overview/)[](https://vn.tradingview.com/symbols/HOSE-VCB/)
+
+                    <strong>2. Q1/2025 Performance:</strong><br>
+                    - [No specific Q1/2025 data provided; based on trends, VCB likely maintained stable growth with focus on digital banking and credit expansion. Next earnings report due May 7, 2025].<br>
+                    - 2025 Plan: [No specific targets provided; VCB aims for continued digital transformation, sustainable growth, and Basel II compliance]. Stock dividend paid at 49.5% (Mar 2025), charter capital increased to VND 83.56 trillion (Jan 2025).<br><br>
+
+                    <strong>3. Financial Health:</strong><br>
+                    - High ROE (20.55% in 2020), low NPL (1.22% in Q2 2024), and strong bad debt coverage. Stable capital structure with significant state ownership. Positive operating cash flow supports digital and sustainable investments.<br><br>
+
+                    <strong>4. Competitive Advantages:</strong><br>
+                    - Largest branch network and international presence. Leading digital banking platforms. Strong government and Mizuho support. Low NPL and high profitability compared to industry peers.<br><br>
+
+                    <strong>5. Valuation and Growth Potential:</strong><br>
+                    - Market cap VND 472.93 trillion (2025), P/E 14.6, P/B 3.2. Analysts’ price estimates range from VND 60,802 to VND 80,267. Stable growth expected from digital banking, SME loans, and infrastructure financing.<br><br>[](https://vn.tradingview.com/symbols/HOSE-VCB/)[](https://in.tradingview.com/symbols/HOSE-VCB/)
+
+                    <strong>6. Risks:</strong><br>
+                    - Declining operating income and moderate credit growth. Rising NPL ratio. Competition from private banks. Exposure to global economic volatility and regulatory changes.<br>
                   </p>
-                  <div class="chart-placeholder p-4 my-4 rounded text-center">Biểu đồ tăng trưởng tín dụng, thu nhập ngoài lãi, nợ xấu VCB</div>
+                  <div class="chart-placeholder p-4 my-4 rounded text-center">Revenue, ROE, and Revenue Allocation Chart for VCB</div>
                 </div>
-                <div id="stockAnalysisHPG" class="stock-analysis-content hidden">
-                  <div style="text-align: center;">
-                      <img src="HPG.jpg" alt="Logo HPG" style="height: 200px; display: block; margin: 0 auto;">
-                  </div>
+                <div id="stockAnalysisHPG" class="stock-analysis-content hidden" style="background-color: #ffffff; padding-left: 50px; padding-right: 30px;">
+                  <img src="HPG.jpg" alt="Logo HPG" class="h-12 mb-3">
                   <h3 class="text-2xl font-semibold text-yellow-600 mb-3">Detailed Analysis of HPG</h3>
-                  <p class="text-gray-600 leading-relaxed">
-                    <strong>1. Tổng quan doanh nghiệp:</strong><br>
-                    Hòa Phát (HPG) là tập đoàn sản xuất công nghiệp đa ngành, trong đó ngành thép là lĩnh vực chủ lực. HPG hiện chiếm hơn 30% thị phần thép xây dựng Việt Nam và là doanh nghiệp nội địa duy nhất vận hành chuỗi sản xuất thép khép kín.<br><br>
+                    <p class="text-gray-600 leading-relaxed">
+                    <strong>I. NON FINANCIAL ANALYSIS:</strong><br>
+                    <strong>1. Corporate profile:</strong><br>
+                    - Ticket: HPG (HOSE) (Listed year: 2007)<br>
+                    - Share outstanding: 6,396,250,200 shares<br>
+                    - Industry: Construction Steel / Steel Pipes / Interior / Refrigeration<br>
+                    - Chairman: Trần Đình Long<br>
+                    - CEO: Nguyễn Việt Thắng<br>
+                    - Core values: “Harmony for Development”<br>
+                    - Strategic Vision: Become a leading industrial manufacturing group with top-quality products, with steel as the core business.<br>
+                    - Ecosystem: Iron and Steel, Steel Products, Agriculture, Real Estate, Household Appliances<br>
+                    - Member company: [Not specified in document]<br>
+                    - Awards: Top 10 Strongest Brands – Outstanding Business 2024 (VnEconomy, 13th consecutive year). Four product groups recognized as National Brands in 2022: Hòa Phát Construction Steel, Steel Pipes, Galvanized/Color-Coated Steel, Household Appliances. Top 10 Reputable Building Materials Companies (2017–2022), Top 50 Best Listed Companies, Third-Class Labor Medal (2018), Top 3 Large-Cap for Investor-Favored IR Activities, Top 10 Billion-Dollar Companies.<br><br>
 
-                    <strong>2. Phân tích hoạt động kinh doanh:</strong><br>
-                    - Thép xây dựng và thép cuộn là hai mảng chiếm tỷ trọng doanh thu lớn nhất.<br>
-                    - Các mảng khác như tôn mạ, ống thép, nội thất, nông nghiệp... đang phát triển ổn định.<br>
-                    - HPG đang mở rộng sang khu công nghiệp và phát triển bất động sản công nghiệp như KCN Yên Mỹ II, KCN Hòa Mạc.<br><br>
+                    <strong>2. Company’s products and services:</strong><br>
+                    a. Steel Products:<br>
+                    - Upstream: Steel billets (130mm x 130mm, 150mm x 150mm), hot-rolled coil (HRC, 1.2mm–19mm), construction steel (rebars, rods, shapes, coils), high-quality steel (wire rods, PC Bar, PC Strand, PC Wire) for large-scale projects (towers, bridges, high-rises).<br>
+                    - Downstream: Steel pipes (black welded up to 325mm/12mm thick, hot-dip galvanized, large-diameter), galvanized/color-coated steel coils.<br>
+                    - Containers: Produced since 2023 at Dung Quất with 500,000 TEU/year capacity (Phase 1: 200,000 TEU). Made from HRC and weather-resistant SPA-H steel, supplied to clients like Hapag-Lloyd, Seacube, VIMC.<br>
+                    - Production Facilities: Hưng Yên factory, Hải Dương and Dung Quất complexes, 6 steel pipe factories (1 million tons/year). Crude steel capacity: 8.9 million tons/year (largest in Vietnam/Southeast Asia).<br>
+                    - Supporting Units: An Thông Mineral Investment (600,000–800,000 tons of iron ore annually from Hà Giang, Yên Bái mines), Hòa Phát Energy (2.3 million tons of coke, waste heat power generation), Hòa Phát Maritime Transport (3 Kamsarmax ships, 80,000–90,000 tons; 2 domestic ships, 24,500 tons each).<br>
+                    b. Agriculture:<br>
+                    - Since 2015, includes feed production, livestock (pigs, cattle), and poultry (chickens). Đồng Nai feed factory (GlobalGap), pig farms (VietGAP, Danish imports), high-yield egg chickens (300 million eggs/year). Supplies supermarkets, schools, industrial kitchens, exports to Laos/Cambodia. Revenue ~VND 7 trillion/year (5% of total).<br>
+                    c. Real Estate and Others:<br>
+                    - Real Estate: Residential projects in Hanoi (257 Giải Phóng, Mandarin Garden 1&2, 70 Nguyễn Đức Cảnh), industrial parks in Hà Nam, Hưng Yên (1,134 ha, 95% occupancy). Planned worker housing project at Yên Mỹ 2 (31 ha, VND 5 trillion).<br>
+                    - Household Appliances: Funiki (air conditioners, freezers), Hòa Phát appliances (refrigerators, water purifiers, washing machines, kitchen appliances). Revenue ~3% of total, varies with project handovers.<br><br>
 
-                    <strong>3. Tình hình tài chính:</strong><br>
-                    Doanh thu năm 2023 đạt hơn 120.000 tỷ đồng, lợi nhuận sau thuế hơn 10.000 tỷ đồng. Biên lợi nhuận gộp phục hồi nhờ giá nguyên vật liệu ổn định, trong khi chi phí tài chính và chi phí bán hàng được kiểm soát tốt.<br><br>
+                    <strong>3. Relevant industry characteristics:</strong><br>
+                    - Steel Industry: Domestic demand to recover 8–10% in 2025–2026, reaching 21.5–22.5 million tons. Q1/2025 production: 7.464 million tons (+5.7% YoY), sales: 7.501 million tons (+12.2% YoY). Lower iron ore/scrap prices reduce input costs. Trade barriers (U.S. Section 232, EU/India anti-dumping taxes) challenge exports. EU’s CBAM (2026) and Net-Zero 2050 push green production.<br>
+                    - Real Estate: New Real Estate Business Law (effective Jan 2025) regulates brokers, bans land subdivision in urban areas, mandates bank transfers for certain transactions. Impacts project supply and strategies.<br>
+                    - Agriculture: Extended agricultural land tax exemption to 2030, VND 100 trillion credit program for agriculture/fisheries. Supports Hòa Phát’s farming operations.<br>
+                    - Household Appliances: 23% e-commerce growth projected for 2025. Retailers optimize costs, close underperforming stores, and boost online sales.<br><br>
 
-                    <strong>4. Lợi thế cạnh tranh:</strong><br>
-                    - Chuỗi giá trị khép kín từ quặng sắt – luyện gang – cán thép giúp HPG kiểm soát chi phí.<br>
-                    - Quy mô lớn, công nghệ hiện đại, năng lực sản xuất linh hoạt theo thị trường.<br>
-                    - Mạng lưới phân phối rộng toàn quốc và kênh xuất khẩu ổn định.<br><br>
+                    <strong>4. Company’s pricing environment:</strong><br>
+                    - Market Demand: Real estate recovery and public investment drive construction steel demand, enabling price increases. Export demand affected by trade barriers.<br>
+                    - Input Costs: Iron ore, coke, scrap price fluctuations impact production costs. HPG’s partial domestic ore supply (Hà Giang, Yên Bái) mitigates reliance. USD/VND exchange rate volatility increases import costs.<br>
+                    - Competition: Chinese steel oversupply pressures domestic prices. HPG benefits from integrated production and cost control but faces import competition.<br>
+                    - Advantages: Real estate/infrastructure recovery, closed-loop production. Challenges: Global input price volatility, Chinese imports, exchange rate risks.<br><br>
 
-                    <strong>5. Định giá và tiềm năng tăng trưởng:</strong><br>
-                    Trong trung hạn, HPG kỳ vọng hoàn tất Khu liên hợp Dung Quất 2, nâng công suất lên gấp đôi. Điều này giúp củng cố vị thế trong nước và mở rộng xuất khẩu khu vực ASEAN và Nam Á.<br><br>
+                    <strong>5. SWOT Analysis:</strong><br>
+                    - Strengths:<br>
+                      + Market leader with 35–40% construction steel share, ~50% HRC. Diversified into agriculture, real estate, appliances. Closed-loop production optimizes costs and quality. Large-scale, modern facilities (Dung Quất, 8.9 million tons crude steel). Strong brand, extensive distribution network.<br>
+                    - Weaknesses:<br>
+                      + Dependence on imported raw materials (iron ore, coke). Exchange rate risks from imports and foreign loans. Export challenges due to global trade barriers.<br>
+                    - Opportunities:<br>
+                      + Dung Quất 2 (2025) boosts HRC/high-quality steel capacity. Urbanization and industrial growth drive steel demand. Rising need for specialized steel products.<br>
+                    - Threats:<br>
+                      + Chinese steel imports depress prices. U.S./EU/India trade barriers limit exports. EU CBAM and environmental regulations increase costs.<br><br>
 
-                    <strong>6. Rủi ro:</strong><br>
-                    - Biến động giá thép thế giới, cạnh tranh từ thép Trung Quốc.<br>
-                    - Tăng trưởng ngành xây dựng chậm lại ảnh hưởng đến nhu cầu tiêu thụ.<br>
-                    - Chi phí đầu tư lớn làm gia tăng áp lực tài chính trong ngắn hạn.<br>
+                    <strong>II. FINANCIAL ANALYSIS:</strong><br>
+                    <strong>1. 2020–2024 Recap:</strong><br>
+                    - 2013–2020: Revenue CAGR 25%, profit CAGR 31.3%, driven by steel capacity expansion and real estate. Steel sales grew from 0.7 million tons (2013) to 3.4 million tons (2020), market share from 14% to 26.4% (construction steel), 32% (pipes).<br>
+                    - 2020–2021: Record highs due to surging steel prices during COVID-19. Post-2021: Declines from global inflation, low domestic demand, and real estate slowdown.<br>
+                    - 2024: Revenue VND 138,855 billion (+16.7% YoY), net profit VND 9,210 billion (strong growth vs. 2023). Cost control (materials ~77% of costs, production costs ~66% of revenue) and in-house power generation (3.18 billion kWh, saving VND 5,400 billion) supported profitability.<br><br>
+
+                    <strong>2. Q1/2025 Performance:</strong><br>
+                    - Net revenue VND 37,900 billion (+22% YoY), net profit VND 3,300 billion, completing 22% of annual revenue/profit targets. EPS (last 4 quarters to Q1/2025): VND 1,983.64. Gross margin 14.42%, net margin 8.9%.<br>
+                    - 2025 Plan: [No specific targets provided; focus on Dung Quất 2 completion, market recovery]. Dividend 2024: 20% stock (100:20 ratio, finalized Jun 27, 2025). Future dividends may include cash from 2026–2027 if conditions stabilize.<br><br>
+
+                    <strong>3. Financial Health:</strong><br>
+                    - Total assets VND 224,489 billion (2024, +15x since 2010, CAGR 21.3%). Fixed assets/projects VND 131,178 billion (58%), short-term assets (receivables, inventory, cash) VND 25,862 billion (11.5%). Debt ratio ~49%, with favorable loan terms (short-term 2.2–4.3%, long-term 2.48–7.5%). Stable margins (gross 12.66–14.42%, net 8.15–8.9%).<br><br>
+
+                    <strong>4. Competitive Advantages:</strong><br>
+                    - Dominant market share, closed-loop production, modern facilities. Diversified revenue streams. Strong cost management and brand reputation.<br><br>
+
+                    <strong>5. Valuation and Growth Potential:</strong><br>
+                    - Strong recovery in 2024–Q1/2025, supported by real estate/infrastructure demand. Dung Quất 2 and high-quality steel focus promise long-term growth. Stable margins and reinvestment strategy enhance valuation.<br><br>
+
+                    <strong>6. Risks:</strong><br>
+                    - Raw material price volatility, exchange rate fluctuations. Chinese import competition. Trade barriers and EU CBAM compliance costs.<br>
                   </p>
-                  <div class="chart-placeholder p-4 my-4 rounded text-center">Biểu đồ sản lượng sản xuất, giá thép, và biên lợi nhuận HPG</div>
+                  <div class="chart-placeholder p-4 my-4 rounded text-center">Revenue, ROE, and Revenue Allocation Chart for HPG</div>
                 </div>
-                <div id="stockAnalysisVNM" class="stock-analysis-content hidden">
-                  <div style="text-align: center;">
-                          <img src="VNM.png" alt="Logo VNM" style="height: 200px; display: block; margin: 0 auto;">
-                      </div>
+                <div id="stockAnalysisVNM" class="stock-analysis-content hidden" style="background-color: #ffffff; padding-left: 50px; padding-right: 30px;">
+                  <img src="VNM.png" alt="Logo VNM" class="h-12 mb-3">
                   <h3 class="text-2xl font-semibold text-yellow-600 mb-3">Detailed Analysis of VNM</h3>
-                  <p class="text-gray-600 leading-relaxed">
-                    <strong>1. Tổng quan doanh nghiệp:</strong><br>
-                    Vinamilk (VNM) là doanh nghiệp sữa lớn nhất Việt Nam, chiếm khoảng 43% thị phần sữa nội địa. Với mạng lưới phân phối rộng khắp và danh mục sản phẩm đa dạng, VNM đã mở rộng hoạt động ra quốc tế, đặc biệt tại Campuchia, Philippines, Mỹ và Lào.<br><br>
+                    <p class="text-gray-600 leading-relaxed">
+                    <strong>I. NON FINANCIAL ANALYSIS:</strong><br>
+                    <strong>1. Products and Services Excellence:</strong><br>
+                    - Technology in Products: Vinamilk pioneers 6 HMO (Human Milk Oligosaccharides) in infant formula, a first in Vietnam, achieving 58% of mother’s milk HMO content vs. competitors’ 48% (5 HMO). Collaborates with global nutrition leaders (DSM, Chr Hansen, Beneo) to integrate advanced science, enhancing gut health and immunity with nutrients like BB-12™, LGG™, FOS/GOS, and whey protein. Introduced vacuum dual-technology for Green Farm milk in 2024, removing 50% free oxygen radicals to preserve flavor, earning international quality and taste awards. Swedish ultra-filtration technology produces high-protein, low-fat, lactose-free Green Farm milk, maintaining natural taste without enzyme hydrolysis.<br>
+                    - Accompanying Services: Operates an efficient supply chain with 97% customer satisfaction. Manages 13 factories and 13 distribution centers, serving 250,000 sales points. Utilizes Salesforce Automation, delivery tracking, and e-commerce for operational efficiency. Customer relations emphasize satisfaction with professional support, multiple contact channels (phone, email, website, social media, app), rapid query resolution, and clear return policies.<br>
+                    - Marketing and Advertising: Innovates with personalized multi-touchpoint marketing, collaborating with celebrities, KOLs, and KOCs to target youth. Conducted large-scale product trials (e.g., 50,000 free products at Bến Thành-Suối Tiên metro). Partners with hospitals (Tâm Anh, VNVC) for tailored nutrition programs. Digitalized promotions allow personalized rewards, enhancing brand loyalty.<br>
+                    - Supply Quality: Operates 15 high-tech dairy farms and a 10,000-ton beef processing plant, managing ~130,000 cows. Farms meet global standards (Global S.L.P., Global GAP), transitioning to sustainable, circular agriculture. Milk quality ensured via data loggers maintaining <4°C during transport. 2024 raw milk procurement: 227,000 tons.<br>
+                    - Workforce Expertise: Employs ~10,000 staff with low turnover. Invests in training (48.6 hours/employee in 2024). “Always Progress” culture with 10 core competencies. Named “Most Favored Employer 2024” by CareerViet. Rigorous recruitment, including an 18-month Management Trainee program for top graduates (GPA ≥7.5/10). Offers full scholarships in Russia for dairy technology, veterinary, and automation studies.<br>
+                    - Unique Distribution Channels: Covers ~200,000 sales points nationwide, exports to 63 countries (added 3 in 2024). Online sales via Vinamilk website and app (>1M downloads), partnerships with Shopee, Lazada, Tiki. Modern retail through Co.opmart, VinMart, Big C, Circle K. Operates 600+ “Giấc Mơ Sữa Việt” stores for direct sales and nutrition consulting. Distribution process: high-tech production, cold storage, specialized transport, trained distributors, and robust marketing.<br>
+                    - Geographic Positioning: Headquarters in HCMC, leveraging economic hub status. 13 factories across North, Central, South reduce transport costs. Farms in Lâm Đồng, Tuyên Quang optimize climate and feed. Nationwide distribution network ensures market coverage.<br>
+                    - Integrated Ecosystem: Closed-loop value chain from farms to factories, distribution, R&D, and marketing. JVL’s Vinabeef plant (Dec 2024, 10,000 tons/year) and planned Mộc Châu dairy complex (Q4/2025) diversify offerings. Combines agriculture, industry, and services for sustainability.<br>
+                    - Scale for Unique Offerings: Vietnam’s top dairy firm for 12 years, only Vietnamese dairy in Fortune 500 SEA 2024. Strong finances enable R&D and projects (Tây Ninh, Hưng Yên factories, Vinabeef). National Brand for 16 years, facilitating innovative product launches.<br><br>
 
-                    <strong>2. Phân tích hoạt động kinh doanh:</strong><br>
-                    - Hoạt động sản xuất kinh doanh tập trung vào sữa tươi, sữa bột, sữa đặc, sữa chua và nước giải khát từ sữa.<br>
-                    - Đẩy mạnh kênh bán hàng trực tuyến, mở rộng hệ thống chuỗi cửa hàng Giấc Mơ Sữa Việt.<br>
-                    - Các công ty con như Driftwood (Mỹ), Angkor Milk (Campuchia) và Mộc Châu Milk tăng trưởng tốt.<br><br>
+                    <strong>2. Factors for Sustainable Competitive Advantage:</strong><br>
+                    - Brand: Vietnam’s top dairy brand for 12 years, National Brand for 16 years. Only Vietnamese dairy with global certifications (Clean Label, Purity Awards). Fortune 500 SEA 2024. Rebranding boosted innovation perception from 47% (2022) to 74% (2024). New packaging enhances modern appeal. Commitment to quality builds trust, justifying premium pricing.<br>
+                    - Proprietary Technology: Pioneered 6 HMO infant formula, Swedish ultra-filtration, and vacuum dual-technology. Hard-to-replicate innovations ensure product superiority and market differentiation.<br>
+                    - Exclusive/Unique Products: Leads in condensed milk, yogurt, drinking yogurt, liquid milk (~30% market share gap vs. competitors). Unique offerings: first no-soy high-protein plant milk, Green Farm high-protein milk, vegan 9-grain creamer, 6 HMO formula. Vinabeef’s chilled beef processing (Dec 2024) pioneers a new segment.<br>
+                    - Low Switching Costs: High FMCG competition (TH True Milk, Abbott, Nestlé). Customers may switch due to price or competitor innovations. Loyalty stems from quality, innovation, and marketing, not high switching barriers.<br>
+                    - Cost Advantage: Competitive pricing via operational efficiency, not deep discounts. Penetration pricing for mass-market milk (180ml 4-pack VND 31,500, ~10% below TH True Milk). Premium pricing for Organic/Deluxe lines. Saved VND 550 billion in procurement, VND 100.8 billion in materials. Uses drones, automation, circular economy, renewable energy (88.77% green energy in 2024), FTAs for export cost advantages.<br><br>
 
-                    <strong>3. Tình hình tài chính:</strong><br>
-                    Năm 2023, VNM đạt doanh thu trên 63.000 tỷ đồng và lợi nhuận sau thuế gần 9.000 tỷ. Biên lợi nhuận gộp duy trì quanh 45%, tỷ lệ chia cổ tức đều đặn hằng năm, tỷ lệ nợ vay thấp, dòng tiền hoạt động mạnh.<br><br>
+                    <strong>3. Strategic Outlook:</strong><br>
+                    - Best-Cost Provider Strategy: Combines cost leadership, differentiation, and focus. Optimizes costs (VND 650.8 billion saved in 2024) while offering innovative, high-quality products. Targets high-growth segments (premium, health-focused) and markets (domestic middle class, international high-end).<br>
+                    - Cost Leadership Potential: Economies of scale (15 farms, 16 factories), advanced farming (drones, automation), circular economy, and FTAs reduce costs, supporting domestic and export expansion.<br>
+                    - Differentiation Potential: 125 new/relaunched products in 2024, including 25 novel items. Advanced technologies and rebranding enhance premium segment appeal.<br>
+                    - Focus Potential: Targets health-conscious domestic consumers and high-end international markets (Taiwan, Korea, Japan). Vinabeef serves premium hospitality. Tailored products for Australia, New Zealand.<br>
+                    - Market Fit: Aligns with rising health awareness, middle-class growth, modern retail expansion. Meets demand for low-sugar, low-fat, organic, high-protein products.<br>
+                    - Management Capability: Strong governance, strategic oversight, and succession planning. 358,741 training hours in 2024. Digital transformation drives efficiency.<br><br>
 
-                    <strong>4. Lợi thế cạnh tranh:</strong><br>
-                    - Thương hiệu mạnh, niềm tin tiêu dùng cao.<br>
-                    - Hệ thống trang trại bò sữa công nghệ cao theo tiêu chuẩn quốc tế.<br>
-                    - Hệ thống phân phối rộng khắp đến tận huyện xã, độ phủ thị trường cao.<br><br>
+                    <strong>4. SWOT Analysis:</strong><br>
+                    - Strengths:<br>
+                      + Leading brand, Fortune 500 SEA 2024, National Brand 16 years. 2024 revenue VND 61,824 billion (+2.2%), net profit VND 9,453 billion (+4.8%), ROE 26.1%. 125 new products, pioneering technologies (6 HMO, ultra-filtration, vacuum). 200,000+ sales points, exports to 63 countries (+12.6% in 2024). 15 high-tech farms, 16 factories, 88.77% green energy. Top employer 2024, low turnover, 358,741 training hours. Effective multi-channel marketing, 3 carbon-neutral units.<br>
+                    - Weaknesses:<br>
+                      + ~30% raw material reliance on imports, impacting cost stability. Modest milk powder market share due to import preference. Governance issues: 30% independent board members (below ASEAN 50%), no separate independent meetings, limited long-term incentive policies, internal audit lacks third-party oversight, strategic/audit committees need focus.<br>
+                    - Opportunities:<br>
+                      + Government support (reduced import tariffs, agriculture incentives). FMCG growth (+2.3% in 2024), dairy market CAGR single-digit 2024–2029. Rising health awareness, middle-class expansion, modern retail growth. Demand for senior-focused products (calcium, collagen). HORECA recovery boosts cheese, butter, condensed milk. FTAs, JVL’s Vinabeef, M&A, and new factories/farms enhance global reach.<br>
+                    - Threats:<br>
+                      + Intense competition (TH True Milk, Dutch Lady, Abbott). Unstable raw material supply, farmer career shifts, import bias. Global economic slowdown, inflation, supply chain disruptions. Rising input costs. Climate change impacts farming. Cybersecurity risks amid digitalization.<br><br>
 
-                    <strong>5. Định giá và tiềm năng tăng trưởng:</strong><br>
-                    VNM tiếp tục mở rộng sang thị trường quốc tế và đa dạng hóa danh mục sản phẩm (sữa hạt, thực phẩm chức năng). Kỳ vọng tăng trưởng kép 6–8% trong 3 năm tới nhờ tăng trưởng tiêu dùng và tái cơ cấu hệ thống bán hàng.<br><br>
+                    <strong>II. FINANCIAL ANALYSIS:</strong><br>
+                    <strong>1. 2020–2024 Recap:</strong><br>
+                    - 2020: Revenue VND 60,919 billion, net profit VND 10,633 billion.<br>
+                    - 2021: Revenue VND 60,919 billion, net profit VND 8,578 billion.<br>
+                    - 2022: Revenue VND 59,636 billion, net profit VND 9,019 billion.<br>
+                    - 2023: Revenue VND 60,479 billion, net profit VND 9,019 billion.<br>
+                    - 2024: Revenue VND 61,824 billion (+2.2% YoY, 97.9% plan), domestic VND 50,799 billion (+0.4%), exports VND 10,983 billion (+12.6%). Operating profit VND 11,594 billion (+6.3%), pre-tax profit VND 11,600 billion (+5.8%), net profit VND 9,453 billion (+4.8%). Gross margin improved, interest expense down 21.1%. State budget contribution VND 4,569 billion (+11.3%). Dividend: VND 2,000/share (interim waves 1 & 2), expected ≥2023 level. Total assets VND 55,049 billion (+4.5%), cash/deposits 46.3%. Exports grew via Vietnamese diaspora markets and partnerships (Angkor Milk, Driftwood).<br><br>
 
-                    <strong>6. Rủi ro:</strong><br>
-                    - Cạnh tranh gay gắt từ các hãng sữa nước ngoài (TH True Milk, Dutch Lady, Nestlé).<br>
-                    - Biến động chi phí nguyên liệu đầu vào như sữa bột nhập khẩu, thức ăn chăn nuôi.<br>
-                    - Thị trường sữa đang dần bão hòa tại Việt Nam, áp lực đổi mới sản phẩm lớn.<br>
+                    <strong>2. Q1/2025 Performance:</strong><br>
+                    - Net revenue VND 12,935 billion (20.1% annual plan), domestic VND 10,011 billion (77%), exports VND 2,924 billion (23%, +11.8% YoY). Gross profit VND 5,210 billion (40.3% margin). Selling & admin expenses VND 3,601 billion (27.8% revenue). Pre-tax profit VND 1,951 billion (16.1% plan), net profit VND 1,587 billion (12.3% margin, -28% YoY), parent company net profit VND 1,568 billion (-29% YoY). EPS VND 674, lowest since Q2/2015. Total assets VND 55,014 billion (~0% QoQ), equity VND 37,622 billion (+4% QoQ), cash/deposits VND 25,709 billion (46.7%), inventory VND 7,000 billion (VND 37 billion provision). Liabilities VND 17,391 billion, short-term loans VND 10,060 billion, interest expense VND 75 billion.<br><br>
+
+                    <strong>3. Financial Ratios 2024:</strong><br>
+                    - Current Ratio: 2.03 (vs. 2.10 in 2023). Quick Ratio: 1.73 (vs. 1.74). Stable liquidity for operations and dividends.<br>
+                    - Debt/Total Assets: 16.8% (vs. 16.1%). Debt/Equity: 25.6% (vs. 24.1%). Low leverage (industry avg. ~35%), no significant long-term debt, reducing financial pressure.<br>
+                    - Inventory Turnover: 6.13 (vs. 6.14). Stable inventory management.<br>
+                    - Asset Turnover: 1.15 (vs. 1.19). Slight decline due to fixed asset investments in strategic projects.<br>
+                    - Net Profit Margin: 15.3% (vs. 14.9%). ROE: 26.1% (vs. 25.8%). ROA: 17.2% (vs. 17.1%). Improved profitability from lower input costs, optimized supply chain, and controlled SG&A.<br><br>
+
+                    <strong>4. Competitive Advantages:</strong><br>
+                    - Dominant brand, advanced technology, exclusive products. Extensive distribution, efficient supply chain. Strong finances, high ROE, low leverage. Innovative marketing, sustainable practices.<br><br>
+
+                    <strong>5. Valuation and Growth Potential:</strong><br>
+                    - Stable revenue/profit growth, high ROE (26.1%). Best-cost provider strategy supports domestic and international expansion. New projects (Vinabeef, Mộc Châu) and premium products drive future growth.<br><br>
+
+                    <strong>6. Risks:</strong><br>
+                    - Import reliance, competitive pressures, governance gaps. Global economic volatility, supply chain disruptions, rising input costs. Climate and cybersecurity challenges.<br>
                   </p>
-                  <div class="chart-placeholder p-4 my-4 rounded text-center">Biểu đồ tăng trưởng doanh thu, biên lợi nhuận và thị phần VNM</div>
+                  <div class="chart-placeholder p-4 my-4 rounded text-center">Revenue, ROE, and Revenue Allocation Chart for VNM</div>
                 </div>
               </div>
             </div>
@@ -924,7 +1178,7 @@
       </div>
       <div class="md:w-1/2">
         <h2 class="text-3xl font-bold text-gray-800 mb-6">
-          Why Choose EverGrow Capital?
+          Why Choose Sustainable Growth Income?
         </h2>
 
         <div class="space-y-6">
@@ -982,73 +1236,70 @@
 </section>
 
     <!-- Testimonials Section -->
-    <section class="py-16 bg-white only-home">
-      <div class="container mx-auto px-4">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-800 mb-4">
-            What Our Clients Say About Us
-          </h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            Discover the experiences of clients working with EverGrow Capital.
-          </p>
+<section class="py-16 bg-white only-home">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">
+        What Our Clients Say About Us
+      </h2>
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+        Discover the experiences of clients working with Sustainable Growth Income.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+        <div class="flex items-center mb-4">
+          <i class="ri-double-quotes-l ri-2x text-primary"></i>
         </div>
-
-        <div class="grid md:grid-cols-3 gap-8">
-          <div class="bg-gray-50 p-8 rounded-lg shadow-md">
-            <div class="flex items-center mb-4">
-              <i class="ri-double-quotes-l ri-2x text-primary"></i>
-            </div>
-            <p class="text-gray-700 mb-6">
-              "EverGrow Capital đã giúp tôi xây dựng một danh mục đầu tư đa dạng
-              và hiệu quả. Đội ngũ chuyên gia của họ luôn sẵn sàng giải đáp mọi
-              thắc mắc và cung cấp những lời khuyên hữu ích."
-            </p>
-            <div class="flex items-center">
-              <div class="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
-              <div>
-                <h4 class="font-bold text-gray-800">Lê Hoàng Phước Đạt</h4>
-                <p class="text-gray-600">Nổi tiếng nhưng ít người biết đến</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="bg-gray-50 p-8 rounded-lg shadow-md">
-            <div class="flex items-center mb-4">
-              <i class="ri-double-quotes-l ri-2x text-primary"></i>
-            </div>
-            <p class="text-gray-700 mb-6">
-              "저는 다양한 투자 자문 회사와 협력해 보았지만, EverGrow Capital은 맞춤형 접근 방식과 지속 가능한 투자 전략으로 정말 돋보입니다.
-              
-              "
-            </p>
-            <div class="flex items-center">
-              <div class="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
-              <div>
-                <h4 class="font-bold text-gray-800">G - Dragon</h4>
-                <p class="text-gray-600">Rapper, Korea <p>
-              </div>
-            </div>
-          </div>
-
-          <div class="bg-gray-50 p-8 rounded-lg shadow-md">
-            <div class="flex items-center mb-4">
-              <i class="ri-double-quotes-l ri-2x text-primary"></i>
-            </div>
-            <p class="text-gray-700 mb-6">
-              "Since starting working with EverGrow Capital, I have seen a significant improvement in my portfolio performance. They really understand my goals and provide tailored solutions."
-            </p>
-            <div class="flex items-center">
-              <div class="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
-              <div>
-                <h4 class="font-bold text-gray-800">Elon Musk</h4>
-                <p class="text-gray-600">Business, South Africa</p>
-              </div>
-            </div>
+        <p class="text-gray-700 mb-6">
+          "Sustainable Growth Income đã giúp tôi xây dựng một danh mục đầu tư đa dạng
+          và hiệu quả. Đội ngũ chuyên gia của họ luôn sẵn sàng giải đáp mọi
+          thắc mắc và cung cấp những lời khuyên hữu ích."
+        </p>
+        <div class="flex items-center">
+          <img src="DAT.png" alt="Lê Hoàng Phước Đạt" class="w-12 h-12 rounded-full mr-4 object-cover" />
+          <div>
+            <h4 class="font-bold text-gray-800">Lê Hoàng Phước Đạt</h4>
+            <p class="text-gray-600">Nổi tiếng nhưng ít người biết đến</p>
           </div>
         </div>
       </div>
-    </section>
 
+      <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+        <div class="flex items-center mb-4">
+          <i class="ri-double-quotes-l ri-2x text-primary"></i>
+        </div>
+        <p class="text-gray-700 mb-6">
+          "저는 다양한 투자 자문 회사와 협력해 보았지만, Sustainable Growth Income은 맞춤형 접근 방식과 지속 가능한 투자 전략으로 정말 돋보입니다."
+        </p>
+        <div class="flex items-center">
+          <img src="GD.jpg" alt="G-Dragon" class="w-12 h-12 rounded-full mr-4 object-cover" />
+          <div>
+            <h4 class="font-bold text-gray-800">G - Dragon</h4>
+            <p class="text-gray-600">Rapper, Korea</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+        <div class="flex items-center mb-4">
+          <i class="ri-double-quotes-l ri-2x text-primary"></i>
+        </div>
+        <p class="text-gray-700 mb-6">
+          "Since starting working with Sustainable Growth Income, I have seen a significant improvement in my portfolio performance. They really understand my goals and provide tailored solutions."
+        </p>
+        <div class="flex items-center">
+          <img src="ElonMusk.png" alt="Elon Musk" class="w-12 h-12 rounded-full mr-4 object-cover" />
+          <div>
+            <h4 class="font-bold text-gray-800">Elon Musk</h4>
+            <p class="text-gray-600">Business, South Africa</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- Newsletter Section -->
   <section class="py-16 bg-white only-home">
@@ -1444,7 +1695,7 @@ document.addEventListener("DOMContentLoaded", function () {
   <div class="container mx-auto px-4">
     <div class="grid md:grid-cols-4 gap-8">
       <div>
-        <h3 class="text-xl font-bold mb-4">EverGrow Capital</h3>
+        <h3 class="text-xl font-bold mb-4">Sustainable Growth Income</h3>
         <p class="mb-4">Smart Investment, Sustainable Growth</p>
         <div class="flex space-x-4">
           <a href="#" class="w-10 h-10 flex items-center justify-center bg-white bg-opacity-20 rounded-full hover:bg-opacity-30 transition duration-300">
@@ -1511,13 +1762,13 @@ document.addEventListener("DOMContentLoaded", function () {
           </li>
           <li class="flex items-center gap-3">
             <i class="ri-mail-line ri-lg"></i>
-            <span>info@evergrowcapital.corp.com</span>
+            <span>info@sustainablegrowthincome.corp.com</span>
           </li>
         </ul>
       </div>
     </div>
     <div class="border-t border-white border-opacity-20 mt-12 pt-8 text-center text-sm text-white text-opacity-70">
-      <p>© 2025 EverGrow Capital. All rights reserved.</p>
+      <p>© 2025 Sustainable Growth Income. All rights reserved.</p>
       <p class="mt-2">Information on this site is for reference purposes only.</p>
     </div>
   </div>
@@ -1586,6 +1837,39 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
+    </script>
+        </script>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: 'vi',
+            includedLanguages: 'en,vi',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+          },
+          'google_translate_element'
+        );
+      }
+    </script>
+    
+    <script type="text/javascript"
+      src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const icon = document.getElementById("language-icon");
+        const translateBox = document.getElementById("google_translate_element");
+    
+        icon.addEventListener("click", function () {
+          translateBox.classList.toggle("hidden");
+        });
+    
+        document.addEventListener("click", function (e) {
+          if (!document.getElementById("custom-language-toggle").contains(e.target)) {
+            translateBox.classList.add("hidden");
+          }
+        });
+      });
     </script>
     <script id="performanceChartScript">
       document.addEventListener("DOMContentLoaded", function () {
@@ -2108,6 +2392,20 @@ document.addEventListener("DOMContentLoaded", function () {
     .stock-analysis-content.active {
         display: block;
     }
+</style>
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      includedLanguages: 'vi,en', // Chỉ định các ngôn ngữ được dịch
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+</script>
+<script type="text/javascript" 
+  src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
 
 </body>
 </html>
