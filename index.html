@@ -36,6 +36,7 @@
             background-size: cover;
             background-position: center;
         }
+
         .chart-placeholder, .image-placeholder, .team-member-image-placeholder-card { /* Gộp chung cho placeholder ảnh card */
             min-height: 128px; /* Cho team member card */
             max-height: 128px;
@@ -188,7 +189,7 @@
                       <a href="#tong-quan" data-target="tong-quan" class="nav-link px-3 py-2 rounded-md text-sm font-bold transition duration-150 ease-in-out">Overview</a>
                       <a href="#khach-hang" data-target="khach-hang" class="nav-link px-3 py-2 rounded-md text-sm font-bold transition duration-150 ease-in-out">Clients</a>
                       <a href="#doi-ngu-phan-tich" data-target="doi-ngu-phan-tich" class="nav-link px-3 py-2 rounded-md text-sm font-bold transition duration-150 ease-in-out">Analyst Team</a>
-                      <a href="#danh-muc-dau-tu" data-target="danh-muc-dau-tu" class="nav-link px-3 py-2 rounded-md text-sm font-bold transition duration-150 ease-in-out">Services</a>
+                      <a href="#danh-muc-dau-tu" data-target="danh-muc-dau-tu" class="nav-link px-3 py-2 rounded-md text-sm font-bold transition duration-150 ease-in-out">Portfolio</a>
                       <a href="#phan-tich-co-phieu" data-target="phan-tich-co-phieu" class="nav-link px-3 py-2 rounded-md text-sm font-bold transition duration-150 ease-in-out">Stock Analysis</a>
                       <a href="#cong-cu" data-target="cong-cu" class="nav-link px-3 py-2 rounded-md text-sm font-bold transition duration-150 ease-in-out">Tools & Resources</a>
                   </nav>
@@ -210,7 +211,7 @@
               <a href="#tong-quan" data-target="tong-quan" class="nav-link block px-4 py-3 text-base font-medium transition duration-150 ease-in-out"><b>Overview</b></a>
               <a href="#khach-hang" data-target="khach-hang" class="nav-link block px-4 py-3 text-base font-medium transition duration-150 ease-in-out">Clients</a>
               <a href="#doi-ngu-phan-tich" data-target="doi-ngu-phan-tich" class="nav-link block px-4 py-3 text-base font-medium transition duration-150 ease-in-out">Analyst Team</a>
-              <a href="#danh-muc-dau-tu" data-target="danh-muc-dau-tu" class="nav-link block px-4 py-3 text-base font-medium transition duration-150 ease-in-out">Investment Portfolio</a>
+              <a href="#danh-muc-dau-tu" data-target="danh-muc-dau-tu" class="nav-link block px-4 py-3 text-base font-medium transition duration-150 ease-in-out">Portfolio</a>
               <a href="#phan-tich-co-phieu" data-target="phan-tich-co-phieu" class="nav-link block px-4 py-3 text-base font-medium transition duration-150 ease-in-out">Stock Analysis</a>
               <a href="#cong-cu" data-target="cong-cu" class="nav-link block px-4 py-3 text-base font-medium transition duration-150 ease-in-out">Tools & Resources</a>
           </div>
@@ -284,6 +285,25 @@
                         <p class="text-gray-600 text-sm mb-1">Accountant</p>
                         <p class="text-gray-500 text-xs italic">"Long-term investment goals"</p>
                     </div>
+                    <div class="clickable-card bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 text-center w-full sm:basis-[calc(50%-0.75rem)] md:basis-[calc(33.333%-1rem)] flex flex-col"
+                        data-name="Nguyễn Thuỳ Lan" data-birth-year="2020" data-title="Kindergarten Student"
+                        data-quote=""
+                        data-details="No information."
+                        data-image-src="con gái.png">
+                        
+                        <div class="team-member-image-placeholder-card">Client Photo</div>
+                        <h3 class="text-xl font-semibold text-[#114664] mb-2">NGUYEN THUY LAN</h3>
+                        <p class="text-gray-600 text-sm mb-1">Kindergarten Student</p>
+                        <p class="text-gray-500 text-xs italic">...</p>
+                    </div>
+                    </div>
+                    <div class="mt-8 w-full bg-gray-50 border border-[#114664] rounded-xl p-6 shadow-md">
+                      <h3 class="text-2xl font-semibold text-[#114664] mb-4">IPS Summary – Nguyen Van Minh & Duong Thuy Nhien</h3>
+                      <p class="text-gray-700 mb-4">
+                        Based on the combined financial goals, income levels, and risk tolerance of both spouses, the joint investment strategy focuses on achieving long-term real estate acquisition and retirement planning.
+                      </p>
+                    <iframe src="IPS.pdf" width="100%" height="800px" style="border: none;"></iframe>
+                    </div>
                 </div>
             </div>
             <div id="client-detail-panel" class="detail-view-panel hidden-detail-panel">
@@ -308,7 +328,7 @@
 
         <section id="doi-ngu-phan-tich" class="main-content-section mb-12 sm:mb-16 detail-section-container">
             <div id="team-list-view" class="list-view-panel visible-list-panel">
-                <h2 class="text-3xl sm:text-4xl font-semibold text-[#114664] mb-6 sm:mb-8 border-b-2 border-[#114664] pb-3"> The (Professional) Analysis</h2>
+                <h2 class="text-3xl sm:text-4xl font-semibold text-[#114664] mb-6 sm:mb-8 border-b-2 border-[#114664] pb-3"> The (Professional) Analysts</h2>
                 <div class="flex flex-wrap justify-center items-stretch gap-6">
                     <div class="clickable-card bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 text-center w-full sm:basis-[calc(50%-0.75rem)] md:basis-[calc(33.333%-1rem)] flex flex-col"
                          data-name="Đào Thị Minh Anh" data-age="1+2+3+4+5+6" data-title="Trưởng nhóm phân tích"
@@ -335,20 +355,20 @@
                         <p class="text-gray-500 text-sm italic">Trưởng bộ phận nhân sự</p>
                     </div>
                     <div class="clickable-card bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 text-center w-full sm:basis-[calc(50%-0.75rem)] md:basis-[calc(33.333%-1rem)] flex flex-col"
+                         data-name="Nguyễn Thị Phương Linh" data-age="4^2+5" data-title="Cấp dưới Minh Anh"
+                         data-bio="Phương Linh theo dõi và phân tích các ngành kinh tế trọng điểm như Bất động sản, Năng lượng, đánh giá tác động của các yếu tố vĩ mô và chính sách lên triển vọng của ngành, từ đó cung cấp góc nhìn tổng quan cho các quyết định đầu tư. Sinh viên năm 3, Đại học Ngân hàng TP.HCM."
+                         data-image-src="PLINH.jpg">
+                        <div class="team-member-image-placeholder-card">Ảnh TV</div>
+                        <h3 class="text-xl font-semibold text-[#114664] mb-1">Nguyễn Thị Phương Linh</h3>
+                        <p class="text-gray-500 text-sm italic">Trưởng bộ phận phân tích</p>
+                    </div>
+                    <div class="clickable-card bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 text-center w-full sm:basis-[calc(50%-0.75rem)] md:basis-[calc(33.333%-1rem)] flex flex-col"
                          data-name="Lê Hoàng Phước Đạt" data-age="21" data-title="Không cấp dưới của ai"
-                         data-bio="Đạt chuyên về ..............."
+                         data-bio="Đạt chuyên về phân tích tài chính, nghiên cứu thị trường, chuyên gia đặt lệnh, chúa tể lùa gà, kiếm được 1000 tỷ ở tuổi 21 và đặc biệt là không cái gì là thật."
                          data-image-src="ĐẠT.jpg">
                         <div class="team-member-image-placeholder-card">Ảnh TV</div>
                         <h3 class="text-xl font-semibold text-[#114664] mb-1">Lê Hoàng Phước Đạt</h3>
                         <p class="text-gray-500 text-sm italic">Trưởng thành</p>
-                    </div>
-                    <div class="clickable-card bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 text-center w-full sm:basis-[calc(50%-0.75rem)] md:basis-[calc(33.333%-1rem)] flex flex-col"
-                         data-name="Nguyễn Thị Phương Linh" data-age="4^2+5" data-title="Cấp dưới Minh Anh"
-                         data-bio="Phương Linh theo dõi và phân tích các ngành kinh tế trọng điểm như Bất động sản, Năng lượng, đánh giá tác động của các yếu tố vĩ mô và chính sách lên triển vọng của ngành, từ đó cung cấp góc nhìn tổng quan cho các quyết định đầu tư. Sinh viên năm 3, Đại học Ngân hàng TP.HCM."
-                         data-image-src="LINH.jpg">
-                        <div class="team-member-image-placeholder-card">Ảnh TV</div>
-                        <h3 class="text-xl font-semibold text-[#114664] mb-1">Nguyễn Thị Phương Linh</h3>
-                        <p class="text-gray-500 text-sm italic">Trưởng bộ phận phân tích</p>
                     </div>
                     <div class="clickable-card bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 text-center w-full sm:basis-[calc(50%-0.75rem)] md:basis-[calc(33.333%-1rem)] flex flex-col"
                          data-name="Nguyễn Minh Thư" data-age="21.sin(pi/2)" data-title="Cấp dưới Minh Anh"
@@ -388,110 +408,32 @@
         </section>
 
         <section id="danh-muc-dau-tu" class="main-content-section mb-12 sm:mb-16">
-            <h2 class="text-3xl sm:text-4xl font-semibold text-[#114664] mb-6 sm:mb-8 border-b-2 border-[#114664] pb-3">Optimal Complete Portfolio</h2>
-            <div class="bg-white p-6 sm:p-8 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
-                <div class="stock-tabs mb-6 border-b border-gray-300 flex flex-wrap gap-4">
-                    <button class="tab-button active" onclick="showStockContent('stockContent1', this)">FPT - BMP - HPG</button>
-                </div>
-               
-                <div id="stockContent1" class="stock-content active space-y-8">
-                    <div>
-                        <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6 mb-6">
-                            <img src="images/fpt_logo_placeholder.png" alt="Logo FPT" class="w-32 h-32 sm:w-40 sm:h-40 object-contain rounded-lg border border-gray-200 p-1">
-                            <div>
-                                <h3 class="text-2xl lg:text-3xl font-semibold text-[#114664] mb-2">FPT (Công ty Cổ phần FPT)</h3>
-                                <p class="text-gray-500 text-sm mb-3">Ngành: Công nghệ Thông tin & Viễn thông | Sàn: HOSE</p>
-                                <h4 class="text-xl font-semibold text-gray-800 mb-2">1. Tổng quan về Công ty:</h4>
-                                <p class="text-gray-600 leading-relaxed text-justify">
-                                    Thành lập từ năm 1988, FPT là tập đoàn công nghệ thông tin và viễn thông hàng đầu Việt Nam. FPT hoạt động trong ba lĩnh vực kinh doanh cốt lõi: Công nghệ, Viễn thông và Giáo dục. Với vị thế tiên phong trong chuyển đổi số, FPT cung cấp các giải pháp và dịch vụ công nghệ toàn diện cho khách hàng trong và ngoài nước, đặc biệt mạnh ở thị trường Nhật Bản, Mỹ và châu Âu. Tầm nhìn của FPT là trở thành một tập đoàn toàn cầu, đóng góp vào sự phát triển kinh tế số của Việt Nam và thế giới.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div>
-                        <h4 class="text-xl font-semibold text-gray-800 mb-3">2. Các điểm nổi trội:</h4>
-                        <ul class="list-disc list-inside text-gray-600 space-y-2 leading-relaxed">
-                            <li><strong>Vị thế dẫn đầu thị trường:</strong> FPT là doanh nghiệp công nghệ lớn nhất Việt Nam với hệ sinh thái sản phẩm, dịch vụ đa dạng và mạng lưới khách hàng rộng khắp.</li>
-                            <li><strong>Năng lực công nghệ vượt trội:</strong> Tiên phong nghiên cứu và ứng dụng các công nghệ mới như AI, Cloud, Big Data, IoT, Blockchain, đóng góp vào nhiều dự án chuyển đổi số quốc gia.</li>
-                            <li><strong>Tăng trưởng doanh thu từ thị trường nước ngoài ấn tượng:</strong> Mảng xuất khẩu phần mềm liên tục ghi nhận mức tăng trưởng cao, khẳng định năng lực cạnh tranh trên thị trường toàn cầu.</li>
-                            <li><strong>Nguồn nhân lực chất lượng cao:</strong> Hệ thống giáo dục FPT (FPT Education) cung cấp nguồn nhân lực IT dồi dào và chất lượng cho chính tập đoàn và thị trường.</li>
-                            <li><strong>Văn hóa doanh nghiệp đặc sắc:</strong> Môi trường làm việc năng động, sáng tạo, thu hút và giữ chân nhân tài.</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="grid md:grid-cols-2 gap-x-8 gap-y-6">
-                        <div>
-                            <h4 class="text-xl font-semibold text-gray-800 mb-3">3. Luận điểm đầu tư:</h4>
-                            <ul class="list-disc list-inside text-gray-600 space-y-2 leading-relaxed">
-                                <li>Hưởng lợi trực tiếp từ xu hướng chuyển đổi số mạnh mẽ trên toàn cầu và tại Việt Nam.</li>
-                                <li>Biên lợi nhuận mảng công nghệ, đặc biệt là dịch vụ xuất khẩu phần mềm, duy trì ở mức cao và ổn định.</li>
-                                <li>Mảng viễn thông (dịch vụ internet, truyền hình) tạo dòng tiền đều đặn.</li>
-                                <li>Khối giáo dục tiếp tục mở rộng quy mô, đóng góp ngày càng lớn vào cơ cấu doanh thu và lợi nhuận.</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 class="text-xl font-semibold text-gray-800 mb-3">4. Rủi ro cần lưu ý:</h4>
-                            <ul class="list-disc list-inside text-gray-600 space-y-2 leading-relaxed">
-                                <li>Biến động tỷ giá có thể ảnh hưởng đến lợi nhuận từ thị trường nước ngoài.</li>
-                                <li>Cạnh tranh ngày càng gay gắt từ các đối thủ trong và ngoài nước.</li>
-                                <li>Rủi ro về bảo mật thông tin và an ninh mạng.</li>
-                                <li>Thách thức trong việc thu hút và giữ chân nhân tài IT chất lượng cao.</li>
-                            </ul>
-                        </div>
-                    </div>
-        
-                     <div>
-                        <h4 class="text-xl font-semibold text-gray-800 mb-3">5. Định giá & Khuyến nghị:</h4>
-                        <p class="text-gray-600 bg-gray-50 p-4 rounded-md leading-relaxed">Giá mục tiêu (1 năm): <span class="font-semibold">145.000 VNĐ/cp</span> (Dựa trên phương pháp P/E và DCF).<br>
-                           P/E dự phóng 2025: <span class="font-semibold">18.5x</span> (So với trung bình ngành 20.x).<br>
-                           Khuyến nghị: <span class="font-semibold text-[#114664]">MUA</span> với tỷ trọng cao trong danh mục dài hạn.
-                        </p>
-                    </div>
-                    
-                    <div>
-                        <h4 class="text-xl font-semibold text-gray-800 mb-3">6. Tin tức & Sự kiện nổi bật:</h4>
-                        <ul class="list-none space-y-3">
-                            <li class="border-b pb-2">
-                                <a href="#" class="text-blue-600 hover:text-blue-700 font-medium hover:underline block">[FPT Software ký kết hợp đồng chiến lược trị giá 100 triệu USD với đối tác Mỹ]</a>
-                                <span class="text-sm text-gray-500 block mt-1">Ngày 20/05/2025 - FPT tiếp tục khẳng định vị thế trên thị trường công nghệ toàn cầu.</span>
-                            </li>
-                            <li class="border-b pb-2">
-                                <a href="#" class="text-blue-600 hover:text-blue-700 font-medium hover:underline block">[FPT Smart Cloud ra mắt nền tảng AI thế hệ mới FPT.AI 2.0]</a>
-                                <span class="text-sm text-gray-500 block mt-1">Ngày 10/05/2025 - Nền tảng mới hứa hẹn mang lại nhiều giải pháp đột phá cho doanh nghiệp.</span>
-                            </li>
-                            <li>
-                                <a href="#" class="text-blue-600 hover:text-blue-700 font-medium hover:underline block">[Đại học FPT nằm trong TOP 3 trường đào tạo CNTT tốt nhất Việt Nam]</a>
-                                <span class="text-sm text-gray-500 block mt-1">Ngày 01/05/2025 - Khẳng định chất lượng đào tạo nguồn nhân lực công nghệ cao.</span>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div>
-                        <h4 class="text-xl font-semibold text-gray-800 mb-3">7. Các bài báo & Phân tích liên quan:</h4>
-                         <ul class="list-none space-y-3">
-                            <li class="border-b pb-2">
-                                <a href="#" class="text-blue-600 hover:text-blue-700 font-medium hover:underline block">[VnEconomy: FPT - Cổ phiếu công nghệ đáng chú ý nửa cuối năm 2025]</a>
-                                <p class="text-sm text-gray-500 mt-1">Bài viết đánh giá triển vọng tăng trưởng của FPT dựa trên các hợp đồng mới và xu hướng thị trường.</p>
-                            </li>
-                            <li>
-                                <a href="#" class="text-blue-600 hover:text-blue-700 font-medium hover:underline block">[Forbes Vietnam: Câu chuyện thành công của FPT và khát vọng toàn cầu]</a>
-                                 <p class="text-sm text-gray-500 mt-1">Phân tích chiến lược mở rộng thị trường quốc tế và những yếu tố làm nên thành công của FPT.</p>
-                            </li>
-                        </ul>
-                    </div>
-        
-                    <div>
-                        <h4 class="text-xl font-semibold text-gray-800 mb-3">8. Biểu đồ phân tích:</h4>
-                        <div class="grid md:grid-cols-3 gap-4">
-                            <div class="chart-placeholder p-4 rounded text-center">Biểu đồ Tăng trưởng Doanh thu FPT (5 năm)</div>
-                            <div class="chart-placeholder p-4 rounded text-center">Biểu đồ P/E của FPT so với VNINDEX & Ngành</div>
-                            <div class="chart-placeholder p-4 rounded text-center">Biểu đồ Phân tích Kỹ thuật FPT (Ngắn hạn)</div>
-                        </div>
-                    </div>
-                </div>
-        
+          <h2 class="text-3xl sm:text-4xl font-semibold text-[#114664] mb-6 sm:mb-8 border-b-2 border-[#114664] pb-3">
+            Optimal Complete Portfolio (FPT - BMP - HPG)
+          </h2>
+
+          <!-- Bọc chung tab + nội dung trong 1 khối trắng -->
+          <div class="bg-white p-6 sm:p-8 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
+
+            <!-- Tabs -->
+            <div class="stock-tabs mb-6 border-b border-gray-300 flex flex-wrap gap-4">
+              <button class="tab-button active" onclick="showStockContent('PortfolioTab1', this)">Portfolio Management</button>
+              <button class="tab-button" onclick="showStockContent('PortfolioTab2', this)">Customer's Objectives</button>
             </div>
+
+            <!-- Tab 1 -->
+            <div id="PortfolioTab1" class="stock-content active">
+              <iframe src="https://docs.google.com/spreadsheets/d/1pVrfWhz2ryESxQ6o01Qu1bYhe07gqn33cz5cir16GJI/edit?usp=sharing" 
+                      width="100%" height="800" style="border: none;"></iframe>
+            </div>
+
+            <!-- Tab 2 -->
+            <div id="PortfolioTab2" class="stock-content hidden">
+              <iframe src="https://docs.google.com/spreadsheets/d/1809TO9TZHrYWkjNO_-Lsbl1G5NTIYsZ2iD8rlSAdvX8/edit?usp=sharing" 
+                      width="100%" height="800" style="border: none;"></iframe>
+            </div>
+
+          </div>
         </section>
 
         <section id="phan-tich-co-phieu" class="main-content-section mb-12 sm:mb-16">
@@ -509,11 +451,19 @@
                   <h3 class="text-2xl font-semibold text-yellow-600 mb-3">Detailed Analysis of FPT</h3>
                   <p class="text-gray-600 leading-relaxed">
                   <iframe src="FPT.pdf" width="100%" height="800px" style="border: none;"></iframe>
+                  <br> </br>
+                  <h3 class="text-2xl font-semibold text-yellow-600 mb-3">Stock Valuation Model of FPT</h3>
+                  <p class="text-gray-600 leading-relaxed">
+                  <iframe src="https://docs.google.com/spreadsheets/d/1mdO09zEYOv46vh3f124CJ9eJ8TgCZbhNvZV5fk52CIE/edit?usp=sharing" width="100%" height="800px" style="border: none;"></iframe>
                 </div>
                 <div id="stockAnalysisBMP" class="stock-analysis-content active" style="background-color: #ffffff; padding-left: 50px; padding-right: 30px;">
                   <h3 class="text-2xl font-semibold text-yellow-600 mb-3">Detailed Analysis of BMP</h3>
                   <p class="text-gray-600 leading-relaxed">
                   <iframe src="BMP.pdf" width="100%" height="800px" style="border: none;"></iframe>
+                  <br> </br>
+                  <h3 class="text-2xl font-semibold text-yellow-600 mb-3">Stock Valuation Model of BMP</h3>
+                  <p class="text-gray-600 leading-relaxed">
+                  <iframe src="https://docs.google.com/spreadsheets/d/1xezB6GWp3quxu75k3kowHQCPiWuQReo4x9vr2Bc9JP8/edit?usp=sharing" width="100%" height="800px" style="border: none;"></iframe>
                     <strong>References:</strong><br>
                       <ul class="list-disc pl-6 text-blue-700 space-y-1 text-sm">
                         <li><a href="https://www.binhminhplastic.com.vn/Uploads/File/H%E1%BB%93%20s%C6%A1%20n%C4%83ng%20l%E1%BB%B1c%20-%20BMP%20-%202021.pdf" target="_blank">Hồ sơ năng lực BMP 2021</a></li>
@@ -535,11 +485,19 @@
                   <h3 class="text-2xl font-semibold text-yellow-600 mb-3">Detailed Analysis of VCB</h3>
                   <p class="text-gray-600 leading-relaxed">
                   <iframe src="VCB.pdf" width="100%" height="800px" style="border: none;"></iframe>
+                  <br> </br>
+                  <h3 class="text-2xl font-semibold text-yellow-600 mb-3">Stock Valuation Model of VCB</h3>
+                  <p class="text-gray-600 leading-relaxed">
+                  <iframe src="https://docs.google.com/spreadsheets/d/17CPCms8uBRW9zcpZyFO0bEJHBKVfu6G_YHw4klPuZC0/edit?usp=sharing" width="100%" height="800px" style="border: none;"></iframe>
                </div>
                 <div id="stockAnalysisHPG" class="stock-analysis-content active" style="background-color: #ffffff; padding-left: 50px; padding-right: 30px;">
                   <h3 class="text-2xl font-semibold text-yellow-600 mb-3">Detailed Analysis of HPG</h3>
                   <p class="text-gray-600 leading-relaxed">
                   <iframe src="HPG.pdf" width="100%" height="800px" style="border: none;"></iframe>
+                  <br> </br>
+                  <h3 class="text-2xl font-semibold text-yellow-600 mb-3">Stock Valuation Model of HPG</h3>
+                  <p class="text-gray-600 leading-relaxed">
+                  <iframe src="https://docs.google.com/spreadsheets/d/1dW-YG-9bSzVLhG-nWR5gQ-wA49vcOtXfy0kUcqGjJBs/edit?usp=sharing" width="100%" height="800px" style="border: none;"></iframe>
                     <strong>References:</strong><br>
                     <ul class="list-disc pl-6 text-blue-700 space-y-1 text-sm">
                       <li><a href="https://www.hoaphat.com.vn/gioi-thieu#maps-about" target="_blank">Giới thiệu tập đoàn Hòa Phát</a></li>
@@ -563,10 +521,14 @@
                   <h3 class="text-2xl font-semibold text-yellow-600 mb-3">Detailed Analysis of VNM</h3>
                   <p class="text-gray-600 leading-relaxed">
                   <iframe src="VNM.pdf" width="100%" height="800px" style="border: none;"></iframe>
+                  <br> </br>
+                  <h3 class="text-2xl font-semibold text-yellow-600 mb-3">Stock Valuation Model of VNM</h3>
+                  <p class="text-gray-600 leading-relaxed">
+                  <iframe src="https://docs.google.com/spreadsheets/d/1W9JN-p8zSIyLZQ56l5jJ_8ZPFfKXluS-RxWGH6eHU5k/edit?usp=sharing" width="100%" height="800px" style="border: none;"></iframe>
                     <strong>References:</strong><br>
                     <a href="https://amis.misa.vn/61778/mo-hinh-5-ap-luc-canh-tranh-cua-vinamilk/?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">
                       1. Mô hình 5 áp lực cạnh tranh của Vinamilk (AMIS)
-                    </a><br>
+                    </a><br>  
 
                     <a href="https://ruralleaders.co.nz/wp-content/uploads/2022/12/Davison-Stuart_Industrial-dairy-farmers_Kellogg-report.pdf" target="_blank" rel="noopener noreferrer">
                       2. Industrial Dairy Farmers – Kellogg Report
@@ -593,36 +555,50 @@
         </section>
 
         <section id="cong-cu" class="main-content-section">
-            <h2 class="text-3xl sm:text-4xl font-semibold text-[#114664] mb-6 sm:mb-8 border-b-2 border-[#114664] pb-3">Công Cụ và Tài Nguyên</h2>
+            <h2 class="text-3xl sm:text-4xl font-semibold text-[#114664] mb-6 sm:mb-8 border-b-2 border-[#114664] pb-3">Tools & Resources</h2>
             <div class="bg-white p-6 sm:p-8 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 space-y-6">
                 <div>
-                    <h3 class="text-xl sm:text-2xl font-semibold text-green-700 mb-2">vnstock</h3>
-                    <p class="text-gray-600 leading-relaxed mb-2">
-                        Thư viện Python mạnh mẽ cho phép truy cập dữ liệu lịch sử và thời gian thực của thị trường chứng khoán Việt Nam, hỗ trợ phân tích kỹ thuật, thống kê và xây dựng mô hình định lượng. Rất hữu ích cho các nhà đầu tư cá nhân và tổ chức muốn tự động hóa quy trình phân tích.
+                    <h3 class="text-xl sm:text-2xl font-semibold text-[#114664] mb-2">Vnstock</h3>
+                    <p class="text-gray-900 leading-relaxed mb-2">
+                        A powerful Python library that provides access to historical and real-time data of the Vietnamese stock market. It supports technical analysis, statistics, and quantitative modeling. Especially useful for individual and institutional investors seeking to automate analysis workflows.
                     </p>
-                    <a href="https://vnstocks.com/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">Tìm hiểu thêm về vnstock &rarr;</a>
+                    <a href="https://vnstocks.com/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">Vnstock &rarr;</a>
                 </div>
                 <div>
-                    <h3 class="text-xl sm:text-2xl font-semibold text-green-700 mb-2">FiinPro</h3>
-                    <p class="text-gray-600 leading-relaxed mb-2">
-                        Nền tảng dữ liệu tài chính toàn diện và chuyên sâu hàng đầu cho thị trường Việt Nam, cung cấp thông tin chi tiết về doanh nghiệp, ngành, kinh tế vĩ mô, cùng các công cụ phân tích và sàng lọc cổ phiếu mạnh mẽ. Phù hợp cho các chuyên gia phân tích và quỹ đầu tư.
+                    <h3 class="text-xl sm:text-2xl font-semibold text-[#114664] mb-2">FiinPro</h3>
+                    <p class="text-gray-900 leading-relaxed mb-2">
+                        A comprehensive and in-depth financial data platform for the Vietnamese market. FiinPro offers detailed information on companies, sectors, and macroeconomics, along with powerful stock screening and analysis tools. Ideal for analysts and investment funds.
                     </p>
-                    <a href="https://fiinpro.com/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">Khám phá FiinPro &rarr;</a>
+                    <a href="https://fiinpro.com/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">FiinPro &rarr;</a>
                 </div>
                 <div>
-                    <h3 class="text-xl sm:text-2xl font-semibold text-green-700 mb-2">Python & Jupyter Notebook</h3>
-                    <p class="text-gray-600 leading-relaxed mb-2">
-                        Bộ đôi công cụ mạnh mẽ cho phân tích dữ liệu và tài chính định lượng. Python với các thư viện như Pandas, NumPy, Matplotlib, Scikit-learn cho phép xử lý, trực quan hóa dữ liệu và xây dựng mô hình phức tạp. Jupyter Notebook cung cấp môi trường tương tác để viết code, hiển thị kết quả và ghi chú.
+                    <h3 class="text-xl sm:text-2xl font-semibold text-[#114664] mb-2">Python & Jupyter Notebook</h3>
+                    <p class="text-gray-900 leading-relaxed mb-2">
+                        A powerful duo for data analysis and quantitative finance. Python, along with libraries such as Pandas, NumPy, Matplotlib, and Scikit-learn, enables advanced data processing, visualization, and modeling. Jupyter Notebook provides an interactive environment for writing code, displaying results, and documenting analysis.
                     </p>
                     <ul class="list-disc list-inside text-gray-600 space-y-1">
-                        <li><a href="https://www.python.org/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">Trang chủ Python</a></li>
-                        <li><a href="https://jupyter.org/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">Dự án Jupyter</a></li>
+                        <li><a href="https://www.python.org/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">Python Official Website</a></li>
+                        <li><a href="https://jupyter.org/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">Jupyter Project</a></li>
                     </ul>
                 </div>
-                 <div>
-                    <h3 class="text-xl sm:text-2xl font-semibold text-green-700 mb-2">Tài Liệu Tham Khảo Khác</h3>
+                <div>
+                    <h3 class="text-xl sm:text-2xl font-semibold text-[#114664] mb-2">HTML & CSS – The Foundation</h3>
+                    <p class="text-gray-900 leading-relaxed mb-2">
+                        Every element on this website is handcrafted using HTML and CSS — the essential building blocks of the web. From layout and typography to responsive design, they form the backbone of both structure and style.
+                    </p>
                     <ul class="list-disc list-inside text-gray-600 space-y-1">
-                         <li><a href="https://www.investopedia.com/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">Investopedia - Kiến thức đầu tư</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">Learn HTML – MDN Web Docs</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">Learn CSS – MDN Web Docs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl sm:text-2xl font-semibold text-[#114664] mb-2">Bonus: AI Assistants 😄</h3>
+                    <p class="text-gray-900 leading-relaxed mb-2">
+                        Behind every analyst's productivity boost are two very opinionated but tireless AI tools.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-1">
+                        <li><a href="https://chat.openai.com/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">ChatGPT – The caffeine-free research partner</a></li>
+                        <li><a href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">Gemini – The strategic AI co-pilot with occasional attitude</a></li>
                     </ul>
                 </div>
             </div>
@@ -814,11 +790,24 @@
           </div>
         </div>
       </div>
+<!-- Clip Toggle Button -->
+<div class="text-center mt-12">
+  <button onclick="toggleVideo()" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 text-lg font-semibold transition">
+    <i class="ri-video-line text-2xl"></i> Client feedback!
+  </button>
+</div>
+
+<!-- Hidden Video Section -->
+<div id="clientVideo" class="mt-6 hidden px-4">
+  <video controls class="w-full max-w-5xl rounded-xl shadow-xl" style="aspect-ratio: 16/9;">
+    <source src="clip.mp4" type="video/mp4">
+  </video>
+</div>
+
     </div>
   </div>
 </section>
 
-    <!-- Newsletter Section -->
     <!-- Newsletter Section -->
     <section class="py-16 bg-white only-home">
       <div class="container mx-auto px-4">
@@ -1270,7 +1259,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <ul class="space-y-2">
           <li class="flex items-start gap-3">
             <i class="ri-map-pin-line ri-lg mt-1"></i>
-            <span>36 Ton That Dam, District 1, Ho Chi Minh City</span>
+            <span>36 Ton That Dam St., Nguyen Thai Binh Ward, District 1, HCMC, Vietnam</span>
           </li>
           <li class="flex items-center gap-3">
             <i class="ri-phone-line ri-lg"></i>
@@ -1278,7 +1267,7 @@ document.addEventListener("DOMContentLoaded", function () {
           </li>
           <li class="flex items-center gap-3">
             <i class="ri-mail-line ri-lg"></i>
-            <span>info@sustainablegrowthincome.corp.com</span>
+            <span>investingsgi@gmail.com.vn</span>
           </li>
         </ul>
       </div>
@@ -1922,6 +1911,11 @@ document.addEventListener("DOMContentLoaded", function () {
 <script type="text/javascript" 
   src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
 </script>
-
+<script>
+  function toggleVideo() {
+    const videoBox = document.getElementById('clientVideo');
+    videoBox.classList.toggle('hidden');
+  }
+</script>
 </body>
 </html>
