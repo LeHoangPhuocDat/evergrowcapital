@@ -447,109 +447,100 @@
                     <button class="tab-button" onclick="showStockAnalysis('stockAnalysisVNM', this)">VNM</button>
                 </div>
 
-                <div id="stockAnalysisFPT" class="stock-analysis-content hidden">
-                  <h3 class="text-2xl font-semibold text-yellow-600 mb-3">Detailed Analysis of FPT</h3>
+                <div id="stockAnalysisFPT" class="stock-analysis-content active">
+                  <h3 class="text-2xl font-semibold text-yellow-600 mb-3" style="padding-left: 50px">Detailed Analysis of FPT</h3>
                   <p class="text-gray-600 leading-relaxed">
-                  <iframe src="FPT.pdf" width="100%" height="800px" style="border: none;"></iframe>
-                  <br> </br>
-                  <h3 class="text-2xl font-semibold text-yellow-600 mb-3">Stock Valuation Model of FPT</h3>
-                  <p class="text-gray-600 leading-relaxed">
-                  <iframe src="https://docs.google.com/spreadsheets/d/1mdO09zEYOv46vh3f124CJ9eJ8TgCZbhNvZV5fk52CIE/edit?usp=sharing" width="100%" height="800px" style="border: none;"></iframe>
-                </div>
-                <div id="stockAnalysisBMP" class="stock-analysis-content active" style="background-color: #ffffff; padding-left: 50px; padding-right: 30px;">
-                  <h3 class="text-2xl font-semibold text-yellow-600 mb-3">Detailed Analysis of BMP</h3>
-                  <p class="text-gray-600 leading-relaxed">
-                  <iframe src="BMP.pdf" width="100%" height="800px" style="border: none;"></iframe>
-                  <br> </br>
-                  <h3 class="text-2xl font-semibold text-yellow-600 mb-3">Stock Valuation Model of BMP</h3>
-                  <p class="text-gray-600 leading-relaxed">
-                  <iframe src="https://docs.google.com/spreadsheets/d/1xezB6GWp3quxu75k3kowHQCPiWuQReo4x9vr2Bc9JP8/edit?usp=sharing" width="100%" height="800px" style="border: none;"></iframe>
-                    <strong>References:</strong><br>
-                      <ul class="list-disc pl-6 text-blue-700 space-y-1 text-sm">
-                        <li><a href="https://www.binhminhplastic.com.vn/Uploads/File/H%E1%BB%93%20s%C6%A1%20n%C4%83ng%20l%E1%BB%B1c%20-%20BMP%20-%202021.pdf" target="_blank">Hồ sơ năng lực BMP 2021</a></li>
-                        <li><a href="https://www.binhminhplastic.com.vn/" target="_blank">Website chính thức – Nhựa Bình Minh</a></li>
-                        <li><a href="https://finance.vietstock.vn/BMP-binh-minh-plastics-joint-stock-company.htm" target="_blank">Trang cổ phiếu BMP – Vietstock</a></li>
-                        <li><a href="https://thanhtra.com.vn/dau-tu-72A9E3223/ke-hoach-dau-tu-cong-nam-2025-chinh-phu-du-kien-o-muc-hon-790-000-ty-dong--0AD1F67D3.html" target="_blank">Kế hoạch đầu tư công năm 2025 – Chính phủ</a></li>
-                        <li><a href="https://danviet.vn/vanh-dai-3-tphcm-se-thong-xe-chinh-thuc-doan-nao-cuoi-nam-2025-d1338221.html" target="_blank">Thông xe Vành đai 3 TP.HCM – Dân Việt</a></li>
-                        <li><a href="https://thuvienphapluat.vn/chinh-sach-phap-luat-moi/vn/ho-tro-phap-luat/tai-chinh/53973/goi-tin-dung-120-000-ty-dong-cho-nha-o-xa-hoi-tong-hop-van-ban-huong-dan" target="_blank">Gói tín dụng nhà ở xã hội 120.000 tỷ</a></li>
-                        <li><a href="https://baobacgiang.vn/bg2/hoi-dong-nhan-dan/luat-dat-dai-nha-o-va-kinh-doanh-bat-dong-san-co-hieu-luc-tu-1-8-093247.bbg" target="_blank">Luật Nhà ở, Đất đai và BĐS có hiệu lực từ 1/8</a></li>
-                        <li><a href="https://www.soloma.vn/nhan-khau-cua-viet-nam-nam-2030/#:~:text=Theo%20m%E1%BB%99t%20nghi%C3%AAn%20c%E1%BB%A9u%20c%E1%BB%A7a,4%25%20l%C3%A0%20tr%C3%AAn%2065%20tu%E1%BB%95i." target="_blank">Dự báo nhân khẩu học Việt Nam 2030</a></li>
-                        <li><a href="https://www.globenewswire.com/news-release/2024/10/31/2972797/28124/en/Vietnam-Polyethylene-Import-Research-Report-2024-United-States-China-Singapore-South-Korea-Saudi-Arabia-Thailand-Analysis-2021-2024-Forecasts-2024-2033.html" target="_blank">Vietnam Polyethylene Import Report 2024–2033</a></li>
-                        <li><a href="https://baochinhphu.vn/viet-nam-tich-cuc-chu-dong-trien-khai-bai-ban-cac-cam-ket-tai-cop26-102231124211547625.htm" target="_blank">Việt Nam triển khai cam kết COP26</a></li>
-                        <li><a href="https://www.tinnhanhchungkhoan.vn/nhua-binh-minh-bmp-len-ke-hoach-lai-nam-2025-tang-6-post366768.html" target="_blank">Kế hoạch lãi năm 2025 của BMP tăng 6% – Tinnhanhchungkhoan</a></li>
-                        <li><a href="https://www.dnse.com.vn/senses/tin-tuc/nhua-binh-minh-sap-chi-hon-511-ty-ong-tra-co-tuc-con-lai-nam-2024-35040156" target="_blank">BMP dự chi hơn 511 tỷ trả cổ tức 2024 – DNSE</a></li>
-                        <li><a href="https://www.binhminhplastic.com.vn/res/project/download/20250415%20-%20BMP%20-%20AR%202024%20-%20EN%20(Final).pdf" target="_blank">Báo cáo thường niên BMP 2024 (bản tiếng Anh)</a></li>
-                      </ul>
-               </div>
-                <div id="stockAnalysisVCB" class="stock-analysis-content active" style="background-color: #ffffff; padding-left: 50px; padding-right: 30px;">
-                  <h3 class="text-2xl font-semibold text-yellow-600 mb-3">Detailed Analysis of VCB</h3>
-                  <p class="text-gray-600 leading-relaxed">
-                  <iframe src="VCB.pdf" width="100%" height="800px" style="border: none;"></iframe>
-                  <br> </br>
-                  <h3 class="text-2xl font-semibold text-yellow-600 mb-3">Stock Valuation Model of VCB</h3>
-                  <p class="text-gray-600 leading-relaxed">
-                  <iframe src="https://docs.google.com/spreadsheets/d/17CPCms8uBRW9zcpZyFO0bEJHBKVfu6G_YHw4klPuZC0/edit?usp=sharing" width="100%" height="800px" style="border: none;"></iframe>
-               </div>
-                <div id="stockAnalysisHPG" class="stock-analysis-content active" style="background-color: #ffffff; padding-left: 50px; padding-right: 30px;">
-                  <h3 class="text-2xl font-semibold text-yellow-600 mb-3">Detailed Analysis of HPG</h3>
-                  <p class="text-gray-600 leading-relaxed">
-                  <iframe src="HPG.pdf" width="100%" height="800px" style="border: none;"></iframe>
-                  <br> </br>
-                  <h3 class="text-2xl font-semibold text-yellow-600 mb-3">Stock Valuation Model of HPG</h3>
-                  <p class="text-gray-600 leading-relaxed">
-                  <iframe src="https://docs.google.com/spreadsheets/d/1dW-YG-9bSzVLhG-nWR5gQ-wA49vcOtXfy0kUcqGjJBs/edit?usp=sharing" width="100%" height="800px" style="border: none;"></iframe>
-                    <strong>References:</strong><br>
-                    <ul class="list-disc pl-6 text-blue-700 space-y-1 text-sm">
-                      <li><a href="https://www.hoaphat.com.vn/gioi-thieu#maps-about" target="_blank">Giới thiệu tập đoàn Hòa Phát</a></li>
-                      <li><a href="https://mediacdn.vietnambiz.vn/1881912202208555/files/2025/02/10/bao-cao-thi-truong-thep-nam-2024-20250210093643171.pdf" target="_blank">Báo cáo thị trường thép 2024 – Vietnambiz</a></li>
-                      <li><a href="https://vsa.com.vn/tinh-hinh-thi-truong-thep-viet-nam-thang-3-2025-va-quy-i-nam-2025/" target="_blank">Thị trường thép tháng 3/2025 – VSA</a></li>
-                      <li><a href="https://www.tinnhanhchungkhoan.vn/dhcd-hoa-phat-hpg-tap-doan-se-khong-dieu-chinh-ke-hoach-kinh-doanh-du-my-ap-thue-doi-ung-voi-viet-nam-post367633.html" target="_blank">ĐHĐCĐ Hòa Phát 2025 – Tinnhanhchungkhoan</a></li>
-                      <li><a href="https://vietstock.vn/2025/06/cbam-va-nganh-thep-viet-nam-thach-thuc-chi-phi-hay-co-hoi-tai-cau-truc-768-1313867.htm" target="_blank">CBAM và ngành thép Việt Nam – Vietstock</a></li>
-                      <li><a href="https://xaydungchinhsach.chinhphu.vn/tu-1-1-2025-moi-gioi-bat-dong-san-khong-duoc-hanh-nghe-tu-do-119231222132743287.htm" target="_blank">Chính sách môi giới BĐS từ 2025</a></li>
-                      <li><a href="https://luatvietnam.vn/dat-dai-nha-o/diem-moi-cua-luat-kinh-doanh-bat-dong-san-567-96340-article.html" target="_blank">Luật Kinh doanh BĐS mới</a></li>
-                      <li><a href="https://vneconomy.vn/tag/nong-nghiep" target="_blank">Xu hướng đầu tư nông nghiệp</a></li>
-                      <li><a href="https://www.brandsvietnam.com/congdong/topic/nganh-hang-dien-may-du-bao-tang-truong-26-nam-2025-tren-tmdt-dinh-hinh-lai-thi-truong" target="_blank">Dự báo ngành hàng điện máy 2025</a></li>
-                      <li><a href="https://www.shs.com.vn/Sites/QuoteVN/SiteRoot/reportattach/20250314_10151_HPG%20Intitial%20Report%202025.pdf" target="_blank">Báo cáo phân tích HPG 2025 – SHS</a></li>
-                      <li><a href="https://amis.misa.vn/201009/bao-cao-tai-chinh-hoa-phat/" target="_blank">Báo cáo tài chính Hòa Phát – AMIS</a></li>
-                      <li><a href="https://finance.vietstock.vn/HPG-ctcp-tap-doan-hoa-phat.htm" target="_blank">Trang cổ phiếu HPG – Vietstock</a></li>
-                      <li><a href="https://finance.vietstock.vn/HPG/financials.htm?tab=BCTT&languageid=1" target="_blank">Báo cáo tài chính HPG – Vietstock (Chi tiết)</a></li>
-                      <li><a href="https://vneconomy.vn/hpg-phat-hanh-1-28-ty-co-phieu-tra-co-tuc-nam-2024.htm" target="_blank">HPG phát hành cổ tức 2024 – VnEconomy</a></li>
-                      <li><a href="https://thoibaotaichinhvietnam.vn/dhdcd-hoa-phat-cam-ket-tu-nam-2026-se-chia-co-tuc-cho-co-dong-bang-tien-mat-174793.html" target="_blank">Cam kết chia cổ tức từ 2026 – Thời báo Tài chính</a></li>
-                    </ul>
-               </div>
-                <div id="stockAnalysisVNM" class="stock-analysis-content active" style="background-color: #ffffff; padding-left: 50px; padding-right: 30px;">
-                  <h3 class="text-2xl font-semibold text-yellow-600 mb-3">Detailed Analysis of VNM</h3>
-                  <p class="text-gray-600 leading-relaxed">
-                  <iframe src="VNM.pdf" width="100%" height="800px" style="border: none;"></iframe>
-                  <br> </br>
-                  <h3 class="text-2xl font-semibold text-yellow-600 mb-3">Stock Valuation Model of VNM</h3>
-                  <p class="text-gray-600 leading-relaxed">
-                  <iframe src="https://docs.google.com/spreadsheets/d/1W9JN-p8zSIyLZQ56l5jJ_8ZPFfKXluS-RxWGH6eHU5k/edit?usp=sharing" width="100%" height="800px" style="border: none;"></iframe>
-                    <strong>References:</strong><br>
-                    <a href="https://amis.misa.vn/61778/mo-hinh-5-ap-luc-canh-tranh-cua-vinamilk/?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">
-                      1. Mô hình 5 áp lực cạnh tranh của Vinamilk (AMIS)
-                    </a><br>  
-
-                    <a href="https://ruralleaders.co.nz/wp-content/uploads/2022/12/Davison-Stuart_Industrial-dairy-farmers_Kellogg-report.pdf" target="_blank" rel="noopener noreferrer">
-                      2. Industrial Dairy Farmers – Kellogg Report
-                    </a><br>
-
-                    <a href="http://ulsa.edu.vn/uploads/file/caohoc/Năm 2023/Tháng 12-2023/Luận văn Đỗ Thị Hạnh - QK03005 - QK3.pdf" target="_blank" rel="noopener noreferrer">
-                      3. Luận văn Đỗ Thị Hạnh (ULSA)
-                    </a><br>
-
-                    <a href="https://www.vinamilk.com.vn/static/uploads/bc_thuong_nien/1745318799-...pdf" target="_blank" rel="noopener noreferrer">
-                      4. Báo cáo thường niên Vinamilk
-                    </a><br>
-
-                    <a href="https://www.vinamilk.com.vn/static/uploads/documents/bctc/...Q1.2025_.pdf" target="_blank" rel="noopener noreferrer">
-                      5. Bản tin Nhà đầu tư Q1.2025
-                    </a><br>
-
-                    <a href="https://fisc.vn/co-phieu-tiem-nang/cap-nhat-dhcd-vnm-2025-p1648.html" target="_blank" rel="noopener noreferrer">
-                      6. Cập nhật ĐHĐCĐ VNM 2025 – FISC.vn
+                    <iframe src="FPT.pdf" width="100%" height="800px" style="border: none; padding-left: 50px"></iframe>
+                  </p>
+                    <br></br>
+                  <h3 class="text-2xl font-semibold text-yellow-600 mb-3" style="padding-left: 50px">Stock Valuation Model of FPT</h3>
+                  <div class="text-center pl-[50px]">
+                    <a href="https://docs.google.com/spreadsheets/d/1mdO09zEYOv46vh3f124CJ9eJ8TgCZbhNvZV5fk52CIE/edit?usp=sharing" target="_blank">
+                      <img src="FPT.jpg" alt="FPT Sheet" class="rounded-lg shadow-lg hover:shadow-xl transition duration-300 max-w-3xl w-full cursor-pointer mx-auto">
                     </a>
-               </div>
+                    <p class="mt-4 text-blue-600 hover:text-blue-800 font-semibold">
+                      <a href="https://docs.google.com/spreadsheets/d/1mdO09zEYOv46vh3f124CJ9eJ8TgCZbhNvZV5fk52CIE/edit?usp=sharing" target="_blank">
+                        View Full Google Sheet →
+                      </a>
+                    </p>
+                  </div>
+                </div>
+
+                <div id="stockAnalysisBMP" class="stock-analysis-content hidden">
+                  <h3 class="text-2xl font-semibold text-yellow-600 mb-3" style="padding-left: 50px">Detailed Analysis of BMP</h3>
+                  <p class="text-gray-600 leading-relaxed">
+                    <iframe src="BMP.pdf" width="100%" height="800px" style="border: none; padding-left: 50px"></iframe>
+                  </p>
+                    <br></br>
+                  <h3 class="text-2xl font-semibold text-yellow-600 mb-3" style="padding-left: 50px">Stock Valuation Model of BMP</h3>
+                  <div class="text-center pl-[50px]">
+                    <a href="https://docs.google.com/spreadsheets/d/1xezB6GWp3quxu75k3kowHQCPiWuQReo4x9vr2Bc9JP8/edit?usp=sharing" target="_blank">
+                      <img src="BMP.jpg" alt="FPT Sheet" class="rounded-lg shadow-lg hover:shadow-xl transition duration-300 max-w-3xl w-full cursor-pointer mx-auto">
+                    </a>
+                    <p class="mt-4 text-blue-600 hover:text-blue-800 font-semibold">
+                      <a href="https://docs.google.com/spreadsheets/d/1xezB6GWp3quxu75k3kowHQCPiWuQReo4x9vr2Bc9JP8/edit?usp=sharing" target="_blank">
+                        View Full Google Sheet →
+                      </a>
+                    </p>
+                  </div>
+                </div>
+
+                <div id="stockAnalysisVCB" class="stock-analysis-content hidden">
+                  <h3 class="text-2xl font-semibold text-yellow-600 mb-3" style="padding-left: 50px">Detailed Analysis of VCB</h3>
+                  <p class="text-gray-600 leading-relaxed">
+                    <iframe src="VCB.pdf" width="100%" height="800px" style="border: none; padding-left: 50px"></iframe>
+                  </p>
+                    <br></br>
+                  <h3 class="text-2xl font-semibold text-yellow-600 mb-3" style="padding-left: 50px">Stock Valuation Model of VCB</h3>
+                  <div class="text-center pl-[50px]">
+                    <a href="https://docs.google.com/spreadsheets/d/17CPCms8uBRW9zcpZyFO0bEJHBKVfu6G_YHw4klPuZC0/edit?usp=sharing" target="_blank">
+                      <img src="VCB.jpg" alt="FPT Sheet" class="rounded-lg shadow-lg hover:shadow-xl transition duration-300 max-w-3xl w-full cursor-pointer mx-auto">
+                    </a>
+                    <p class="mt-4 text-blue-600 hover:text-blue-800 font-semibold">
+                      <a href="https://docs.google.com/spreadsheets/d/17CPCms8uBRW9zcpZyFO0bEJHBKVfu6G_YHw4klPuZC0/edit?usp=sharing" target="_blank">
+                        View Full Google Sheet →
+                      </a>
+                    </p>
+                  </div>
+                </div>
+
+                <div id="stockAnalysisHPG" class="stock-analysis-content hidden">
+                  <h3 class="text-2xl font-semibold text-yellow-600 mb-3" style="padding-left: 50px">Detailed Analysis of HPG</h3>
+                  <p class="text-gray-600 leading-relaxed">
+                    <iframe src="HPG.pdf" width="100%" height="800px" style="border: none; padding-left: 50px"></iframe>
+                  </p>
+                    <br></br>
+                  <h3 class="text-2xl font-semibold text-yellow-600 mb-3" style="padding-left: 50px">Stock Valuation Model of HPG</h3>
+                  <div class="text-center pl-[50px]">
+                    <a href="https://docs.google.com/spreadsheets/d/1dW-YG-9bSzVLhG-nWR5gQ-wA49vcOtXfy0kUcqGjJBs/edit?usp=sharing" target="_blank">
+                      <img src="HPG.jpg" alt="FPT Sheet" class="rounded-lg shadow-lg hover:shadow-xl transition duration-300 max-w-3xl w-full cursor-pointer mx-auto">
+                    </a>
+                    <p class="mt-4 text-blue-600 hover:text-blue-800 font-semibold">
+                      <a href="https://docs.google.com/spreadsheets/d/1dW-YG-9bSzVLhG-nWR5gQ-wA49vcOtXfy0kUcqGjJBs/edit?usp=sharing" target="_blank">
+                        View Full Google Sheet →
+                      </a>
+                    </p>
+                  </div>
+                </div>
+
+                <div id="stockAnalysisVNM" class="stock-analysis-content hidden">
+                  <h3 class="text-2xl font-semibold text-yellow-600 mb-3" style="padding-left: 50px">Detailed Analysis of VNM</h3>
+                  <p class="text-gray-600 leading-relaxed">
+                    <iframe src="VNM.pdf" width="100%" height="800px" style="border: none; padding-left: 50px"></iframe>
+                  </p>
+                    <br></br>
+                  <h3 class="text-2xl font-semibold text-yellow-600 mb-3" style="padding-left: 50px">Stock Valuation Model of VNM</h3>
+                  <div class="text-center pl-[50px]">
+                    <a href="https://docs.google.com/spreadsheets/d/1W9JN-p8zSIyLZQ56l5jJ_8ZPFfKXluS-RxWGH6eHU5k/edit?usp=sharing" target="_blank">
+                      <img src="VNM.jpg" alt="FPT Sheet" class="rounded-lg shadow-lg hover:shadow-xl transition duration-300 max-w-3xl w-full cursor-pointer mx-auto">
+                    </a>
+                    <p class="mt-4 text-blue-600 hover:text-blue-800 font-semibold">
+                      <a href="https://docs.google.com/spreadsheets/d/1W9JN-p8zSIyLZQ56l5jJ_8ZPFfKXluS-RxWGH6eHU5k/edit?usp=sharing" target="_blank">
+                        View Full Google Sheet →
+                      </a>
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
         </section>
