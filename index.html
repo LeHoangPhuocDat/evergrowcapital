@@ -159,11 +159,13 @@
             margin-bottom: 1rem;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
-                #google_translate_element select {
+        #google_translate_element select {
           padding: 4px;
           font-size: 14px;
+          border-radius: 8px;
         }
         .goog-te-gadget {
+          width: max-content;
           font-size: 0; /* ẩn chữ “Chọn ngôn ngữ” */
         }
         .goog-logo-link,
@@ -186,12 +188,12 @@
                     <a href="#" id="logo-link" class="text-2xl sm:text-3xl font-bold"> Sustainable Growth Income</a>
                 </div>
                   <nav class="hidden md:flex space-x-1">
-                      <a href="#tong-quan" data-target="tong-quan" class="nav-link px-3 py-2 rounded-md text-sm font-bold transition duration-150 ease-in-out">Overview</a>
-                      <a href="#khach-hang" data-target="khach-hang" class="nav-link px-3 py-2 rounded-md text-sm font-bold transition duration-150 ease-in-out">Clients</a>
-                      <a href="#doi-ngu-phan-tich" data-target="doi-ngu-phan-tich" class="nav-link px-3 py-2 rounded-md text-sm font-bold transition duration-150 ease-in-out">Analyst Team</a>
-                      <a href="#danh-muc-dau-tu" data-target="danh-muc-dau-tu" class="nav-link px-3 py-2 rounded-md text-sm font-bold transition duration-150 ease-in-out">Portfolio</a>
-                      <a href="#phan-tich-co-phieu" data-target="phan-tich-co-phieu" class="nav-link px-3 py-2 rounded-md text-sm font-bold transition duration-150 ease-in-out">Stock Analysis</a>
-                      <a href="#cong-cu" data-target="cong-cu" class="nav-link px-3 py-2 rounded-md text-sm font-bold transition duration-150 ease-in-out">Tools & Resources</a>
+                      <a href="#tong-quan" data-target="tong-quan" class="nav-link px-3 py-2 rounded-md text-sm font-bold transition duration-150 ease-in-out self-center">Overview</a>
+                      <a href="#khach-hang" data-target="khach-hang" class="nav-link px-3 py-2 rounded-md text-sm font-bold transition duration-150 ease-in-out self-center">Clients</a>
+                      <a href="#doi-ngu-phan-tich" data-target="doi-ngu-phan-tich" class="nav-link px-3 py-2 rounded-md text-sm font-bold transition duration-150 ease-in-out self-center">Analyst Team</a>
+                      <a href="#danh-muc-dau-tu" data-target="danh-muc-dau-tu" class="nav-link px-3 py-2 rounded-md text-sm font-bold transition duration-150 ease-in-out self-center">Portfolio</a>
+                      <a href="#phan-tich-co-phieu" data-target="phan-tich-co-phieu" class="nav-link px-3 py-2 rounded-md text-sm font-bold transition duration-150 ease-in-out self-center">Stock Analysis</a>
+                      <a href="#cong-cu" data-target="cong-cu" class="nav-link px-3 py-2 rounded-md text-sm font-bold transition duration-150 ease-in-out self-center">Tools & Resources</a>
                   </nav>
                   
                 <div class="md:hidden flex items-center">
@@ -227,7 +229,7 @@
             Sustainable Growth Income accompanies you on the journey to building a strong financial future.
         </p>
         <a href="#tong-quan" data-target="tong-quan" class="nav-link-hero bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-bold py-3 px-6 rounded-lg text-md transition duration-300 ease-in-out transform hover:scale-105">Learn More</a>
-        <a href="#danh-muc-dau-tu" onclick="event.preventDefault(); setActiveSection('danh-muc-dau-tu');" class="inline-block bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold py-3 px-6 rounded-lg transition duration-300">Sample Portfolio</a>
+        <a href="#danh-muc-dau-tu" onclick="event.preventDefault(); setActiveSection('danh-muc-dau-tu');" class="nav-link-hero bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold py-3 px-6 rounded-lg transition duration-300">Sample Portfolio</a>
     </div>
   </section>
 
@@ -780,20 +782,23 @@
           </div>
         </div>
       </div>
-<!-- Clip Toggle Button -->
-<div class="text-center mt-12">
-  <button onclick="toggleVideo()" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 text-lg font-semibold transition">
-    <i class="ri-video-line text-2xl"></i> Client feedback!
-  </button>
-</div>
 
-<!-- Hidden Video Section -->
-<div id="clientVideo" class="mt-6 hidden px-4">
-  <video controls class="w-full max-w-5xl rounded-xl shadow-xl" style="aspect-ratio: 16/9;">
-    <source src="clip.mp4" type="video/mp4">
-  </video>
-</div>
+    </div>
 
+    <div class="w-full">
+            <!-- Clip Toggle Button -->
+      <div class="text-center mt-12">
+        <button onclick="toggleVideo()" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 text-lg font-semibold transition">
+          <i class="ri-video-line text-2xl"></i> Client feedback!
+        </button>
+      </div>
+
+      <!-- Hidden Video Section -->
+      <div id="clientVideo" class="mt-6 hidden px-4 w-full flex align-center justify-center">
+        <video controls class="w-full max-w-5xl rounded-xl shadow-xl" style="aspect-ratio: 16/9;">
+          <source src="clip.mp4" type="video/mp4">
+        </video>
+      </div>
     </div>
   </div>
 </section>
@@ -1080,7 +1085,7 @@
             />
             <button
               type="submit"
-              class="bg-primary hover:bg-secondary text-yellow-600 font-medium px-6 py-3 rounded whitespace-nowrap transition duration-300"
+              class="bg-yellow-600 hover:opacity-80 text-gray-50 font-medium px-6 py-3 rounded whitespace-nowrap transition duration-300"
             >
               Subscribe for Consultation
             </button>
@@ -1193,54 +1198,57 @@ document.addEventListener("DOMContentLoaded", function () {
         <h3 class="text-xl font-bold mb-4">Sustainable Growth Income</h3>
         <p class="mb-4">Smart Investment, Sustainable Growth</p>
         <div class="flex space-x-4">
-          <a href="#https://web.facebook.com/lhpd1105" target="_blank" class="w-10 h-10 flex items-center justify-center bg-white bg-opacity-20 rounded-full hover:bg-opacity-30 transition duration-300">
+          <a href="#https://web.facebook.com/lhpd1105" target="_blank" 
+          class="w-10 h-10 flex items-center justify-center bg-white bg-opacity-20 rounded-full hover:bg-opacity-30 transition duration-300">
             <i class="ri-facebook-fill ri-lg"></i>
           </a>
-          <a href="#" class="w-10 h-10 flex items-center justify-center bg-white bg-opacity-20 rounded-full hover:bg-opacity-30 transition duration-300">
+          <a href="#" 
+          class="w-10 h-10 flex items-center justify-center bg-white bg-opacity-20 rounded-full hover:bg-opacity-30 transition duration-300">
             <i class="ri-twitter-fill ri-lg"></i>
           </a>
-          <a href="#" class="w-10 h-10 flex items-center justify-center bg-white bg-opacity-20 rounded-full hover:bg-opacity-30 transition duration-300">
+          <a href="#" 
+          class="w-10 h-10 flex items-center justify-center bg-white bg-opacity-20 rounded-full hover:bg-opacity-30 transition duration-300">
             <i class="ri-linkedin-fill ri-lg"></i>
           </a>
         </div>
       </div>
       <div>
-        <h3 class="text-xl font-bold mb-4">Services</h3>
-        <ul class="space-y-2">
+        <h3 class="text-xl font-bold mb-4 pl-2">Services</h3>
+        <ul class="flex flex-col gap-3">
           <li>
-            <a href="#danh-muc-dau-tu" data-target="danh-muc-dau-tu" class="nav-link hover:text-yellow-300 transition duration-300 scroll-smooth">Portfolio Management</a>
+            <a href="#danh-muc-dau-tu" data-target="danh-muc-dau-tu" class="nav-link hover:text-yellow-300 transition duration-300 p-2 rounded scroll-smooth">Portfolio Management</a>
           </li>
           <li>
-            <a href="#" class="hover:text-yellow-300 transition duration-300 service-link">Market Analysis</a>
+            <a href="#" class="nav-link hover:text-yellow-300 transition duration-300 p-2 rounded service-link cursor-not-allowed">Market Analysis</a>
           </li>
           <li>
-            <a href="#" class="hover:text-yellow-300 transition duration-300 service-link">Financial Consulting</a>
+            <a href="#" class="nav-link hover:text-yellow-300 transition duration-300 p-2 rounded service-link cursor-not-allowed">Financial Consulting</a>
           </li>
           <li>
-            <a href="#" class="hover:text-yellow-300 transition duration-300 service-link">Retirement Planning</a>
+            <a href="#" class="nav-link hover:text-yellow-300 transition duration-300 p-2 rounded service-link cursor-not-allowed">Retirement Planning</a>
           </li>
           <li>
-            <a href="#" class="hover:text-yellow-300 transition duration-300 service-link">Real Estate Investment</a>
+            <a href="#" class="nav-link hover:text-yellow-300 transition duration-300 p-2 rounded service-link cursor-not-allowed">Real Estate Investment</a>
           </li>
         </ul>
       </div>
       <div>
-        <h3 class="text-xl font-bold mb-4">Links</h3>
-        <ul class="space-y-2">
+        <h3 class="text-xl font-bold mb-4 pl-2">Links</h3>
+        <ul class="flex flex-col gap-3">
           <li>
-            <a href="#hero-section" data-target="hero-section" class="nav-link hover:text-yellow-300 transition duration-300">Home</a>
+            <a href="#hero-section" data-target="hero-section" class="nav-link hover:text-yellow-300 transition duration-300 p-2 rounded">Home</a>
           </li>
           <li>
-            <a href="#tong-quan" data-target="tong-quan" class="nav-link hover:text-yellow-300 transition duration-300">About Us</a>
+            <a href="#tong-quan" data-target="tong-quan" class="nav-link hover:text-yellow-300 transition duration-300 p-2 rounded">About Us</a>
           </li>
           <li>
-            <a href="#danh-muc-dau-tu" data-target="danh-muc-dau-tu" class="nav-link hover:text-yellow-300 transition duration-300">Services</a>
+            <a href="#danh-muc-dau-tu" data-target="danh-muc-dau-tu" class="nav-link hover:text-yellow-300 transition duration-300 p-2 rounded">Services</a>
           </li>
           <li>
-            <a href="#" class="hover:text-yellow-300 transition duration-300 service-link">Blog</a>
+            <a href="#" class="nav-link hover:text-yellow-300 transition duration-300 p-2 rounded service-link cursor-not-allowed">Blog</a>
           </li>
           <li>
-            <a href="#doi-ngu-phan-tich" data-target="doi-ngu-phan-tich" class="nav-link hover:text-yellow-300 transition duration-300">Contact</a>
+            <a href="#doi-ngu-phan-tich" data-target="doi-ngu-phan-tich" class="nav-link hover:text-yellow-300 transition duration-300 p-2 rounded">Contact</a>
           </li>
         </ul>
       </div>
